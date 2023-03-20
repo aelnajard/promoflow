@@ -194,7 +194,7 @@
           <div class="boxLogin2">
             <div class="contentLogin">
               <br>
-              <h1>Log in</h1>
+              <h1>Log inn</h1>
               <h4>Please provide your username and password to access the system.</h4>
               <br>
               <h4>Username:</h4>
