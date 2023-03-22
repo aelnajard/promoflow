@@ -49,11 +49,9 @@
       .boxLogin{
         position: relative;
         height: 400px;
-
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -62,7 +60,6 @@
         position: relative;
         width: 300px;
         height: 380px;
-        background-color: orange;
       }
       .boxLogin2:first-child{
         border-top-left-radius: 10px;
@@ -175,6 +172,19 @@
         .boxLogin2:last-child{
           display: none;
         }
+        .menuLogin img{
+          height: 35%;
+          margin-right: 10px;
+        }
+        .menuLogin h1{
+          font-size: 1.5em;
+          margin-left: 10px;
+         }
+         .boxLogin2{
+           position: relative;
+           width: 280px;
+           height: 380px;
+         }
       }
   /*    @media screen and (min-width: 480px) {
 
@@ -189,16 +199,15 @@
       @media screen and (min-width: 1200px) {
 
       }*/
-      .bodyLogin{
-        position: relative;
-        height: 80vh;
-        width: 98%;
-        left: 50%;
-        transform: translateX(-50%);
-        background: #5C697B;
-        margin: 20px 0;
-        border-radius: 5px;
+      @media (orientation: landscape) {
+        .bodyLogin{
+          position: relative;
+          width: 98%;
+          height: 150vh;
+          left: 50%;
+        }
       }
+
 
 
     </style>
