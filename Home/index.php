@@ -5,7 +5,7 @@
     <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <style media="screen">
@@ -31,7 +31,7 @@
       .menuLogin h1{
         position: relative;
         color: white;
-        top: 35%;
+        top: 50%;
         transform: translateY(-50%);
         padding-left: 20px;
         margin: 0px;
@@ -156,11 +156,18 @@
       }
       .menuLogin img{
         position: absolute;
-        height: 50%;
+        margin-right: 30px;
+        height: 55%;
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
       }
+      .menuLogin h1{
+        font-size: 3em;
+        margin-left: 30px;
+        font-weight: 400;
+      }
+
       @media screen and (max-width: 630px) {
         .boxLogin2:first-child{
           border-radius: 10px;
@@ -168,8 +175,7 @@
         .boxLogin2:last-child{
           display: none;
         }
-
-         }
+      }
   /*    @media screen and (min-width: 480px) {
 
       }
@@ -183,10 +189,22 @@
       @media screen and (min-width: 1200px) {
 
       }*/
+      .bodyLogin{
+        position: relative;
+        height: 80vh;
+        width: 98%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #5C697B;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
 
     </style>
     <section class="Login">
       <div class="menuLogin">
+        <h1>Promoflow</h1>
         <img src="Images/Logo.png" alt="">
       </div>
       <div class="bodyLogin">
@@ -194,8 +212,8 @@
           <div class="boxLogin2">
             <div class="contentLogin">
               <br>
-              <h1>Log in (test)</h1>
-              <h4>Please provide your username and password to access the system.</h4>
+              <h1>Log in</h1>
+              <h4>Please provide your email and password to access the system.</h4>
               <br>
               <h4>Email:</h4>
               <input type="text" name="" value="">
