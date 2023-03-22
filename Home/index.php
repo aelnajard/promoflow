@@ -187,7 +187,7 @@
     </style>
     <section class="Login">
       <div class="menuLogin">
-        <img src="Images/IanLoginPIcture.png" alt="">
+        <img src="Images/Logo.png" alt="">
       </div>
       <div class="bodyLogin">
         <div class="boxLogin">
@@ -197,7 +197,7 @@
               <h1>Log in</h1>
               <h4>Please provide your username and password to access the system.</h4>
               <br>
-              <h4>Username:</h4>
+              <h4>Email:</h4>
               <input type="text" name="" value="">
               <h4>Password:</h4>
               <input type="text" name="" value="">
@@ -215,6 +215,9 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript">
+
+    </script>
 
 
   </body>
