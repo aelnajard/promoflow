@@ -32,14 +32,7 @@
         justify-content: center;
         flex-wrap: wrap;
       }
-      .menuLogin h1{
-        position: relative;
-        color: white;
-        top: 35%;
-        transform: translateY(-50%);
-        padding-left: 20px;
-        margin: 0px;
-      }
+
       .bodyLogin{
         position: relative;
         height: 80vh;
@@ -168,8 +161,19 @@
         font-size: 1em;
       }
       .menuLogin img{
-        position: relative;
-        height: 60%;
+        position: absolute;
+        margin-right: 30px;
+        height: 55%;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: drop-shadow(2px 2px 3px rgb(50,50,50));
+      }
+      .menuLogin h1{
+        font-size: 3em;
+        margin-left: 30px;
+        font-weight: 400;
+        text-shadow: 2px 2px 5px rgb(50,50,50);
       }
 
       @media screen and (min-width: 480px) {
@@ -183,6 +187,27 @@
       }
       @media screen and (min-width: 1200px) {
 
+      }
+      @media screen and (max-width: 630px) {
+        .boxLogin2:first-child{
+          border-radius: 10px;
+        }
+        .boxLogin2:last-child{
+          display: none;
+        }
+        .menuLogin img{
+          height: 35%;
+          margin-right: 10px;
+        }
+        .menuLogin h1{
+          font-size: 1.5em;
+          margin-left: 10px;
+         }
+         .boxLogin2{
+           position: relative;
+           width: 280px;
+           height: 380px;
+         }
       }
 
       .containerMenu{
@@ -364,7 +389,7 @@
       <div class="menuLoginFixed">
         <div class="menuLogin">
           <div class="containerMenu">
-            <img src="Images/images.png" alt="">
+            <img src="Images/Logo.png" alt="">
           </div>
           <div class="containerMenu">
             <img id="openMenuContainer"  src="Images/menuIcon.png" alt="">

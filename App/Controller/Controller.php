@@ -11,6 +11,7 @@ require_once('../Models/Users.php');
       $user->setPassword($_POST['password']);
       $result = json_encode($user->readUserExist());
       echo $result;
+    //  $_SESSION['loginUser'] = 'active';
     }
 
  ?>
