@@ -168,6 +168,7 @@
         top: 50%;
         transform: translateY(-50%);
         filter: drop-shadow(2px 2px 3px rgb(50,50,50));
+        background-color: red;
       }
       .menuLogin h1{
         font-size: 3em;
