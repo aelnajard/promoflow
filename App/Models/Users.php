@@ -59,9 +59,10 @@
 
 
         function readUserExist(){
-          echo "string".$this->email;exit;
          try{
            $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users`  WHERE `email` = '$this->email'");
+           echo "string".$this->email;exit;
+
           $data = $sql->fetch(PDO::FETCH_OBJ);
           $this->conn->close();
           return $data;
