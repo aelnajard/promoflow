@@ -67,7 +67,7 @@
           $this->conn->close();
 
           //return $data;
-          echo "stringjkhjjhahahha".$this->email.":P:P:P".$data;exit;
+          echo json_encode($data);exit;
 
               }
           catch(PDOException $e){
