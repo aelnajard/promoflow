@@ -267,7 +267,9 @@
           },
           success: function(data){
             var data = jQuery.parseJSON(data);
-            alert(data["COUNT(*)"]);
+            if (data["COUNT(*)"]) {
+              alert(data["COUNT(*)"] + "hola");
+            }
 
          }
         }
