@@ -20,8 +20,6 @@
 
         function setEmail($email){
           $this->email = $email;
-          echo $this->email."hihiho";
-
         }
         function setPassword($password){
           $this->password = $password;
@@ -61,6 +59,8 @@
 
 
         function readUserExist(){
+          echo $this->email."hihihohu";
+
       /*   try{
            $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users`  WHERE `email` = '$this->email'");
           $data = $sql->fetch(PDO::FETCH_OBJ);
