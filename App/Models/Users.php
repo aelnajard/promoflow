@@ -66,8 +66,7 @@
 
           $this->conn->close();
 
-          //return $data;
-          echo json_encode($data);exit;
+          return $data;
 
               }
           catch(PDOException $e){
