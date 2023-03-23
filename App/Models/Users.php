@@ -67,7 +67,7 @@
           $this->conn->close();
 
           //return $data;
-          echo json_encode($data);exit;
+          echo json_encode($data["COUNT(*)"]);exit;
 
               }
           catch(PDOException $e){
