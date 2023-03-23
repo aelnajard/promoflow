@@ -271,12 +271,12 @@
           },
           success: function(data){
             var data = jQuery.parseJSON(data);
-            if (data["COUNT(*)"]) {
+
+            if (data["COUNT(*)"]==1) {
               window.open("../Dashboard/index.php", "_self");
             }
             else{
               wrongPassword.display = "block";
-
             }
          }
         }
