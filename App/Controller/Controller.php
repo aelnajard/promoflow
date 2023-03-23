@@ -10,7 +10,7 @@ require_once('../Models/Users.php');
       $user->setEmail($_POST['email']);
       $user->setPassword($_POST['password']);
       $result = json_encode($user->readUserExist());
-      echo $result[0]["COUNT(*)"]."hola";
+      echo $result."hola";
     }
 
  ?>
