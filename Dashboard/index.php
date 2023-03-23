@@ -1011,130 +1011,104 @@
                 <th>title</th>
                 <th>reference</th>
                 <th>date</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
             </tbody>
           </table>
