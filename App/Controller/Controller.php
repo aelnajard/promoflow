@@ -9,7 +9,7 @@ require_once('../Models/Users.php');
       $user = new Users($db);
       $user->setEmail($_POST['email']);
       $user->setPassword($_POST['password']);
-      $user->readUserExist();
+    //  $user->readUserExist();
 
       echo ($user->readUserExist());//json_encode
     }
