@@ -168,7 +168,6 @@
         top: 50%;
         transform: translateY(-50%);
         filter: drop-shadow(2px 2px 3px rgb(50,50,50));
-        background-color: red;
       }
       .menuLogin h1{
         font-size: 3em;
@@ -189,28 +188,6 @@
       @media screen and (min-width: 1200px) {
 
       }
-      @media screen and (max-width: 630px) {
-        .boxLogin2:first-child{
-          border-radius: 10px;
-        }
-        .boxLogin2:last-child{
-          display: none;
-        }
-        .menuLogin img{
-          height: 35%;
-          margin-right: 10px;
-        }
-        .menuLogin h1{
-          font-size: 1.5em;
-          margin-left: 10px;
-         }
-         .boxLogin2{
-           position: relative;
-           width: 280px;
-           height: 380px;
-         }
-      }
-
       .containerMenu{
         position: relative;
         width: 48%;
@@ -237,12 +214,12 @@
         position: fixed;
         display: none;
         top: 4px;
+        right: 4px;
         background-color: rgba(47, 69, 96, .97);
         height: 100%;
+        max-width: 320px;
         z-index: 10;
         width: 98%;
-        left: 50%;
-        transform: translateX(-50%);
         border-radius: 5px;
       }
       .relative{
@@ -366,6 +343,7 @@
       }
       .containerTableW3P table{
         position: relative;
+
       /*  left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);*/
@@ -381,6 +359,17 @@
         padding: 4px;
       }
 
+      .logoImg{
+        position: absolute;
+        left: 20px;
+      }
+
+
+      .containerCenterTable{
+        padding: 2px;
+      }
+
+
     </style>
 
     <section class="Login">
@@ -390,7 +379,7 @@
       <div class="menuLoginFixed">
         <div class="menuLogin">
           <div class="containerMenu">
-            <img src="Images/Logo.png" alt="">
+            <img class="logoImg" src="Images/Logo.png" alt="">
           </div>
           <div class="containerMenu">
             <img id="openMenuContainer"  src="Images/menuIcon.png" alt="">
@@ -402,6 +391,9 @@
         <img id="closeMenu"  src="Images/Close.png" alt="">
         <div class="relative">
           <div class="itemContainer">
+            <div class="items">
+              <h3>User admin</h3>
+            </div>
             <div class="items">
               <h3>W3P official website</h3>
             </div>
@@ -432,6 +424,9 @@
             <div class="items">
               <h3>Invoice</h3>
             </div>
+            <div class="items">
+              <h3>Logout </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -448,19 +443,19 @@
         <div class="navigateTable">
           <img id="leftArrowW3P" src="Images/arrow.png" alt="">
           <div class="textNavigatorTable">
+            <h3>Category products</h3>
+          </div>
+          <div class="textNavigatorTable">
+            <h3>Group products</h3>
+          </div>
+          <div class="textNavigatorTable">
             <h3>Products</h3>
           </div>
           <div class="textNavigatorTable">
-            <h3>Selected Product Options</h3>
+            <h3>Customers</h3>
           </div>
           <div class="textNavigatorTable">
-            <h3>Product Options</h3>
-          </div>
-          <div class="textNavigatorTable">
-            <h3>Product Groups</h3>
-          </div>
-          <div class="textNavigatorTable">
-            <h3>Order List</h3>
+            <h3>Orders</h3>
           </div>
           <img id="rightArrowW3P" src="Images/arrow.png" alt="">
         </div>
@@ -470,284 +465,173 @@
         <!--  Table 1  -->
 
         <div class="containerTableW3P">
+          <div class="containerCenterTable">
+
           <table>
             <thead>
               <tr>
-                <th>Column 1</th>
-                <th>Column 1</th>
-                <th>Column 1</th>
-                <th>Column 1</th>
-                <th>Column 1</th>
-                <th>Column 1</th>
-                <th>Column 1</th>
-                <th>Column 1</th>
+                <th>Code</th>
+                <th>Name</th>
+
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
 
         <!--  Table 2  -->
+
 
         <div class="containerTableW3P">
           <table>
             <thead>
               <tr>
-                <th>Column 2</th>
-                <th>Column 2</th>
-                <th>Column 2</th>
-                <th>Column 2</th>
-                <th>Column 2</th>
-                <th>Column 2</th>
-                <th>Column 2</th>
-                <th>Column 2</th>
+                <th>code</th>
+                <th>name</th>
+                <th>url_slug</th>
+                <th>prodcat</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
             </tbody>
           </table>
         </div>
+
+
 
         <!--  Table 3  -->
 
@@ -755,293 +639,378 @@
           <table>
             <thead>
               <tr>
-                <th>Column 3</th>
-                <th>Column 3</th>
-                <th>Column 3</th>
-                <th>Column 3</th>
-                <th>Column 3</th>
-                <th>Column 3</th>
-                <th>Column 3</th>
-                <th>Column 3</th>
+                <th>id</th>
+                <th>name</th>
+                <th>filetype</th>
+                <th>width</th>
+                <th>height</th>
+                <th>bleed</th>
+                <th>rununits</th>
+                <th>reverse</th>
+                <th>allowmulti</th>
+                <th>partnercode</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
               <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <!--  Table 4  -->
-
         <div class="containerTableW3P">
-          <table>
-            <thead>
-              <tr>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 1</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-                <td>Hola 2</td>
-              </tr>
-              <tr>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 3</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-                <td>Hola 4</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-              <tr>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 5</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-                <td>Hola 6</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="containerCenterTable">
+
+            <table>
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>name</th>
+                  <th>address1</th>
+                  <th>address2</th>
+                  <th>address3</th>
+                  <th>address4</th>
+                  <th>address5</th>
+                  <th>postcode</th>
+                  <th>countrycode</th>
+                  <th>category</th>
+                  <th>workgroup</th>
+                  <th>payment_terms_code</th>
+                  <th>payment_terms_description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+                <tr>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                  <td>data</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+
         </div>
 
+
+        <!--  Table 4  -->
+
         <div class="containerTableW3P">
 
           <table>
             <thead>
               <tr>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
-                <th>Column 4</th>
+                <th>id</th>
+                <th>contact</th>
+                <th>customer</th>
+                <th>title</th>
+                <th>reference</th>
+                <th>date</th>
                 <th>Column 4</th>
                 <th>Column 4</th>
               </tr>
