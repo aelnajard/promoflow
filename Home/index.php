@@ -242,7 +242,7 @@
                 <h3>Access</h3>
               </div>
               <br>
-            <!--  <h5>The login credentials you entered are incorrect. Please try again</h5> -->
+              <h5 id="wrongPassword">The login credentials you entered are incorrect. Please try again</h5>
             </div>
           </div>
           <div class="boxLogin2">
@@ -256,6 +256,10 @@
     var access = document.getElementById('access');
     var data = document.getElementsByClassName('data');
 
+    var wrongPassword = document.getElementById("wrongPassword").style;
+
+    wrongPassword.display = "none";
+
     access.addEventListener("click", function(){
           $.ajax( "../App/Controller/Controller.php", {
           type: 'post',
@@ -268,9 +272,12 @@
           success: function(data){
             var data = jQuery.parseJSON(data);
             if (data["COUNT(*)"]) {
-              alert(data["COUNT(*)"] + "hola");
+              window.open("../Dashboard/index.php", "_self");
             }
+            else{
+              wrongPassword.display = "block";
 
+            }
          }
         }
        )
