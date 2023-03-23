@@ -271,7 +271,7 @@
           },
           success: function(data){
             var data = jQuery.parseJSON(data);
-
+            alert(data["COUNT(*)"]);
             if (data["COUNT(*)"]==1) {
               window.open("../Dashboard/index.php", "_self");
             }
