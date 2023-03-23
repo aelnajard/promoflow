@@ -266,8 +266,9 @@
             password: data[1].value
           },
           success: function(data){
+            var data = jQuery.parseJSON(data);
             alert(data);
-            //var data = jQuery.parseJSON(data);
+
          }
         }
        )
