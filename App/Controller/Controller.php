@@ -11,7 +11,7 @@ require_once('../Models/Users.php');
       $user->setPassword($_POST['password']);
       $user->readUserExist();
 
-      echo json_encode($user->readUserExist());
+      echo ($user->readUserExist());//json_encode
     }
 
  ?>
