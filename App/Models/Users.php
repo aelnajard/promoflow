@@ -65,9 +65,10 @@
           $data = $sql->fetch(PDO::FETCH_OBJ);
 
           $this->conn->close();
-          echo "stringjkhjj".$this->email;exit;
 
           return $data;
+          echo "stringjkhjjhahahha".$this->email;exit;
+
               }
           catch(PDOException $e){
               echo $query . "<br>" . $e->getMessage();
