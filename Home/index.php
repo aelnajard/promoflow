@@ -6,8 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <style media="screen">
       body{
         position: relative;
@@ -27,6 +30,7 @@
         background: linear-gradient(90deg, rgba(49,70,95,1) 27%, rgba(141,151,163,1) 72%, rgba(252,251,252,1) 100%);
         margin: 20px 0;
         border-radius: 5px;
+        box-shadow: 0px 0px 3px black;
       }
       .menuLogin h1{
         position: relative;
@@ -42,7 +46,8 @@
         width: 98%;
         left: 50%;
         transform: translateX(-50%);
-        background: #5C697B;
+        background-color: #2F4560;
+        box-shadow: 0px 0px 3px #4A596D;
         margin: 20px 0;
         border-radius: 5px;
       }
@@ -60,6 +65,7 @@
         position: relative;
         width: 300px;
         height: 380px;
+        box-shadow: 0px 0px 5px rgb(50,50,50);
       }
       .boxLogin2:first-child{
         border-top-left-radius: 10px;
@@ -69,8 +75,7 @@
       .boxLogin2:last-child{
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        background-color: #2F4560;
-
+        background: #205698;
       }
       .boxLogin2:last-child img{
         position: relative;
@@ -78,6 +83,7 @@
         left: 50%;
         transform: translateX(-50%);
         margin-top: 50px;
+        filter: drop-shadow(3px 3px 8px rgb(50,50,50));
       }
       .boxLogin2:last-child h3{
         position: relative;
@@ -136,6 +142,8 @@
         border-radius: 5px;
         width: 100px;
         cursor: pointer;
+        box-shadow: 0px 0px 2px rgb(50,50,50);
+
       }
       .contactTitle:hover{
         background-color: #435267;
@@ -158,11 +166,13 @@
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
+        filter: drop-shadow(2px 2px 3px rgb(50,50,50));
       }
       .menuLogin h1{
         font-size: 3em;
         margin-left: 30px;
         font-weight: 400;
+        text-shadow: 2px 2px 5px rgb(50,50,50);
       }
 
       @media screen and (max-width: 630px) {
@@ -199,7 +209,7 @@
       @media screen and (min-width: 1200px) {
 
       }*/
-      @media (orientation: landscape) {
+      @media (orientation: landscape) and (max-width: 630px){
         .bodyLogin{
           position: relative;
           width: 98%;
@@ -225,11 +235,11 @@
               <h4>Please provide your email and password to access the system.</h4>
               <br>
               <h4>Email:</h4>
-              <input type="text" name="" value="">
+              <input class="data" id="emailData" type="text" name="" >
               <h4>Password:</h4>
-              <input type="text" name="" value="">
-              <div class="contactTitle">
-                <a href=""><h3>Access</h3></a>
+              <input class="data" id="passwordData" type="password" name="" >
+              <div id="access" class="contactTitle">
+                <h3>Access</h3>
               </div>
               <br>
             <!--  <h5>The login credentials you entered are incorrect. Please try again</h5> -->
@@ -243,9 +253,28 @@
       </div>
     </section>
     <script type="text/javascript">
+    var access = document.getElementById('access');
+    var data = document.getElementsByClassName('data');
+
+    access.addEventListener("click", function(){
+          $.ajax( "../App/Controller/Controller.php", {
+          type: 'post',
+          async: false,
+          data: {
+            module: "loginUser",
+            email: data[0].value,
+            password: data[1].value
+          },
+          success: function(data){
+            alert(data);
+            //var data = jQuery.parseJSON(data);
+         }
+        }
+       )
+    })
+
 
     </script>
-
 
   </body>
 </html>
