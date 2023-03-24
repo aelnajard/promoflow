@@ -217,11 +217,56 @@
           left: 50%;
         }
       }
+      .spanLoading{
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: red;
+        z-index: 10;
+      }
+      section .spanLoading span{
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: rotate(calc(var(--i) *
+        (360deg / 15))) translateY(35px);
 
-
+        animation: animate 1.5s linear infinite;
+        animation-delay: calc(var(--i) * .1s);
+      }
+      @keyframes animate{
+        0%{
+          opacity: 0.9;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
 
     </style>
+
     <section class="Login">
+      <div  id="spanLoading" class="spanLoading ">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+      </div>
       <div class="menuLogin">
         <h1>Promoflow</h1>
         <img src="Images/Logo.png" alt="">
@@ -252,6 +297,8 @@
         </div>
       </div>
     </section>
+
+
     <script type="text/javascript">
     var access = document.getElementById('access');
     var data = document.getElementsByClassName('data');
@@ -260,7 +307,12 @@
 
     wrongPassword.display = "none";
 
+    var spanLoading = document.getElementById("spanLoading").style;
+    spanLoading.display = "none";
+
+
     access.addEventListener("click", function(){
+      spanLoading.display = "block";
           $.ajax( "../App/Controller/Controller.php", {
           type: 'post',
           async: false,
@@ -277,11 +329,14 @@
             }
             else{
               wrongPassword.display = "block";
+              spanLoading.display = "none";
+
             }
          }
         }
-       )
+      )
     })
+
 
 
     </script>
