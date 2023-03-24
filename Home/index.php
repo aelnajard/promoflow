@@ -327,6 +327,9 @@
               window.open("../Dashboard/index.php", "_self");
             }
             else{
+              setTimeout(function() {
+                  //your code to be executed after 1 second
+              }, 3);
               wrongPassword.display = "block";
               spanLoading.display = "none";
             }
