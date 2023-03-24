@@ -219,7 +219,6 @@
       }
       .spanLoading{
         position: absolute;
-        display: none;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -330,7 +329,6 @@
             else{
               wrongPassword.display = "block";
               spanLoading.display = "none";
-
             }
          }
         }
