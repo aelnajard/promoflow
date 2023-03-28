@@ -209,7 +209,7 @@
       @media screen and (min-width: 1200px) {
 
       }*/
-      @media (orientation: landscape) and (max-width: 630px){
+      @media (orientation: landscape) and (max-width: 750px){
         .bodyLogin{
           position: relative;
           width: 98%;

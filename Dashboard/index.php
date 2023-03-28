@@ -392,7 +392,7 @@
         <div class="relative">
           <div class="itemContainer">
             <div class="items">
-              <h3>User admin</h3>
+              <h3>User manager</h3>
             </div>
             <div class="items">
               <h3>W3P official website</h3>
@@ -998,7 +998,7 @@
         </div>
 
 
-        <!--  Table 4  -->
+        <!--  Table 5  -->
 
         <div class="containerTableW3P">
 
@@ -1120,6 +1120,7 @@
 
 
     </section>
+    <?php include "../ClientsManager/ClientsManager.php" ?>
 
     <script type="text/javascript">
 
