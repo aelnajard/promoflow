@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   </head>
   <body>
@@ -175,33 +176,28 @@
         text-shadow: 2px 2px 5px rgb(50,50,50);
       }
 
-      @media only screen and (-moz-min-device-pixel-ratio: 2),
-       only screen and (-o-min-device-pixel-ratio: 2/1),
-       only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-device-pixel-ratio: 2) {
-         .boxLogin2:first-child{
-           border-radius: 10px;
-         }
-         .boxLogin2:last-child{
-           display: none;
-         }
-         .menuLogin img{
-           height: 35%;
-           margin-right: 10px;
-         }
-         .menuLogin h1{
-           font-size: 8.5em;
-           margin-left: 10px;
-          }
-          .boxLogin2{
-            position: relative;
-            width: 280px;
-            height: 380px;
-          }
-}
+
 
       @media screen and (max-width: 630px) {
-
+        .boxLogin2:first-child{
+          border-radius: 10px;
+        }
+        .boxLogin2:last-child{
+          display: none;
+        }
+        .menuLogin img{
+          height: 35%;
+          margin-right: 10px;
+        }
+        .menuLogin h1{
+          font-size: 1.5em;
+          margin-left: 10px;
+         }
+         .boxLogin2{
+           position: relative;
+           width: 280px;
+           height: 380px;
+         }
       }
   /*    @media screen and (min-width: 480px) {
 
