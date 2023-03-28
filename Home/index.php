@@ -190,7 +190,7 @@
            margin-right: 10px;
          }
          .menuLogin h1{
-           font-size: 1.5em;
+           font-size: 8.5em;
            margin-left: 10px;
           }
           .boxLogin2{
