@@ -1,5 +1,5 @@
 <style media="screen">
-  .UsersManager{
+  .bodyLogin{
     position: relative;
     height: 80vh;
     width: 98%;
@@ -9,10 +9,10 @@
     margin: 20px 0;
     border-radius: 5px;
   }
-  .UsersManager h1{
+  .titleBodyLogin{
     position: relative;
     color: white;
-    font-size: 1.9;
+    font-size: 6.9!important;
     text-align: center;
     padding-top: 20px;
   }
@@ -91,8 +91,8 @@
 </style>
 
 
-  <section class="UsersManager">
-    <h1>Clients Manager</h1>
+  <section class="bodyLogin">
+    <h1 class="titleBodyLogin">Clients Manager</h1>
     <div class="containerUsersManagerBottoms">
       <div class="itemUsersManager">
         <img src="../ClientsManager/Images/create.png" alt="">
