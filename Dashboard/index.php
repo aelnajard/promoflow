@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <style media="screen">
       body{
         position: relative;
@@ -1189,17 +1190,30 @@
          containerTableW3P[indexTableOn].style.display = "block";
        }
    })
+    </script>
+    <script type="text/javascript">
+    verifyLogin();
+    function verifyLogin() {
+      $.ajax( "../App/Controller/Controller.php", {
+      type: 'post',
+      async: false,
+      data: {
+        module: "verifyLogin",
+      },
+      success: function(data){
+        alert(data);
+      //  var data = jQuery.parseJSON(data);
+    //    alert(data["COUNT(*)"]);
+      /*  if (true) {
 
+        }
+        else{
 
-
-
-
-
-
-
-
-
-
+        }*/
+     }
+    }
+  )
+    }
 
     </script>
 
