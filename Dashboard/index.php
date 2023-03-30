@@ -240,6 +240,24 @@
         cursor: pointer;
         margin: 3px 0;
       }
+      .itemsLogout{
+        padding: 5px;
+        background-color: gold;
+        cursor: pointer;
+        margin: 3px 0;
+        background-color: rgba(33, 46, 63, 1);
+      }
+      .itemsLogout h3{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        color: rgba(240, 250, 240, 1);
+      }
+      .itemsLogout:hover {
+        background-color: rgba(33, 46, 63, .7);
+      }
 
       .items:nth-child(odd) {
         background-color: rgba(33, 46, 63, 1);
@@ -375,8 +393,6 @@
     </style>
 
     <section class="Login">
-
-
       <!--  MENU  -->
       <div class="menuLoginFixed">
         <div class="menuLogin">
@@ -397,10 +413,7 @@
               <h3>User manager</h3>
             </div>
             <div class="items">
-              <h3>W3P official website</h3>
-            </div>
-            <div class="items">
-              <h3>W3P (API)</h3>
+              <h3>W3P </h3>
             </div>
             <div class="items">
               <h3>Client PO & Art to C2R</h3>
@@ -426,26 +439,29 @@
             <div class="items">
               <h3>Invoice</h3>
             </div>
-            <div class="items">
+            <div id="logout" class="itemsLogout">
               <h3>Logout </h3>
             </div>
           </div>
         </div>
       </div>
 
-
-      <!--  BODY  -->
-
-
-
     </section>
-    <?php include "../W3P/W3P.php" ?>
 
-    <?php include "../ClientsManager/ClientsManager.php" ?>
+    <?php include "../1-ClientsManager/ClientsManager.php" ?>
+    <?php include "../2-W3P/W3P.php" ?>
+    <?php include "../3-ClientPOAndArtToC2R/ClientPOAndArtToC2R.php" ?>
+    <?php include "../4-C2RPOAndArtSupplier/C2RPOAndArtSupplier.php" ?>
+    <?php include "../5-ProofFromSupplierToC2R/ProofFromSupplierToC2R.php" ?>
+    <?php include "../6-ApprovalFromClient/ApprovalFromClient.php" ?>
+    <?php include "../7-ApprovalFromC2RToSupplier/ApprovalFromC2RToSupplier.php" ?>
+    <?php include "../8-ToProduction/ToProduction.php" ?>
+    <?php include "../9-Despatch/Despatch.php" ?>
+    <?php include "../10-Invoice/Invoice.php" ?>
+
 
     <script type="text/javascript">
-
-                          /* Menu */
+    /* Menu */
 
     /* Declaration of variables*/
     var closeMenu = document.getElementById('closeMenu');
@@ -454,64 +470,13 @@
 
     /* Close Menu*/
     closeMenu.addEventListener("click", function(){
-      menuContainer.style.display = "none";
+    menuContainer.style.display = "none";
     })
     /* Open Menu*/
     openMenuContainer.addEventListener("click", function(){
-      menuContainer.style.display = "block";
+    menuContainer.style.display = "block";
     })
 
-
-                /* Move table with arrows */
-
-    /* Declaration of variables*/
-    var leftArrowW3P = document.getElementById('leftArrowW3P');
-    var rightArrowW3P = document.getElementById('rightArrowW3P');
-    const textNavigatorTable = document.querySelectorAll(".textNavigatorTable");
-    const containerTableW3P = document.querySelectorAll(".containerTableW3P");
-
-    var indexTableOn = 0;
-
-    /*Turn on the first layer*/
-    textNavigatorTable[indexTableOn].style.display = "block";
-    containerTableW3P[indexTableOn].style.display = "block";
-
-
-    /*Event for click left*/
-   leftArrowW3P.addEventListener("click", function(){
-     textNavigatorTable[indexTableOn].style.display = "none"; // Turn off current layer
-     containerTableW3P[indexTableOn].style.display = "none"; // Turn off current layer
-
-       if (indexTableOn != 0) { //If layers its not 0
-         indexTableOn = indexTableOn - 1;
-         textNavigatorTable[indexTableOn].style.display = "block";
-         containerTableW3P[indexTableOn].style.display = "block";
-       }
-       else {
-         indexTableOn = containerTableW3P.length - 1; //If layers it's  0
-         textNavigatorTable[indexTableOn].style.display = "block";
-         containerTableW3P[indexTableOn].style.display = "block";
-       }
-   })
-
-   /*Event for click right*/
-   rightArrowW3P.addEventListener("click", function(){
-     textNavigatorTable[indexTableOn].style.display = "none"; // Turn off current layer
-     containerTableW3P[indexTableOn].style.display = "none"; // Turn off current layer
-
-       if (indexTableOn != containerTableW3P.length -1) {  //If layers it's not 3
-         indexTableOn = indexTableOn + 1;
-         textNavigatorTable[indexTableOn].style.display = "block";
-         containerTableW3P[indexTableOn].style.display = "block";
-       }
-       else {//If layers it's  3
-         indexTableOn = 0;
-         textNavigatorTable[indexTableOn].style.display = "block";
-         containerTableW3P[indexTableOn].style.display = "block";
-       }
-   })
-    </script>
-    <script type="text/javascript">
     verifyLogin();
     function verifyLogin() {
       $.ajax( "../App/Controller/Controller.php", {
@@ -523,17 +488,55 @@
       success: function(data){
         //alert(data);
       //  var data = jQuery.parseJSON(data);
-    //    alert(data["COUNT(*)"]);
-      /*  if (true) {
 
-        }
-        else{
-
-        }*/
      }
     }
-  )
+    )
     }
+
+
+
+  const items = document.querySelectorAll(".items");
+    const bodyLogin = document.querySelectorAll(".bodyLogin");
+    var containerOn = 0;
+
+
+
+    for (let i = 0; i < items.length; i++) {
+
+      bodyLogin[i].style.display = "none";
+      bodyLogin[0].style.display = "block";
+
+
+      items[i].addEventListener("click", function(){
+
+        if (bodyLogin[i].style.display == "none"){
+          containerOn  = i;
+          bodyLogin[i].style.display = "block";
+          turnOffOtherContainers();
+          menuContainer.style.display = "none";
+
+        }
+      }
+    )
+    }
+
+    function turnOffOtherContainers(){
+      for (let i = 0; i < items.length; i++) { // Cambiar el 3 por optionAddToCard2.length
+        if (i != containerOn) {
+          bodyLogin[i].style.display = "none";
+        }
+      }
+    }
+
+    /* Logout */
+    var logout = document.getElementById('logout');
+
+    logout.addEventListener("click", function(){
+      menuContainer.style.display = "none";
+      window.open("../index.php", "_self");
+    })
+
 
     </script>
 

@@ -84,8 +84,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
+  }
+  .ContainerCRUD{
   }
 
 </style>
@@ -95,19 +95,19 @@
     <h1 class="titleBodyLogin">Clients Manager</h1>
     <div class="containerUsersManagerBottoms">
       <div class="itemUsersManager">
-        <img src="../ClientsManager/Images/create.png" alt="">
+        <img src="../1-ClientsManager/Images/create.png" alt="">
         <h3>Create</h3>
       </div>
       <div class="itemUsersManager">
-        <img src="../ClientsManager/Images/Read.png" alt="">
+        <img src="../1-ClientsManager/Images/Read.png" alt="">
         <h3>Read</h3>
       </div>
       <div class="itemUsersManager">
-        <img src="../ClientsManager/Images/update.png" alt="">
+        <img src="../1-ClientsManager/Images/update.png" alt="">
         <h3>Update</h3>
       </div>
       <div class="itemUsersManager">
-        <img src="../ClientsManager/Images/DeleteIcon.png" alt="">
+        <img src="../1-ClientsManager/Images/DeleteIcon.png" alt="">
         <h3>Delete</h3>
       </div>
     </div>
