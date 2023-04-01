@@ -515,7 +515,9 @@
           bodyLogin[i].style.display = "block";
           turnOffOtherContainers();
           menuContainer.style.display = "none";
-
+        }
+        else {
+          menuContainer.style.display = "none";
         }
       }
     )

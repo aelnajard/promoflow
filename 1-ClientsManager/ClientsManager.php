@@ -79,14 +79,17 @@
     border-radius: 5px;
     overflow: scroll;
     margin-top: 30px;
-  }
-  .ContainerCRUD{
+
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .ContainerCRUD{
+
   }
+
 
 </style>
 
@@ -111,13 +114,41 @@
         <h3>Delete</h3>
       </div>
     </div>
-    <div class="ContainerCRUD">
-      <label for="name">Name</label>
-      <input id="name" type="text" name="" value="" placeholder="">
-    </div>
+    <?php include "../1-1-Create/Create.php" ?>
+    <?php include "../1-2-Read/Read.php" ?>
+    <?php include "../1-3-Update/Update.php" ?>
+    <?php include "../1-4-Delete/Update.php" ?>
   </section>
 
 
 <script type="text/javascript">
+  const itemUsersManager = document.querySelectorAll(".itemUsersManager");
+  const ContainerCRUD  = document.querySelectorAll(".ContainerCRUD");
+  var onContainr = 0
+
+
+  for (let i = 0; i < itemUsersManager.length; i++) {
+    ContainerCRUD[i].style.display = "none";
+    ContainerCRUD[0].style.display = "flex";
+    itemUsersManager[i].addEventListener("click", function(){
+      if (ContainerCRUD[i].style.display == "none") {
+        ContainerCRUD[i].style.display = "flex";
+        onContainr = i;
+
+        for (let j = 0; j < itemUsersManager.length; j++) {
+          if (j != onContainr ) {
+            ContainerCRUD[j].style.display = "none";
+          }
+        }
+
+      }
+    })
+  }
+
+
+
+
+
+
 
 </script>
