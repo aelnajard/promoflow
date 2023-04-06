@@ -25,16 +25,58 @@
     <input id="name" type="text" name="" value="" placeholder="">
   </div>
   <div class="ContainerInput">
-    <label for="name">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>
-    <input id="name" type="text" name="" value="" placeholder="">
+    <label for="email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>
+    <input id="email" type="text" name="" value="" placeholder="">
   </div>
   <div class="ContainerInput">
-    <label for="name">Password</label>
-    <input id="name" type="password" name="" value="" placeholder="">
+    <label for="password">Password</label>
+    <input id="password" type="password" name="" value="" placeholder="">
   </div>
   <div class="ContainerInput">
-    <button type="button" name="button">Create</button>
+    <button id="createUserClick"type="button" name="button">Create</button>
   </div>
-
-
 </div>
+<script type="text/javascript">
+  var name = document.getElementById("name");
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+  var createUserClick = document.getElementById("createUserClick");
+
+  createUserClick.addEventListener("click", function(){
+    alert("hola");
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
