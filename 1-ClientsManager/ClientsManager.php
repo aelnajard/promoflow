@@ -79,6 +79,11 @@
     border-radius: 5px;
     overflow: scroll;
     margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction:column;
   }
 </style>
 
@@ -118,7 +123,7 @@
 
   for (let i = 0; i < itemUsersManager.length; i++) {
     ContainerCRUD[i].style.display = "none";
-    ContainerCRUD[0].style.display = "flex";
+    ContainerCRUD[2].style.display = "flex";
     itemUsersManager[i].addEventListener("click", function(){
       if (ContainerCRUD[i].style.display == "none") {
         ContainerCRUD[i].style.display = "flex";
