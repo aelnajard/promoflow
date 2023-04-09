@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
     height: 50px;
-    background-color: purple;
   }
 
   .containerCRUDTitle h2{
@@ -12,7 +11,6 @@
     font-size: 1.3em;
     font-weight: 300;
     text-align: center;
-    background-color: green;
     margin: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -22,7 +20,6 @@
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: yellow;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -38,6 +35,8 @@
     margin: 20px;
     box-shadow: 2px 2px 3px black;
     background-color: rgba(216, 225, 232, 1);
+    overflow: hidden;
+    border-radius: 10%;
 
     display: flex;
     justify-content: center;
@@ -53,6 +52,7 @@
     height: 100%;
     width: 30%;
     background-color:rgba(155, 198, 232, 1);
+    border-top-left-radius: 50%;
   }
 
   .CRUDBoxesRight{
@@ -61,7 +61,7 @@
     top: 0px;
     height: 100%;
     width: 70%;
-    background-color:red;
+    background-color:rgba(208, 217, 223, 1);
   }
 
   .CRUDBoxesLeftTop{
@@ -70,7 +70,8 @@
     top: 0px;
     height: 10%;
     width: 100%;
-    background-color:blue;
+    background-color:rgba(62, 140, 209, 1);
+    border-top-left-radius: 30%;
   }
 
   .CRUDBoxesLeftTopInside{
@@ -90,7 +91,7 @@
     top: 0px;
     height: 30%;
     width: 100%;
-    background-color:purple;
+    background-color:rgba(155, 198, 232, 1);
     padding: 15% 0;
   }
 
@@ -111,7 +112,7 @@
     transform: translateX(-50%);
     height: 35%;
     width: 75%;
-    background-color: orange;
+    background-color: rgba(103, 135, 229, 1);
     border-radius: 15%;
   }
 
@@ -122,7 +123,6 @@
     transform: translateX(-50%);
     height: 50%;
     width: 75%;
-    background-color: green;
     border-radius: 15%;
 
     display: flex;
@@ -136,13 +136,13 @@
     height: 15%;
     width: 80%;
     margin-top: 5%;
-    background-color: white;
+    background-color: rgba(241, 242, 246, 1);
     margin-bottom: 3%;
     border-radius: 25%;
   }
 
   .CRUDBoxesRightDownLine:nth-child(3){
-    background-color: blue;
+    background-color: rgba(144, 183, 219, 1);
   }
 
   .CRUDBoxesRightDownLineSubline{
@@ -150,22 +150,22 @@
     height: 7%;
     width: 60%;
     margin-top: 5%;
-    background-color: black;
+    background-color: rgba(193, 214, 242, 1);
     margin-bottom: 15%;
     margin-left: 10%;
     border-radius: 10%;
   }
 
   .CRUDBoxesRightDownLine:nth-child(1) .CRUDBoxesRightDownLineSubline{
-    background-color: orange;
+    background-color: rgba(193, 214, 242, 1);
     width: 50%;
   }
   .CRUDBoxesRightDownLine:nth-child(2) .CRUDBoxesRightDownLineSubline{
-    background-color: Black;
+    background-color: rgba(193, 214, 242, 1);
     width: 35%;
   }
   .CRUDBoxesRightDownLine:nth-child(3) .CRUDBoxesRightDownLineSubline{
-    background-color: white;
+    background-color: rgba(193, 214, 242, 1);
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -174,31 +174,39 @@
     position: relative;
     font-size: 80%;
     margin: 0;
-    background-color: yellow;
     text-align: center;
   }
   .BottonCRUDUpdate{
     position: absolute;
     width: 35%;
     height:45%;
-    background-color: orange;
     top: 50%;
     left: -12%;
-    border-radius: 10%;
+    border-radius: 20%;
+    background-color: rgba(225, 228, 235, 1);
   }
+
   .relative{
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: brown;
   }
+
   .BottonCRUDUpdate img{
     position: relative;
-    height: 80%;
-    width: 90%;
+    height: 60%;
+    width: 70%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .CRUDBoxes:hover > .BottonCRUDUpdate img{
+    filter: drop-shadow(3px 3px 5px Black);
+  }
+  .CRUDBoxes:active > .BottonCRUDUpdate img{
+    filter: drop-shadow(0px 0px 3px Black);
 
   }
 
@@ -249,39 +257,46 @@
     </div>
   </div>
   <div class="CRUDBoxes">
+    <div class="CRUDBoxesLeft">
+      <div class="CRUDBoxesLeftTop">
+        <div class="CRUDBoxesLeftTopInside">
+        </div>
+      </div>
+      <div class="CRUDBoxesLeftBody">
+        <div class="CRUDBoxesLeftBodyLine">
+        </div>
+        <div class="CRUDBoxesLeftBodyLine">
+        </div>
+        <div class="CRUDBoxesLeftBodyLine">
+        </div>
+      </div>
+    </div>
+    <div class="CRUDBoxesRight">
+      <div class="CRUDBoxesRightName">
+        <h3>CRUD, CRUD, CRUD, CRUD,</h3>
+      </div>
+      <div class="CRUDBoxesRightDown">
+        <div class="CRUDBoxesRightDownLine">
+          <div class="CRUDBoxesRightDownLineSubline">
+          </div>
+        </div>
+        <div class="CRUDBoxesRightDownLine">
+          <div class="CRUDBoxesRightDownLineSubline">
+          </div>
+        </div>
+        <div class="CRUDBoxesRightDownLine">
+          <div class="CRUDBoxesRightDownLineSubline">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="BottonCRUDUpdate">
+      <div class="relative">
+          <img src="../1-3-Update/Images/update.png" alt="">
+      </div>
+    </div>
   </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
-  <div class="CRUDBoxes">
-  </div>
+
 
 
 </div>
