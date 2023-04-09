@@ -31,7 +31,7 @@
 </style>
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
-      <h2>Update user.</h2>
+      <h2>Update user</h2>
   </div>
 <div class="containerCRUDWrap">
 
