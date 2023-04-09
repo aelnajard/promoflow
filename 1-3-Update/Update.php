@@ -5,6 +5,7 @@
     height: 50px;
     background-color: purple;
   }
+
   .containerCRUDTitle h2{
     position: relative;
     color: white;
@@ -16,6 +17,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
   .containerCRUDWrap{
     position: relative;
     width: 100%;
@@ -26,6 +28,7 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   .CRUDBoxes{
     position: relative;
     height: 120px;
@@ -42,6 +45,7 @@
     flex-direction: row;
 
   }
+
   .CRUDBoxesLeft{
     position: relative;
     left: 0px;
@@ -50,6 +54,7 @@
     width: 30%;
     background-color:rgba(155, 198, 232, 1);
   }
+
   .CRUDBoxesRight{
     position: relative;
     right: 0px;
@@ -58,6 +63,7 @@
     width: 70%;
     background-color:red;
   }
+
   .CRUDBoxesLeftTop{
     position: relative;
     right: 0px;
@@ -66,6 +72,7 @@
     width: 100%;
     background-color:blue;
   }
+
   .CRUDBoxesLeftTopInside{
     position: relative;
     left: 50%;
@@ -76,6 +83,7 @@
     background-color: white;
     border-top-left-radius: 5px;
   }
+
   .CRUDBoxesLeftBody{
     position: relative;
     right: 0px;
@@ -85,6 +93,7 @@
     background-color:purple;
     padding: 15% 0;
   }
+
   .CRUDBoxesLeftBodyLine{
     position: relative;
     height: 7%;
@@ -94,6 +103,7 @@
     margin-left: 10%;
     border-radius: 29%;
   }
+
   .CRUDBoxesRightName{
     position: relative;
     left: 50%;
@@ -104,6 +114,7 @@
     background-color: orange;
     border-radius: 15%;
   }
+
   .CRUDBoxesRightDown{
     position: relative;
     left: 50%;
@@ -119,31 +130,61 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   .CRUDBoxesRightDownLine{
     position: relative;
     height: 15%;
     width: 80%;
     margin-top: 5%;
     background-color: white;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     border-radius: 25%;
   }
+
   .CRUDBoxesRightDownLine:nth-child(3){
     background-color: blue;
   }
+
   .CRUDBoxesRightDownLineSubline{
     position: relative;
     height: 7%;
     width: 60%;
+    margin-top: 5%;
     background-color: black;
     margin-bottom: 15%;
     margin-left: 10%;
-    border-radius: 29%;
+    border-radius: 10%;
+  }
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+  .CRUDBoxesRightDownLine:nth-child(1) .CRUDBoxesRightDownLineSubline{
+    background-color: orange;
+    width: 50%;
+  }
+  .CRUDBoxesRightDownLine:nth-child(2) .CRUDBoxesRightDownLineSubline{
+    background-color: Black;
+    width: 35%;
+  }
+  .CRUDBoxesRightDownLine:nth-child(3) .CRUDBoxesRightDownLineSubline{
+    background-color: white;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .CRUDBoxesRightName h3{
+    position: relative;
+    font-size: 80%;
+    margin: 0;
+    background-color: yellow;
+    text-align: center;
+  }
+  .BottonCRUDUpdate{
+    position: absolute;
+    width: 35%;
+    height:45%;
+    background-color: orange;
+    top: 50%;
+    left: -12%;
+    border-radius: 10%;
   }
 
 </style>
@@ -169,6 +210,7 @@
     </div>
     <div class="CRUDBoxesRight">
       <div class="CRUDBoxesRightName">
+        <h3>CRUD, CRUD, CRUD, CRUD,</h3>
       </div>
       <div class="CRUDBoxesRightDown">
         <div class="CRUDBoxesRightDownLine">
@@ -184,6 +226,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="BottonCRUDUpdate">
+      
     </div>
   </div>
   <div class="CRUDBoxes">
