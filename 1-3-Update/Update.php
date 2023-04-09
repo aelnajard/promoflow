@@ -30,19 +30,23 @@
     position: relative;
     height: 120px;
     width: 160px;
-    border: 1px solid black;
-    border-radius: 5px;
     margin: 20px;
-    box-shadow: 2px 2px 3px black;
+  }
+
+  .RoundBoxes{
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-color: rgba(216, 225, 232, 1);
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 3%;
+    box-shadow: 2px 2px 3px black, -1px -1px 2px grey;
+
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-
   }
 
   .CRUDBoxesLeft{
@@ -114,6 +118,7 @@
     width: 75%;
     background-color: rgba(103, 135, 229, 1);
     border-radius: 15%;
+    box-shadow: 2px 2px 3px black, -1px -1px 2px grey;
   }
 
   .CRUDBoxesRightDown{
@@ -184,6 +189,7 @@
     left: -12%;
     border-radius: 20%;
     background-color: rgba(225, 228, 235, 1);
+    box-shadow: 2px 2px 3px black, -1px -1px 2px grey;
   }
 
   .relative{
@@ -207,7 +213,6 @@
   }
   .CRUDBoxes:active > .BottonCRUDUpdate img{
     filter: drop-shadow(0px 0px 3px Black);
-
   }
 
 </style>
@@ -216,7 +221,10 @@
       <h2>Update user.</h2>
   </div>
 <div class="containerCRUDWrap">
+
+
   <div class="CRUDBoxes">
+    <div class="RoundBoxes">
     <div class="CRUDBoxesLeft">
       <div class="CRUDBoxesLeftTop">
         <div class="CRUDBoxesLeftTopInside">
@@ -250,13 +258,18 @@
         </div>
       </div>
     </div>
-    <div class="BottonCRUDUpdate">
-      <div class="relative">
-          <img src="../1-3-Update/Images/update.png" alt="">
-      </div>
-    </div>
+   </div>
+   <div class="BottonCRUDUpdate">
+     <div class="relative">
+         <img src="../1-3-Update/Images/update.png" alt="">
+     </div>
+   </div>
   </div>
+
+
+
   <div class="CRUDBoxes">
+    <div class="RoundBoxes">
     <div class="CRUDBoxesLeft">
       <div class="CRUDBoxesLeftTop">
         <div class="CRUDBoxesLeftTopInside">
@@ -290,12 +303,17 @@
         </div>
       </div>
     </div>
-    <div class="BottonCRUDUpdate">
-      <div class="relative">
-          <img src="../1-3-Update/Images/update.png" alt="">
-      </div>
-    </div>
+   </div>
+   <div class="BottonCRUDUpdate">
+     <div class="relative">
+         <img src="../1-3-Update/Images/update.png" alt="">
+     </div>
+   </div>
   </div>
+
+
+
+
 
 
 
