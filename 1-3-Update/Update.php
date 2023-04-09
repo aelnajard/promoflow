@@ -53,8 +53,19 @@
   <div class="CRUDBoxes">
   </div>
   <div class="CRUDBoxes">
+  </div><div class="CRUDBoxes">
   </div>
-  
+  <div class="CRUDBoxes">
+  </div>
+  <div class="CRUDBoxes">
+  </div>
+  <div class="CRUDBoxes">
+  </div>
+  <div class="CRUDBoxes">
+  </div>
+  <div class="CRUDBoxes">
+  </div>
+
 </div>
 
 
