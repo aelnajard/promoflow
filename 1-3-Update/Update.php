@@ -15,18 +15,27 @@
   .containerCRUDWrap{
     position: relative;
     width: 90%;
-    background-color: yellow;
     height: calc(100%-200px);
+    background-color: green;
+    margin-top:15px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
   }
+
 
 </style>
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
-      <h2>Update user</h2>
+      <h2>Update user.</h2>
   </div>
-<!--<div class="containerCRUDWrap">
+<div class="containerCRUDWrap">
 
-</div>-->
+</div>
 
 
 </div>
