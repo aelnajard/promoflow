@@ -26,8 +26,8 @@
   }
   .CRUDBoxes{
     position: relative;
-    height: 120px;
-    width: 150px;
+    height: 60px;
+    width: 70px;
     border: 1px solid black;
     border-radius: 5px;
     margin: 20px;
