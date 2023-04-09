@@ -23,18 +23,27 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-
-
+  }
+  .CRUDBoxes{
+    position: relative;
+    height: 120px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 2px 2px 3px black;
+    background-color: rgba(216, 225, 232, 0.5);
   }
 
 
 </style>
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
-      <h2>Update user</h2>
+      <h2>Update user.</h2>
   </div>
 <div class="containerCRUDWrap">
-    <h1>hola</h1>
+  <div class="CRUDBoxes">
+  </div>
 </div>
 
 
