@@ -2,9 +2,7 @@
   .containerCRUDTitle{
     position: relative;
     width: 80%;
-    padding: 5px;
     background-color: brown;
-
   }
   .containerCRUDWrap{
     position: relative;
@@ -16,7 +14,7 @@
 </style>
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
-      <h2>Update user.</h2>
+      <h2>Update user</h2>
   </div>
 <!--<div class="containerCRUDWrap">
 
