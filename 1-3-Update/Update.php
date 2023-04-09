@@ -10,6 +10,7 @@
     font-weight: 300;
     text-align: center;
     background-color: green;
+    margin: 0;
   }
   .containerCRUDWrap{
     position: relative;
@@ -21,7 +22,7 @@
 </style>
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
-      <h2>Update user.</h2>
+      <h2>Update user</h2>
   </div>
 <!--<div class="containerCRUDWrap">
 
