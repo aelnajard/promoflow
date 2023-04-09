@@ -1,25 +1,26 @@
 <style media="screen">
-  .ContainerCRUD input{
-    height: 30px;
-    border-radius: 5px;
-    margin: 0 10px;
-    padding-left: 5px;
-    font-size: 1em;
-    font-weight: 300;
-  }
-  .ContainerInput{
+  .containerCRUDTitle{
     position: relative;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    margin: 10px;
+    width: 80%;
+    padding: 5px;
+    background-color: brown;
+    
   }
-  .ContainerInput button{
-    padding: 10px;
+  .containerCRUDWrap{
+    position: relative;
+    width: 90%;
+    background-color: yellow;
+    height: calc(100%-200px);
   }
+
 </style>
 <div class="ContainerCRUD">
-  <h1>Update user</h1>
-  
+  <div class="containerCRUDTitle">
+      <h2>Update user</h2>
+  </div>
+<!--<div class="containerCRUDWrap">
+
+</div>-->
+
 
 </div>
