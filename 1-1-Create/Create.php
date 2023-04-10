@@ -43,7 +43,7 @@
   var createUserClick = document.getElementById("createUserClick");
 
   createUserClick.addEventListener("click", function(){
-    $.ajax( "../App/Controller/Controller.php", {
+    /*$.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
            data: {
@@ -57,7 +57,7 @@
              alert(data);
           }
          }
-       )
+       ) */
       // alert("hola");
   })
 
