@@ -71,7 +71,15 @@
         }
 
         function getUsers(){
-          return "entramos getUsers";
+          try{
+            $sql = $this->conn->conn()->query("SELECT * FROM `Users` ");
+           $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+           $this->conn->close();
+           return $data;
+               }
+           catch(PDOException $e){
+               echo $query . "<br>" . $e->getMessage();
+             }
         }
 
 
