@@ -334,7 +334,7 @@ var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate")
 function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {
-     alert(data[i]["name"]);
+     alert(data[i]["name"] + "buenas");
      }
 }
 
