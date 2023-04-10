@@ -47,17 +47,14 @@
            type: 'post',
            async: false,
            data: {
-             module: "createUser",
-             name: name,
-             email: email,
-             password: password
+             module: "createUser"
                    },
            success: function(data){
         //     var data = jQuery.parseJSON(data);
              alert(data);
           }
          }
-       ) 
+       )
        alert("hola hermanitas");
   })
 
