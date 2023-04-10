@@ -233,7 +233,7 @@
   </div>
 <div class="containerCRUDWrap" id="containerBoxUsersUpdate">
 
-
+<!--
   <div class="CRUDBoxes">
     <div class="RoundBoxes">
     <div class="CRUDBoxesLeft">
@@ -322,7 +322,7 @@
    </div>
   </div>
 
-
+-->
 
 
 </div>
