@@ -58,7 +58,7 @@
           }
          }
        ) */
-       alert("hola hermanas");
+       alert("hola hermanitas");
   })
 
 </script>
