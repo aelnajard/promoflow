@@ -22,6 +22,9 @@ require_once('../Models/Users.php');
       $result = json_encode($user->getUsers());
       echo $result;
     }
+    elseif ($_POST['module']=="createUser") {
+      echo "hola tu";
+    }
 
 
 

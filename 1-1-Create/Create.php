@@ -44,7 +44,19 @@
   var createUserClick = document.getElementById("createUserClick");
 
   createUserClick.addEventListener("click", function(){
-    alert("hola");
+    $.ajax( "../App/Controller/Controller.php", {
+           type: 'post',
+           async: false,
+           data: {
+             module: "createUser"
+                   },
+           success: function(data){
+        //     var data = jQuery.parseJSON(data);
+             alert(data);
+          }
+         }
+       )
+       alert("hola hermanitas");
   })
 
 </script>
