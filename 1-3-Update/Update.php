@@ -231,7 +231,7 @@
   <div class="containerCRUDTitle">
       <h2>Update user.</h2>
   </div>
-<div class="containerCRUDWrap">
+<div class="containerCRUDWrap" id="containerBoxUsersUpdate">
 
 
   <div class="CRUDBoxes">
@@ -330,5 +330,28 @@
 
 </div>
 <script type="text/javascript">
-  
+var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
+function setusers(data){
+     var boxUsers = "";
+     for (var i = 0; i < data.length; i++) {
+     alert(data[i]["name"]);
+     }
+}
+
+
+/*function addMaterialsAddToCartFromIndex(data){
+    var boxMaterial = "";
+   for (var i = 0; i < data.length; i++) {
+     var materialAddToCart = document.getElementById("materialAddToCart");
+      boxMaterial  =  boxMaterial +
+      '<div class=" materialBox">'+
+        '<h4 class="nameMaterialOptions">'+data[i]["nameMaterial"]+'</h4>'+
+        '<img src="'+data[i]["addressImgMaterial"]+'" alt="">'+
+      '</div>';
+     ;
+   }
+   materialAddToCart.innerHTML = boxMaterial;
+ }*/
+
+
 </script>
