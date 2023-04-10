@@ -334,8 +334,52 @@ var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate")
 function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {
-     alert(data[i]["name"] + "buenas");
+       boxUsers = boxUsers +
+       '<div class="CRUDBoxes">' +
+         '<div class="RoundBoxes">' +
+         '<div class="CRUDBoxesLeft">' +
+           '<div class="CRUDBoxesLeftTop">' +
+             '<div class="CRUDBoxesLeftTopInside">' +
+             '</div>' +
+           '</div>' +
+           '<div class="CRUDBoxesLeftBody">' +
+             '<div class="CRUDBoxesLeftBodyLine">' +
+             '</div>' +
+             '<div class="CRUDBoxesLeftBodyLine">' +
+            ' </div>' +
+             '<div class="CRUDBoxesLeftBodyLine">' +
+             '</div>' +
+           '</div>' +
+         '</div>' +
+         '<div class="CRUDBoxesRight">' +
+           '<div class="CRUDBoxesRightName">' +
+             '<h3>CRUD, CRUD, CRUD, CRUD,</h3>' +
+           '</div>' +
+           '<div class="CRUDBoxesRightDown">' +
+             '<div class="CRUDBoxesRightDownLine">' +
+               '<div class="CRUDBoxesRightDownLineSubline">' +
+               '</div>' +
+             '</div>' +
+            ' <div class="CRUDBoxesRightDownLine">' +
+               '<div class="CRUDBoxesRightDownLineSubline">' +
+               '</div>' +
+             '</div>' +
+            ' <div class="CRUDBoxesRightDownLine">' +
+               '<div class="CRUDBoxesRightDownLineSubline">' +
+               '</div>' +
+            ' </div>' +
+           '</div>' +
+         '</div>' +
+        '</div>' +
+        '<div class="BottonCRUDUpdate">' +
+          '<div class="relative">' +
+              '<img src="../1-3-Update/Images/update.png" alt="">' +
+          '</div>' +
+        '</div>' +
+       '</div>' +
+    /* alert(data[i]["name"] + "buenas");*/
      }
+        containerBoxUsersUpdate.innerHTML = boxUsers;
 }
 
 
