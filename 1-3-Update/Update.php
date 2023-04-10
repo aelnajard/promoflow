@@ -376,7 +376,7 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' +
+       '</div>' ;
     /* alert(data[i]["name"] + "buenas");*/
      }
         containerBoxUsersUpdate.innerHTML = boxUsers;
