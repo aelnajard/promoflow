@@ -151,13 +151,16 @@
             module: "getUsers"
                   },
           success: function(data){
-            alert(data);
+            var data = jQuery.parseJSON(data);
+            setusers(data);
          }
         }
        )
  })
 
-
+ function setusers(data){
+   alert(data + "hola");
+ }
 
 
 
