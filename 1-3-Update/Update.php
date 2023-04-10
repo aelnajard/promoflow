@@ -8,8 +8,8 @@
   .containerCRUDTitle h2{
     position: relative;
     color: white;
-    font-size: 1.3em;
-    font-weight: 300;
+    font-size: 1.6em;
+    font-weight: 500;
     text-align: center;
     margin: 0;
     top: 50%;
@@ -20,7 +20,7 @@
     position: relative;
     width: 100%;
     height: 500px;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -226,10 +226,11 @@
     filter: drop-shadow(0px 0px 3px Black);
   }
 
+
 </style>
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
-      <h2>Update user.</h2>
+      <h2>Update user</h2>
   </div>
 <div class="containerCRUDWrap" id="containerBoxUsersUpdate">
 
@@ -279,11 +280,10 @@
 
 -->
 
-
+</div>
+<?php include '../1-5-Form/Form.php'; ?>
 </div>
 
-
-</div>
 <script type="text/javascript">
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){

@@ -80,11 +80,22 @@
     overflow: scroll;
     margin-top: 30px;
 
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction:column;
   }
+  .ContainerCRUD::-webkit-scrollbar {
+  width: 1.5em;
+  }
+  .ContainerCRUD::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .ContainerCRUD::-webkit-scrollbar-thumb {
+  background:rgba(47, 69, 96, 1);
+  border: 1px solid black;
+}
 </style>
 
 
@@ -158,6 +169,6 @@
        )
  })
 
- 
+
 
 </script>

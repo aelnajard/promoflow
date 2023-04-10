@@ -35,6 +35,7 @@
   <div class="ContainerInput">
     <button id="createUserClick"type="button" name="button">Create</button>
   </div>
+  
 </div>
 <script type="text/javascript">
   var name = document.getElementById("name");
