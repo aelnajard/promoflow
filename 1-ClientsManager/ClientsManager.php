@@ -159,8 +159,26 @@
  })
 
  function setusers(data){
-   alert(data + "hola");
+      var boxUsers = "";
+      for (var i = 0; i < data.length; i++) {
+      alert(data[i]["name"]);
+      }
  }
+
+
+ /*function addMaterialsAddToCartFromIndex(data){
+     var boxMaterial = "";
+    for (var i = 0; i < data.length; i++) {
+      var materialAddToCart = document.getElementById("materialAddToCart");
+       boxMaterial  =  boxMaterial +
+       '<div class=" materialBox">'+
+         '<h4 class="nameMaterialOptions">'+data[i]["nameMaterial"]+'</h4>'+
+         '<img src="'+data[i]["addressImgMaterial"]+'" alt="">'+
+       '</div>';
+      ;
+    }
+    materialAddToCart.innerHTML = boxMaterial;
+  }*/
 
 
 
