@@ -118,7 +118,13 @@
     width: 75%;
     background-color: rgba(103, 135, 229, 1);
     border-radius: 15%;
-    box-shadow: 2px 2px 3px black, -1px -1px 2px grey;
+    box-shadow: -2px 2px 10px black, -1px -1px 2px grey;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
   }
 
   .CRUDBoxesRightDown{
@@ -143,7 +149,9 @@
     margin-top: 5%;
     background-color: rgba(241, 242, 246, 1);
     margin-bottom: 3%;
-    border-radius: 25%;
+    border-radius: 29.5%;
+    box-shadow: 1px 1px 3px black;
+
   }
 
   .CRUDBoxesRightDownLine:nth-child(3){
@@ -177,9 +185,12 @@
   }
   .CRUDBoxesRightName h3{
     position: relative;
+    width: 90%;
     font-size: 80%;
     margin: 0;
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
   }
   .BottonCRUDUpdate{
     position: absolute;
@@ -314,10 +325,10 @@
 
 
 
-
-
-
 </div>
 
 
 </div>
+<script type="text/javascript">
+  
+</script>

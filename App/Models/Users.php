@@ -70,6 +70,10 @@
             }
         }
 
+        function getUsers(){
+          return "entramos getUsers";
+        }
+
 
 
     /*    function updateUser(){

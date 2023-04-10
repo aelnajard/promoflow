@@ -99,7 +99,7 @@
         <img src="../1-ClientsManager/Images/Read.png" alt="">
         <h3>Read</h3>
       </div>
-      <div class="itemUsersManager">
+      <div class="itemUsersManager" id="openUpdate">
         <img src="../1-ClientsManager/Images/update.png" alt="">
         <h3>Update</h3>
       </div>
@@ -139,7 +139,23 @@
     })
   }
 
+ /*Update information of the user*/
+ var openUpdate = document.getElementById("openUpdate");
 
+ openUpdate.addEventListener("click", function(){
+
+   $.ajax( "../App/Controller/Controller.php", {
+          type: 'post',
+          async: false,
+          data: {
+            module: "getUsers"
+                  },
+          success: function(data){
+            alert(data);
+         }
+        }
+       )
+ })
 
 
 

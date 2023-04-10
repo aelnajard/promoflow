@@ -16,6 +16,12 @@ require_once('../Models/Users.php');
     elseif ($_POST['module']=="verifyLogin") {
       echo "buenas";
     }
+    elseif ($_POST['module'] = "getUsers") {
+      $db = new Database();
+      $user = new Users($db);
+      $result = json_encode($user->getUsers());
+      echo $result;
+    }
 
 
 
