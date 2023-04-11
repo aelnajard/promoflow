@@ -2,10 +2,9 @@
 .formUpdate{
   position: absolute;
   left: 0px;
-  top: 50px;
+  top: 40px;
   width: 100%;
   height: 10px;
-  background-color: blue;
 }
 .inputFormUpdate{
   position:relative;
