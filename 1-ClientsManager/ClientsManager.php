@@ -79,6 +79,7 @@
     transform: translateX(-50%);
     border-radius: 5px;
     overflow-y: scroll;
+    overflow-x: none;
     margin-top: 30px;
 
 
