@@ -335,7 +335,9 @@ function setusers(data){
        '<script type="text/javascript">'+
          'document.getElementById("CRUDBoxesUpdate'+i+'").onclick = function(e){setDataForUpdate('   + data[i]["idCourse"]+     ')}'+
        '</script>';
-    /* alert(data[i]["name"] + "buenas");*/
+
+
+     
      }
 
         containerBoxUsersUpdate.innerHTML = boxUsers;
@@ -344,21 +346,6 @@ function setusers(data){
   function  setDataForUpdate(idUser){
     alert(idUser);
   }
-
-
-/*function addMaterialsAddToCartFromIndex(data){
-    var boxMaterial = "";
-   for (var i = 0; i < data.length; i++) {
-     var materialAddToCart = document.getElementById("materialAddToCart");
-      boxMaterial  =  boxMaterial +
-      '<div class=" materialBox">'+
-        '<h4 class="nameMaterialOptions">'+data[i]["nameMaterial"]+'</h4>'+
-        '<img src="'+data[i]["addressImgMaterial"]+'" alt="">'+
-      '</div>';
-     ;
-   }
-   materialAddToCart.innerHTML = boxMaterial;
- }*/
 
 
 </script>
