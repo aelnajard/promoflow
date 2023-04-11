@@ -21,7 +21,7 @@
     position: relative;
     width: 100%;
     height: 500px;
-    display: none;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -231,7 +231,7 @@
 </style>
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
-      <h2>Update user</h2>
+      <h2 id="test">Update user</h2>
   </div>
 <div class="containerCRUDWrap" id="containerBoxUsersUpdate">
 
@@ -332,7 +332,13 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>';
+       '</div>' +
+       '<script type="text/javascript">' +
+      'var CRUDBoxesUpdate = document.getElementById("CRUDBoxesUpdate");' +
+       'CRUDBoxesUpdate.addEventListener("click", function(){' +
+         'updateUser(data[i]["idUser"] , data[i]["name"], data[i]["email"], data[i]["password"], data[i]["images"], data[i]["userType"] );' +
+       '});' +
+       '</script>' ;
 
 
 
@@ -342,5 +348,8 @@ function setusers(data){
   }
 
 
+  function updateUser(idUser, name, email, password, images, userType){
+  alert(email);
+  }
 
 </script>
