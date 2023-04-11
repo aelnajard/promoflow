@@ -1,6 +1,8 @@
 <style media="screen">
 .formUpdate{
-  position: relative;
+  position: absolute;
+  left: 0px;
+  top: 200px;
   width: 100%;
   height: 300px;
   background-color: red;
