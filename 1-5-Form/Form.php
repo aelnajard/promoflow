@@ -2,7 +2,7 @@
 .formUpdate{
   position: absolute;
   left: 0px;
-  top: 50px;
+  top: 100px;
   width: 100%;
   height: 300px;
   background-color: red;
