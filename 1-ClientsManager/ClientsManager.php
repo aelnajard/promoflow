@@ -81,70 +81,22 @@
     overflow-y: scroll;
     margin-top: 30px;
 
+
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction:column;
   }
-
-  .ContainerCRUD h2{
-    position: relative;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    font-size: 1.35em;
-    margin: none;
-    padding: none;
-    width: 100%;
-    /*display: block;
-    background-color: blue;*/
+  .ContainerCRUD::-webkit-scrollbar {
+  width: 1.5em;
   }
-  .ContainerCRUD input{
-    height: 30px;
-    border-radius: 5px;
-    margin: 0 10px;
-    padding-left: 5px;
-    font-size: 1em;
-    font-weight: 300;
-    width: 110px;
+  .ContainerCRUD::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
-  .ContainerCRUD button{
-    position: relative;
-    left: -50%;
-    transform: translateX(50%);
-    padding: 10px 35px;
-    background-color: #222D3E;
-    color: white;
-    font-size: 1em;
-    font-weight: 200;
-    cursor: pointer;
-    border: none;
-    transition: .4s;
-    margin-top: 10px;
-  }
-  .ContainerCRUD button:hover{
-    box-shadow: 1px 1px 3px rgba(20, 20, 20, .3);
-    background-color: rgba(34, 45, 62, .8);
-  }
-  .ContainerCRUD button:active{
-    box-shadow: 1px 1px 3px rgba(20, 20, 20, 0);
-    background-color: rgba(34, 45, 62, 1);
-  }
-  @media (orientation: landscape) and (max-width: 750px){
-    .bodyLogin{
-      position: relative;
-      width: 98%;
-      height: 150vh;
-      left: 50%;
-    }
-  }
-  @media screen and (min-width: 480px) {
-    .ContainerCRUD input{
-      width: 180px;
-    }
-  }
-
+  .ContainerCRUD::-webkit-scrollbar-thumb {
+  background:rgba(47, 69, 96, 1);
+  border: 1px solid black;
+}
 </style>
 
 
@@ -159,7 +111,7 @@
         <img src="../1-ClientsManager/Images/Read.png" alt="">
         <h3>Read</h3>
       </div>
-      <div class="itemUsersManager">
+      <div class="itemUsersManager" id="openUpdate">
         <img src="../1-ClientsManager/Images/update.png" alt="">
         <h3>Update</h3>
       </div>
@@ -183,7 +135,7 @@
 
   for (let i = 0; i < itemUsersManager.length; i++) {
     ContainerCRUD[i].style.display = "none";
-    ContainerCRUD[0].style.display = "flex";
+    ContainerCRUD[2].style.display = "flex";
     itemUsersManager[i].addEventListener("click", function(){
       if (ContainerCRUD[i].style.display == "none") {
         ContainerCRUD[i].style.display = "flex";
@@ -199,9 +151,24 @@
     })
   }
 
+ /*Update information of the user*/
+ var openUpdate = document.getElementById("openUpdate");
 
+ openUpdate.addEventListener("click", function(){
 
-
+   $.ajax( "../App/Controller/Controller.php", {
+          type: 'post',
+          async: false,
+          data: {
+            module: "getUsers"
+                  },
+          success: function(data){
+            var data = jQuery.parseJSON(data);
+            setusers(data);
+         }
+        }
+       )
+ })
 
 
 
