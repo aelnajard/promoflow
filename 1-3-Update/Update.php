@@ -19,7 +19,7 @@
   .containerCRUDWrap{
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 150px;
     display: none;
     justify-content: center;
     flex-wrap: wrap;
