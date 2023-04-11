@@ -331,13 +331,13 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>'+
+       '</div>'/*+
        '<script type="text/javascript">'+
          'document.getElementById("CRUDBoxesUpdate'+i+'").onclick = function(e){setDataForUpdate('   + data[i]["idCourse"]+     ')}'+
-       '</script>';
+       '</script>'*/;
 
 
-     
+
      }
 
         containerBoxUsersUpdate.innerHTML = boxUsers;
