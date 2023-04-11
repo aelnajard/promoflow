@@ -59,7 +59,7 @@
     <input type="text" name="" value="" id="updateName">
   </div>
   <div class="inputFormUpdate">
-    <button type="button" name="button">Access</button>
+    <button type="button" name="button">Update</button>
   </div>
 </div>
 
