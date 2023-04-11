@@ -4,6 +4,7 @@
     width: 100%;
     height: 50px;
     top: 0px;
+    background-color: red;
   }
 
   .containerCRUDTitle h2{
