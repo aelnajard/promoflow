@@ -333,9 +333,9 @@ function setusers(data){
           '</div>' +
         '</div>' +
        '</div>' +
-       eval('<script type="text/javascript">'
-         'alert("buenas");'
-       '</script>')
+       '<script type="text/javascript">' +
+         'alert("buenas");' +
+       '</script>'
        ;
 
 
