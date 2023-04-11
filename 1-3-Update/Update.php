@@ -286,6 +286,7 @@
 </div>
 
 <script type="text/javascript">
+var script = "";
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
      var boxUsers = "";
@@ -332,14 +333,21 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' 
-       ;
+       '</div>' +
+       '<iframe srcdoc="<script>alert("buenas");</script>"></iframe>'
+       '<script type="text/javascript">' +
+         'alert("buenas");' +
+       '</script>'
+
+
+
 
 
 
      }
 
-        containerBoxUsersUpdate.innerHTML = boxUsers;
+     $( "#containerBoxUsersUpdate" ).append( boxUsers );
+
   }
 
 
