@@ -332,9 +332,7 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' +
-       '<iframe srcdoc="<script>alert("buenas");</script>"></iframe>'
-       
+       '</div>' 
        ;
 
 
