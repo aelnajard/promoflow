@@ -290,7 +290,7 @@ function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {
        boxUsers = boxUsers +
-       '<div class="CRUDBoxes">' +
+       '<div id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
@@ -331,11 +331,19 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' ;
+       '</div>'+
+       '<script type="text/javascript">'+
+         'document.getElementById("CRUDBoxesUpdate'+i+'").onclick = function(e){setDataForUpdate('   + data[i]["idCourse"]+     ')}'+
+       '</script>';
     /* alert(data[i]["name"] + "buenas");*/
      }
+
         containerBoxUsersUpdate.innerHTML = boxUsers;
-}
+  }
+
+  function  setDataForUpdate(idUser){
+    alert(idUser);
+  }
 
 
 /*function addMaterialsAddToCartFromIndex(data){
