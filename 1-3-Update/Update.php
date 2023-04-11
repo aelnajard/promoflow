@@ -343,9 +343,9 @@ function setusers(data){
         containerBoxUsersUpdate.innerHTML = boxUsers;
   }
 
-  function  setDataForUpdate(idUser){
+  /*function  setDataForUpdate(idUser){
     alert(idUser);
-  }
+  }*/
 
 
 </script>
