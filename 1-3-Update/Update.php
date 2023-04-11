@@ -332,13 +332,7 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' /*+
-       '<script type="text/javascript">' +
-      'var CRUDBoxesUpdate = document.getElementById("CRUDBoxesUpdate");' +
-       'CRUDBoxesUpdate.addEventListener("click", function(){' +
-         'updateUser(data[i]["idUser"] , data[i]["name"], data[i]["email"], data[i]["password"], data[i]["images"], data[i]["userType"] );' +
-       '});' +
-       '</script>' */;
+       '</div>' ;
 
 
 
@@ -348,8 +342,6 @@ function setusers(data){
   }
 
 
-/*  function updateUser(idUser, name, email, password, images, userType){
-  alert(email);
-}*/
+
 
 </script>
