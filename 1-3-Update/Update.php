@@ -337,7 +337,7 @@ function setusers(data){
        '<iframe srcdoc="<script>alert("buenas");</script>"></iframe>'
        '<script type="text/javascript">' +
          'alert("buenas");' +
-       '</script>'
+       '</script>';
 
 
 
