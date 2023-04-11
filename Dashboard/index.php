@@ -382,8 +382,8 @@
       .logoImg{
         position: absolute;
         left: 20px;
+        height: 40%!important;
       }
-
 
       .containerCenterTable{
         padding: 2px;

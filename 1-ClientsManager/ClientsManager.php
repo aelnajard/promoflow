@@ -12,9 +12,9 @@
   .titleBodyLogin{
     position: relative;
     color: white;
-    font-size: 6.9!important;
     text-align: center;
-    padding-top: 20px;
+    font-weight: 300;
+    padding-top: 15px;
   }
   .containerUsersManagerBottoms{
     position: relative;
@@ -68,6 +68,7 @@
   .itemUsersManager:active > h3{
     font-weight: 300;
   }
+
   .ContainerCRUD{
     position: relative;
     padding: 5px;
@@ -77,7 +78,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-    overflow: scroll;
+    overflow-y: scroll;
     margin-top: 30px;
 
     display: flex;
@@ -86,16 +87,69 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .ContainerCRUD{
 
+  .ContainerCRUD h2{
+    position: relative;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    font-size: 1.35em;
+    margin: none;
+    padding: none;
+    width: 100%;
+    /*display: block;
+    background-color: blue;*/
   }
-
+  .ContainerCRUD input{
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding-left: 5px;
+    font-size: 1em;
+    font-weight: 300;
+    width: 110px;
+  }
+  .ContainerCRUD button{
+    position: relative;
+    left: -50%;
+    transform: translateX(50%);
+    padding: 10px 35px;
+    background-color: #222D3E;
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    cursor: pointer;
+    border: none;
+    transition: .4s;
+    margin-top: 10px;
+  }
+  .ContainerCRUD button:hover{
+    box-shadow: 1px 1px 3px rgba(20, 20, 20, .3);
+    background-color: rgba(34, 45, 62, .8);
+  }
+  .ContainerCRUD button:active{
+    box-shadow: 1px 1px 3px rgba(20, 20, 20, 0);
+    background-color: rgba(34, 45, 62, 1);
+  }
+  @media (orientation: landscape) and (max-width: 750px){
+    .bodyLogin{
+      position: relative;
+      width: 98%;
+      height: 150vh;
+      left: 50%;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    .ContainerCRUD input{
+      width: 180px;
+    }
+  }
 
 </style>
 
 
   <section class="bodyLogin">
-    <h1 class="titleBodyLogin">Clients Manager</h1>
+    <h2 class="titleBodyLogin">Clients Manager</h2>
     <div class="containerUsersManagerBottoms">
       <div class="itemUsersManager">
         <img src="../1-ClientsManager/Images/create.png" alt="">

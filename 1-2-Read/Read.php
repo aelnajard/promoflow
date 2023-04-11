@@ -1,45 +1,45 @@
 <style media="screen">
-  .ContainerCRUD input{
-    height: 30px;
-    border-radius: 5px;
-    margin: 0 10px;
-    padding-left: 5px;
-    font-size: 1em;
-    font-weight: 300;
-  }
-  .ContainerInput{
+  .centerContainerRead{
     position: relative;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    margin: 10px;
-  }
-  .ContainerInput button{
-    padding: 10px;
-  }
-  .containerReadUsers{
-    height: 80%;
-    width: 80%;
-    margin-top: 20px;
-    background-color: red;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-  }
-  .boxReadUsers{
-    height: 300px;
-    width: 300px;
+    background-color: orange;
 
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .boxUserCRUD{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 2px;
   }
 </style>
-<div class="ContainerCRUD">
-  <h1>Get user's information</h1>
 
-  <div class="containerReadUsers">
-    <div class="boxReadUsers">
+<div class="ContainerCRUD">
+    <h2>Create user</h2>
+  <div class="centerContainerRead">
+
+    <div class="boxUserCRUD">
 
     </div>
+    <div class="boxUserCRUD">
+
+    </div>
+    <div class="boxUserCRUD">
+
+    </div>
+    <div class="boxUserCRUD">
+
+    </div>
+    <div class="boxUserCRUD">
+
+    </div>
+    <div class="boxUserCRUD">
+
+    </div>
+
   </div>
-
-
 </div>
