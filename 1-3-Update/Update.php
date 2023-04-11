@@ -333,9 +333,8 @@ function setusers(data){
           '</div>' +
         '</div>' +
        '</div>' +
-       '<script type="text/javascript">' +
-         'alert("buenas");' +
-       '</script>'
+       '<iframe srcdoc="<script>alert("buenas");</script>"></iframe>'
+       
        ;
 
 
