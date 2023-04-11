@@ -348,8 +348,8 @@ function setusers(data){
   }
 
 
-  function updateUser(idUser, name, email, password, images, userType){
+/*  function updateUser(idUser, name, email, password, images, userType){
   alert(email);
-  }
+}*/
 
 </script>
