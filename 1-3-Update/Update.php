@@ -291,9 +291,9 @@ var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate")
 function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {//
-      
+
        boxUsers = boxUsers +
-       '<div onclick="updateUsers("Message")" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers('+"Message"+')" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
