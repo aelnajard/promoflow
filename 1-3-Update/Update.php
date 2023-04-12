@@ -287,8 +287,6 @@
 
 <script type="text/javascript">
 
-var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
-var formUpdate = document.getElementById("formUpdate");
 
 
 function setusers(data){
@@ -343,9 +341,8 @@ function setusers(data){
   }
 
   function updateUsers(idUser, name, email, password, userType) {
-         alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
-         containerBoxUsersUpdate.style.display = "none";
-         formUpdate.style.display = "block";
+      //   alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
+
      }
 
 

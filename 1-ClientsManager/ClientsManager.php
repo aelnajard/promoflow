@@ -154,6 +154,8 @@
 
  /*Update information of the user*/
  var openUpdate = document.getElementById("openUpdate");
+ var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
+ var formUpdate = document.getElementById("formUpdate");
 
  openUpdate.addEventListener("click", function(){
 
@@ -165,6 +167,8 @@
                   },
           success: function(data){
             var data = jQuery.parseJSON(data);
+            containerBoxUsersUpdate.style.display = "none";
+            formUpdate.style.display = "block";
             setusers(data);
          }
         }
