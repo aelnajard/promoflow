@@ -393,7 +393,7 @@ var globalIdUser;
              userType: updateUserType.value
                    },
            success: function(data){
-             aleert(data);
+             alert(data);
 
           }
          }
