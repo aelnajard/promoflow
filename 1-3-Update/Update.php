@@ -380,7 +380,24 @@ function setusers(data){
   }
 
   clickUpdate.addEventListener("click", function(){
-    alert(updateName.value);
+    $.ajax( "../App/Controller/Controller.php", {
+           type: 'post',
+           async: false,
+           data: {
+             module: "getUsers"
+                   },
+           success: function(data){
+             var data = jQuery.parseJSON(data);
+             containerBoxUsersUpdate.style.display = "flex";
+             formUpdate.style.display = "none";
+             setusers(data);
+          }
+         }
+        )
+        alert(updateName.value);
+        alert(updateEmail.value);
+        alert(updatePassword.value);
+        alert(updateUserType.value);
   })
 
 
