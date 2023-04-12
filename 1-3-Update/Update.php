@@ -286,15 +286,16 @@
 </div>
 
 <script type="text/javascript">
-window.onload = function() {
-
-var script = "";
+function updateUsers(item) {
+       alert(item);
+   }
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
      for (var i = 0; i < data.length; i++) {//
+    //   col.innerHTML='<div onclick="test(123);">Text</div>';
 
        containerBoxUsersUpdate.innerHTML  +=
-       '<div onclick="updateUsers("Message")" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers(456564);" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
@@ -341,11 +342,8 @@ function setusers(data){
 
   }
 
-  function updateUsers(item) {
-         alert(item);
-     }
 
 
-};
+
 
 </script>

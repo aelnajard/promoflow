@@ -129,7 +129,6 @@
 
 
 <script type="text/javascript">
-window.onload = function() {
   const itemUsersManager = document.querySelectorAll(".itemUsersManager");
   const ContainerCRUD  = document.querySelectorAll(".ContainerCRUD");
   var onContainr = 0
@@ -173,5 +172,4 @@ window.onload = function() {
  })
 
 
-};
 </script>
