@@ -77,7 +77,6 @@
 </div>
 <script type="text/javascript">
 function setUsersCreate(data){
-  alert("2");
   containerBoxUsersRead.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
        containerBoxUsersRead.innerHTML  +=
@@ -128,11 +127,11 @@ function setUsersCreate(data){
   }
 var globalIdUser;
   function readUsers(idUser, name, email, password, userType) {
-    alert("3");
-      /*   containerBoxUsersRead.style.display = "none";
+  //  alert("3");
+         containerBoxUsersRead.style.display = "none";
          formUpdateRead.style.display = "flex";
 
-         globalIdUser  = idUser;*/
+         globalIdUser  = idUser;
 
   }
 </script>
