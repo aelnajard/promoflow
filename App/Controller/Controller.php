@@ -25,6 +25,9 @@ require_once('../Models/Users.php');
     elseif ($_POST['module']=="createUser") {
       echo "hola tu";
     }
+    elseif ($_POST['module']=="updateUsers") {
+      echo $_POST['idUser'].$_POST['name'].$_POST['email'].$_POST['password'].$_POST['userType'];
+    }
 
 
 

@@ -368,11 +368,12 @@ function setusers(data){
        ;
      }
   }
-
+var globalIdUser;
   function updateUsers(idUser, name, email, password, userType) {
          containerBoxUsersUpdate.style.display = "none";
          formUpdate.style.display = "block";
 
+         globalIdUser  = idUser;
          updateName.value = name;
          updateEmail.value = email;
          updatePassword.value = password;
@@ -384,17 +385,20 @@ function setusers(data){
            type: 'post',
            async: false,
            data: {
-             module: "getUsers"
+             module: "updateUsers",
+             idUser: globalIdUser,
+             name: updateName.value,
+             email: updateEmail.value,
+             password: updatePassword.value,
+             userType: updateUserType.value
                    },
            success: function(data){
-             
+             aleert(data);
+
           }
          }
         )
-        alert(updateName.value);
-        alert(updateEmail.value);
-        alert(updatePassword.value);
-        alert(updateUserType.value);
+
   })
 
 
