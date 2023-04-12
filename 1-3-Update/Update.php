@@ -286,8 +286,8 @@
 </div>
 
 <script type="text/javascript">
-function updateUsers(item, email) {
-       alert(item + "  " + email);
+function updateUsers(idUser, name, email, password, UserType) {
+       alert(idUser + "  " + name + "  " + email + "  " + password + "  " + UserType);
    }
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
