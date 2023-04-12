@@ -64,7 +64,7 @@
            return "The user has been created";
              }
          catch(PDOException $e){
-             echo $query . "<br>" . $e->getMessage();
+             return $query . "<br>" . $e->getMessage();
            }
        }
        function updateUser(){
