@@ -379,7 +379,6 @@ var globalIdUser;
            success: function(data){
              alert(data);
              location.reload();
-
           }
          }
         )

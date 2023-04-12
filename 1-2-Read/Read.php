@@ -127,8 +127,8 @@ function setUsersCreate(data){
   }
 var globalIdUser;
   function readUsers(idUser, name, email, password, userType) {
-         containerBoxUsersUpdate.style.display = "none";
-         formUpdate.style.display = "block";
+         containerBoxUsersRead.style.display = "none";
+         formUpdateRead.style.display = "flex";
 
          globalIdUser  = idUser;
 
