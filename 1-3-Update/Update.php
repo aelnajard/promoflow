@@ -286,8 +286,8 @@
 </div>
 
 <script type="text/javascript">
-function updateUsers(item) {
-       alert(item);
+function updateUsers(item, email) {
+       alert(item + "  " + email);
    }
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
@@ -295,7 +295,7 @@ function setusers(data){
     //   col.innerHTML='<div onclick="test(123);">Text</div>';
 
        containerBoxUsersUpdate.innerHTML  +=
-       '<div onclick="updateUsers(\''+data[i]["name"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers(\''+data[i]["name"]+'\',  \''+data[i]["email"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
