@@ -126,6 +126,7 @@
   top: 40px;
   width: 100%;
   height: 10px;
+  background-color: blue;
 }
 .inputFormUpdate{
   position:relative;
