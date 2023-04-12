@@ -50,6 +50,23 @@
              echo $query . "<br>" . $e->getMessage();
            }
        }
+       function createUser(){
+         try{
+           $sql = "INSERT INTO `Users`(name, email, password, userType)
+                 VALUES (
+                   '$this->name',
+                   '$this->email',
+                   '$this->password',
+                   '$this->userType'
+                 )";
+           $this->con->conn()->exec($sql);
+           $this->con->close();
+           return "The user has been created";
+             }
+         catch(PDOException $e){
+             echo $query . "<br>" . $e->getMessage();
+           }
+       }
        function updateUser(){
         try{
             $sql = "UPDATE
@@ -96,20 +113,7 @@
           $this->phone = $phone;
         }
 
-        function createUser(){
-          try{
-            $sql = "INSERT INTO `Users`(NIT, email)
-                  VALUES (
-                    '$this->NIT',
-                    '$this->email'
-                  )";
-            $this->con->conn()->exec($sql);
-            $this->con->close();
-              }
-          catch(PDOException $e){
-              echo $query . "<br>" . $e->getMessage();
-            }
-        }
+
         function readUserLastId(){//"LAST_INSERT_ID()"
           try{
            $sql = $this->con->conn()->query("SELECT `idUser` FROM `Users` ORDER BY `idUser` DESC LIMIT 1");
