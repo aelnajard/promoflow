@@ -385,7 +385,7 @@ var globalIdUser;
            type: 'post',
            async: false,
            data: {
-             module: "updateUsers",
+             moduleUserManager: "updateUsers",
              idUser: globalIdUser,
              name: updateName.value,
              email: updateEmail.value,
