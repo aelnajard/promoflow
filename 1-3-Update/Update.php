@@ -290,9 +290,11 @@ var script = "";
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
      var boxUsers = "";
-     for (var i = 0; i < data.length; i++) {
+     var name = "";
+     for (var i = 0; i < data.length; i++) {//
+       name = data[i]["name"];
        boxUsers = boxUsers +
-       '<div onclick="updateUsers("'+data[i]["name"]+'")" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers("'+name+'")" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
