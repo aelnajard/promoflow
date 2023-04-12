@@ -1,14 +1,5 @@
 <style media="screen">
-  .ContainerInput{
-    position: relative;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    margin: 10px;
-  }
-  .centerContainer{
-    position: relative;
-  }
+  
 </style>
 
 <div class="ContainerCRUD">
