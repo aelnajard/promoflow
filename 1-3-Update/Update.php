@@ -383,11 +383,11 @@ var globalIdUser;
   }
 
   clickUpdate.addEventListener("click", function(){
-    $.ajax( "../App/Controller/Controller.php", {
+    $.ajax( "../App/Controller/Controller2.php", {
            type: 'post',
            async: false,
            data: {
-             module: "updateUsers2",
+             module: "updateUsers",
              idUser: globalIdUser,
              name: updateName.value,
              email: updateEmail.value,
