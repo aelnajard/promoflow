@@ -344,12 +344,9 @@ function setusers(data){
 
   function updateUsers(idUser, name, email, password, userType) {
          alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
-         containerBoxUsersUpdate.style.block = "none";
-         formUpdate.style.block = "block";
+         containerBoxUsersUpdate.style.display = "none";
+         formUpdate.style.display = "block";
      }
-
-
-
 
 
 </script>
