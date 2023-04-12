@@ -130,6 +130,7 @@
 }
 .inputFormUpdate{
   position:relative;
+  display: block;
   width: 250px;
   height: 80px;
   margin: 10px 0px;
