@@ -101,8 +101,6 @@
 
         function deleteUser(){
             try{
-
-              echo $this->sectionName2;
               $sql =  "DELETE FROM `Users` WHERE `iduser`= '$this->idUser' ";
               $this->conn->conn()->exec($sql);
               $this->conn->close();
