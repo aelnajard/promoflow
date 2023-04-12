@@ -129,7 +129,7 @@ var globalIdUser;
   function readUsers(idUser, name, email, password, userType) {
   //  alert("3");
          containerBoxUsersRead.style.display = "none";
-         formUpdateRead.style.display = "flex";
+         formRead.style.display = "flex";
 
          globalIdUser  = idUser;
 
