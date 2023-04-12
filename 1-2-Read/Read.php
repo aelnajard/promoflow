@@ -56,25 +56,15 @@
   </div>
   <div id="formRead" class="formUpdate">
     <br><br><br><br>
-    <div class="inputFormRead">
-      <label for="updateName">Name</label>
-      <p id="readName"></p><br>
-    </div><br>
-    <div class="inputFormRead">
-      <label for="updateName">Email</label>
-      <p  id="readEmail"></p><br>
-    </div>
-    <div class="inputFormRead">
-      <label for="updateName">Password</label>
-      <p id="readPassword"></p><br>
-    </div>
-    <div class="inputFormRead">
-      <label for="updateName">Type of user</label>
-      <p id="readUserType"></p><br>
-    </div>
-    <div class="inputFormRead">
+
+    <h3>Email: </h3>
+    <h3>Email: </h3>
+    <h3>Email: </h3>
+    <h3>Email: </h3>
+    <h3>Email: </h3>
+    
       <button id="" type="button" name="button">Read</button>
-    </div>
+
   </div>
 </div>
 <script type="text/javascript">
