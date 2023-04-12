@@ -4,17 +4,16 @@ require_once('../Config/database.php');
 require_once('../Models/Users.php');
 
 
-    /*if ($_POST['module']=="loginUser") {
+    if ($_POST['module']=="updateUsers") {
       $db = new Database();
       $user = new Users($db);
+      $user->setIdUser($_POST['idUser']);
+      $user->setName($_POST['name']);
       $user->setEmail($_POST['email']);
       $user->setPassword($_POST['password']);
-      $result = json_encode($user->readUserExist());
+      $user->setUserType($_POST['userType']);
+      $result = json_encode($user->updateUser());
       echo $result;
-    }*/
-
-    if ($_POST['module']=="updateUsers") {
-      echo json_encode($_POST['idUser'].$_POST['name'].$_POST['email'].$_POST['password'].$_POST['userType']);
     }
 
 

@@ -1,109 +1,75 @@
 <?php
     class Users {
+      private $conn;
       private $idUser;
+      private $name;
       private $email;
       private $password;
-      private $conn;
+      private $userType;
+
+      function __construct($conn) {
+          $this->conn = $conn;
+      }
+      function setidUser($idUser ){
+        $this->idUser  = $idUser ;
+      }
+      function setname($name ){
+        $this->name  = $name ;
+      }
+      function setEmail($email){
+        $this->email = $email;
+      }
+      function setPassword($password){
+        $this->password = $password;
+      }
+      function set($userType ){
+        $this->userType  = $userType;
+      }
 
 
-
-
-      private $NIT;
-      private $company;
-      private $positionCompany;
-      private $phone;
-      private $date;
-
-        function __construct($conn) {
-            $this->conn = $conn;
-        }
-
-        function setEmail($email){
-          $this->email = $email;
-        }
-        function setPassword($password){
-          $this->password = $password;
-        }
-
-        function setNIT($NIT){
-          $this->NIT = $NIT;
-        }
-
-        function setCompany($company){
-          $this->company = $company;
-        }
-
-        function setPositionCompany($positionCompany){
-          $this->positionCompany = $positionCompany;
-        }
-
-        function setPhoneNumber($phone){
-          $this->phone = $phone;
-        }
-
-        function setDate($date){
-          $this->date = $date;
-        }
-
-      /*  function createUser(){
-         try{
-            $sql = "INSERT INTO `Users`(`name`, `NIT`, `email`,  `phoneNumber`, `TimeAppoiment`, `company`, `positionCompany`)
-            VALUES ('$this->name', '$this->NIT','$this->email', '$this->phone', '$this->date', '$this->company', '$this->positionCompany')";
-            $this->conn->conn()->exec($sql);
-            $this->conn->close();
-              }
-          catch(PDOException $e){
-              echo $query . "<br>" . $e->getMessage();
+      function readUserExist(){
+       try{
+         $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users` WHERE `email` = '$this->email' AND  `password` = '$this->password'");
+        $data = $sql->fetch(PDO::FETCH_OBJ);
+        $this->conn->close();
+        return $data;
             }
-        }*/
+        catch(PDOException $e){
+            echo $query . "<br>" . $e->getMessage();
+          }
+      }
 
-
-        function readUserExist(){
-         try{
-           $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users` WHERE `email` = '$this->email' AND  `password` = '$this->password'");
-          $data = $sql->fetch(PDO::FETCH_OBJ);
-          $this->conn->close();
-          return $data;
-              }
-          catch(PDOException $e){
-              echo $query . "<br>" . $e->getMessage();
-            }
-        }
-
-        function getUsers(){
-          try{
-            $sql = $this->conn->conn()->query("SELECT * FROM `Users` ");
-           $data = $sql->fetchAll(PDO::FETCH_ASSOC);
-           $this->conn->close();
-           return $data;
-               }
-           catch(PDOException $e){
-               echo $query . "<br>" . $e->getMessage();
+      function getUsers(){
+        try{
+          $sql = $this->conn->conn()->query("SELECT * FROM `Users` ");
+         $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+         $this->conn->close();
+         return $data;
              }
-        }
-
-
-
-    /*    function updateUser(){
-          try{
+         catch(PDOException $e){
+             echo $query . "<br>" . $e->getMessage();
+           }
+       }
+       function updateUser(){
+        try{
             $sql = "UPDATE
             `Users`
             SET `name` =  '$this->name',
-             `NIT` =  '$this->NIT',
-             `TimeAppoiment` =  '$this->date',
-             `company` =  '$this->company',
-             `positionCompany` =  '$this->positionCompany'
+             `email` =  '$this->email',
+             `password` =  '$this->password',
+             `userType` =  '$this->userType'
 
-            WHERE `email` = '$this->email'
+            WHERE `idUser` = '$this->idUser'
             ";
             $this->conn->conn()->exec($sql);
             $this->conn->close();
-              }
+            return "The information has been modified";
+            }
           catch(PDOException $e){
-              echo $query . "<br>" . $e->getMessage();
+              echo "The information is not refreshed." . "<br>" .$query . "<br>"."Error: " . $e->getMessage();
             }
         }
-*/
+
         function lastIdUser(){
          try{
             $sql = $this->conn->conn()->query("SELECT `idUser` FROM `Users` ORDER BY `idUser`DESC LIMIT 1  ");
@@ -115,14 +81,6 @@
               echo $query . "<br>" . $e->getMessage();
             }
         }
-
-
-
-
-
-
-
-
 
   /*
         function setIdUser($idUser){
