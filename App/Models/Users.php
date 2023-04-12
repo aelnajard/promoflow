@@ -52,7 +52,7 @@
        }
        function createUser(){
          try{
-           $sql = "INSERT INTO `Users`(name, email, password, userType)
+           $sql = "INSERT INTO `Users`(`name`, `email`, `password`, `userType`)
                  VALUES (
                    '$this->name',
                    '$this->email',
@@ -61,10 +61,10 @@
                  )";
            $this->con->conn()->exec($sql);
            $this->con->close();
-           return "The user has been created";
+           echo "The user has been created";
              }
          catch(PDOException $e){
-             return $query . "<br>" . $e->getMessage();
+             echo $query . "<br>" . $e->getMessage();
            }
        }
        function updateUser(){
