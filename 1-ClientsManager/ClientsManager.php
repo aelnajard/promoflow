@@ -167,7 +167,7 @@
                   },
           success: function(data){
             var data = jQuery.parseJSON(data);
-            containerBoxUsersUpdate.style.display = "block";
+            containerBoxUsersUpdate.style.display = "flex";
             formUpdate.style.display = "none";
             setusers(data);
          }
