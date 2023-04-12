@@ -25,6 +25,17 @@ require_once('../Models/Users.php');
       $result = json_encode($user->createUser());
       echo $result;
     }
+    elseif ($_POST['module']=="deleteUser") {
+      
+      $db = new Database();
+      $user = new Users($db);
+      $user->setName($_POST['name']);
+      $user->setEmail($_POST['email']);
+      $user->setPassword($_POST['password']);
+      $user->setUserType($_POST['userType']);
+      $result = json_encode($user->createUser());
+      echo $result;
+    }
 
 
 

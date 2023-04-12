@@ -108,25 +108,21 @@ function setUsersDelete(data){
   }
 var globalIdUser;
   function deleteUsers(idUser) {
-    alert(idUser);
+
          globalIdUser  = idUser;
-        /* $.ajax( "../App/Controller/Controller2.php", {
+         $.ajax( "../App/Controller/Controller2.php", {
                 type: 'post',
                 async: false,
                 data: {
-                  module: "updateUsers",
-                  idUser: globalIdUser,
-                  name: updateName.value,
-                  email: updateEmail.value,
-                  password: updatePassword.value,
-                  userType: updateUserType.value
+                  module: "deleteUser",
+                  idUser: globalIdUser
                         },
                 success: function(data){
                   alert(data);
 
                }
               }
-            )*/
+            )
   }
 
 
