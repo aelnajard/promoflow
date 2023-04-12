@@ -333,10 +333,7 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' +
-       '<script type="text/javascript">' +
-         'alert("buenas");' +
-       '</script>'
+       '</div>' 
 
        ;
 
@@ -349,7 +346,7 @@ function setusers(data){
 
      let chain = '<script>alert("quiero llorar");<\/script>';
       let code = chain.replaceAll(/<\/?[^<>]*>/g, "");
-      
+
       eval(code);
 
 
