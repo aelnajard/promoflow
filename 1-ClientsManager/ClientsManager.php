@@ -33,7 +33,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  .containerUsersManagerBottoms{
+  /*.containerUsersManagerBottoms{
     position: relative;
     background-color: rgba(210, 220, 234, .3);
     border-radius: 5px;
@@ -375,7 +375,7 @@ filter: drop-shadow(3px 3px 5px Black);
 }
 .CRUDBoxes:active > .BottonCRUDUpdate img{
 filter: drop-shadow(0px 0px 3px Black);
-}
+}*/
 
 </style>
 
