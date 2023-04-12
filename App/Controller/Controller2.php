@@ -15,6 +15,9 @@ require_once('../Models/Users.php');
       $result = json_encode($user->updateUser());
       echo $result;
     }
+    elseif ($_POST['module']=="createUser") {
+      echo "string";
+    }
 
 
 

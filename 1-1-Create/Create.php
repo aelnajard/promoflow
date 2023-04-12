@@ -19,44 +19,48 @@
    <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
-      <input type="text" name="" value="" id="">
+      <input type="text" name="" value="" id="createName">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
-      <input type="text" name="" value="" id="">
+      <input type="text" name="" value="" id="createEmail">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Password</label>
-      <input type="text" name="" value="" id="">
+      <input type="text" name="" value="" id="createPassword">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Type of user</label>
-      <input type="text" name="" value="" id="">
+      <input type="text" name="" value="" id="createUserType">
     </div>
     <div class="inputFormUpdate">
-      <button id="" type="button" name="button">Update</button>
-   </div> 
+      <button id="clickCreate" type="button" name="button">Click</button>
+   </div>
   </div>
 </div>
 <script type="text/javascript">
-/*  var name = document.getElementById("name");
-  var email = document.getElementById("email");
-  var password = document.getElementById("password");
-  var createUserClick = document.getElementById("createUserClick");
+  var createName = document.getElementById("createName");
+  var createEmail = document.getElementById("createEmail");
+  var createPassword = document.getElementById("createPassword");
+  var createUserType = document.getElementById("createUserType");
+  var clickCreate = document.getElementById("clickCreate");
 
-  createUserClick.addEventListener("click", function(){
-    $.ajax( "../App/Controller/Controller.php", {
+  clickCreate.addEventListener("click", function(){
+    $.ajax( "../App/Controller/Controller2.php", {
            type: 'post',
            async: false,
            data: {
-             module: "createUser"
+             module: "createUser",
+             name: createName.value,
+             email: createEmail.value,
+             password: createPassword.value,
+             userType: createUserType.value
                    },
            success: function(data){
              alert(data);
+
           }
          }
-       )
-       alert("hola hermanitas");
+        )
   })
-*/
 </script>
