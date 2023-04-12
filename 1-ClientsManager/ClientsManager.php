@@ -166,7 +166,7 @@
     <h2 class="titleBodyLogin">Clients Manager</h2>
     <div class="containerUsersManagerBottoms">
 
-      <div class="itemUsersManager "id="openCreate">
+      <div class="itemUsersManager " onclick="openCreate">
         <img src="../1-ClientsManager/Images/create.png" alt="">
         <h3>Create</h3>
       </div>
@@ -221,15 +221,10 @@
  /*Update information of the user*/
 
  var openUpdate = document.getElementById("openUpdate");
-var openDelete = document.getElementById("openDelete");
-
-  var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
  var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
- var containerBoxUsersDelete = document.getElementById("containerBoxUsersDelete");
-
-
  var formUpdate = document.getElementById("formUpdate");
-formUpdate.style.display = "none";
+ formUpdate.style.display = "none";
+
  openUpdate.addEventListener("click", function(){
 
    $.ajax( "../App/Controller/Controller.php", {
@@ -248,6 +243,9 @@ formUpdate.style.display = "none";
        )
  })
 
+ var openDelete = document.getElementById("openDelete");
+ var containerBoxUsersDelete = document.getElementById("containerBoxUsersDelete");
+
  openDelete.addEventListener("click", function(){
 
    $.ajax( "../App/Controller/Controller.php", {
@@ -265,13 +263,15 @@ formUpdate.style.display = "none";
         }
        )
  })
-
+ var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
  var openCreate = document.getElementById("openCreate");
  var formRead = document.getElementById("formRead");
  formRead.style.display = "none";
 
+function openCreate(){
+  alert("0");
+}
   openCreate.addEventListener("click", function(){
-    alert("0");
   /*  $.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
