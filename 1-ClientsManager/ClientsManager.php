@@ -273,6 +273,7 @@ formUpdate.style.display = "none";
              module: "getUsers"
                    },
            success: function(data){
+             alert("1");
              var data = jQuery.parseJSON(data);
              containerBoxUsersRead.style.display = "flex";
              formUpdateRead.style.display = "none";
