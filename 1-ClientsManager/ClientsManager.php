@@ -207,6 +207,9 @@
       if (ContainerCRUD[i].style.display == "none") {
         ContainerCRUD[i].style.display = "flex";
         onContainr = i;
+        if (i == 1) {
+          alert("-1");
+        }
 
         for (let j = 0; j < itemUsersManager.length; j++) {
           if (j != onContainr ) {
