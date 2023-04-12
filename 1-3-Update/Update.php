@@ -291,9 +291,8 @@ function updateUsers(item, email) {
    }
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
+  containerBoxUsersUpdate.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
-    //   col.innerHTML='<div onclick="test(123);">Text</div>';
-
        containerBoxUsersUpdate.innerHTML  +=
        '<div onclick="updateUsers(\''+data[i]["name"]+'\',  \''+data[i]["email"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
