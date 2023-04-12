@@ -420,7 +420,7 @@ filter: drop-shadow(0px 0px 3px Black);
 
   for (let i = 0; i < itemUsersManager.length; i++) {
     ContainerCRUD[i].style.display = "none";
-    ContainerCRUD[2].style.display = "flex";
+    ContainerCRUD[0].style.display = "flex";
     itemUsersManager[i].addEventListener("click", function(){
       if (ContainerCRUD[i].style.display == "none") {
         ContainerCRUD[i].style.display = "flex";
