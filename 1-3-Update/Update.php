@@ -292,7 +292,7 @@ function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {
        boxUsers = boxUsers +
-       '<div onclick="showMsg()" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers('+data[i]["name"]+')" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
@@ -348,8 +348,8 @@ function setusers(data){
         containerBoxUsersUpdate.innerHTML = boxUsers;
   }
 
-  function showMsg() {
-         alert("item");
+  function updateUsers(item) {
+         alert(item);
      }
 
 
