@@ -1,5 +1,5 @@
 <style media="screen">
-  
+
 </style>
 
 <div class="ContainerCRUD">
@@ -25,7 +25,7 @@
       <input type="text" name="" value="" id="createUserType">
     </div>
     <div class="inputFormUpdate">
-      <button id="clickCreate" type="button" name="button">Click</button>
+      <button id="clickCreate" type="button" name="button">Create</button>
    </div>
   </div>
 </div>
