@@ -216,6 +216,7 @@
 var openDelete = document.getElementById("openDelete");
 
  var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
+ var containerBoxUsersDelete = document.getElementById("containerBoxUsersDelete");
  var formUpdate = document.getElementById("formUpdate");
 formUpdate.style.display = "none";
  openUpdate.addEventListener("click", function(){
@@ -245,10 +246,10 @@ formUpdate.style.display = "none";
             module: "getUsers"
                   },
           success: function(data){
-          //  var data = jQuery.parseJSON(data);
+           var data = jQuery.parseJSON(data);
 
 
-            alert(data);
+          setUsersDelete(data);
          }
         }
        )

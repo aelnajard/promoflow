@@ -1,40 +1,134 @@
 <style media="screen">
-  .ContainerCRUD input{
-    height: 30px;
-    border-radius: 5px;
-    margin: 0 10px;
-    padding-left: 5px;
-    font-size: 1em;
-    font-weight: 300;
-  }
-  .ContainerInput{
-    position: relative;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    margin: 10px;
-  }
-  .ContainerInput button{
-    padding: 10px;
-  }
+
 </style>
 <div class="ContainerCRUD">
-  <h1>Update user</h1>
-  <div class="ContainerInput">
-    <label for="name">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input id="name" type="text" name="" value="" placeholder="">
+  <div class="containerCRUDTitle">
+      <h2 id="">Update user</h2>
   </div>
-  <div class="ContainerInput">
-    <label for="name">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>
-    <input id="name" type="text" name="" value="" placeholder="">
+<div class="containerCRUDWrap" id="containerBoxUsersDelete">
+<!--
+  <div class="CRUDBoxes">
+    <div class="RoundBoxes">
+    <div class="CRUDBoxesLeft">
+      <div class="CRUDBoxesLeftTop">
+        <div class="CRUDBoxesLeftTopInside">
+        </div>
+      </div>
+      <div class="CRUDBoxesLeftBody">
+        <div class="CRUDBoxesLeftBodyLine">
+        </div>
+        <div class="CRUDBoxesLeftBodyLine">
+        </div>
+        <div class="CRUDBoxesLeftBodyLine">
+        </div>
+      </div>
+    </div>
+    <div class="CRUDBoxesRight">
+      <div class="CRUDBoxesRightName">
+        <h3>CRUD, CRUD, CRUD, CRUD,</h3>
+      </div>
+      <div class="CRUDBoxesRightDown">
+        <div class="CRUDBoxesRightDownLine">
+          <div class="CRUDBoxesRightDownLineSubline">
+          </div>
+        </div>
+        <div class="CRUDBoxesRightDownLine">
+          <div class="CRUDBoxesRightDownLineSubline">
+          </div>
+        </div>
+        <div class="CRUDBoxesRightDownLine">
+          <div class="CRUDBoxesRightDownLineSubline">
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="BottonCRUDUpdate">
+     <div class="relative">
+         <img src="../1-3-Update/Images/update.png" alt="">
+     </div>
+   </div>
   </div>
-  <div class="ContainerInput">
-    <label for="name">Password</label>
-    <input id="name" type="password" name="" value="" placeholder="">
-  </div>
-  <div class="ContainerInput">
-    <button type="button" name="button">Create</button>
-  </div>
+
+-->
+</div>
+
 
 
 </div>
+<script type="text/javascript">
+function setUsersDelete(data){
+  containerBoxUsersDelete.innerHTML  = "";
+     for (var i = 0; i < data.length; i++) {//
+      containerBoxUsersDelete.innerHTML  +=
+       '<div onclick="deleteUsers(\''+data[i]["idUser"]+'\',  \''+data[i]["name"]+'\',  \''+data[i]["email"]+'\',  \''+data[i]["password"]+'\',  \''+data[i]["userType"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+         '<div class="RoundBoxes">' +
+         '<div class="CRUDBoxesLeft">' +
+           '<div class="CRUDBoxesLeftTop">' +
+             '<div class="CRUDBoxesLeftTopInside">' +
+             '</div>' +
+           '</div>' +
+           '<div class="CRUDBoxesLeftBody">' +
+             '<div class="CRUDBoxesLeftBodyLine">' +
+             '</div>' +
+             '<div class="CRUDBoxesLeftBodyLine">' +
+            ' </div>' +
+             '<div class="CRUDBoxesLeftBodyLine">' +
+             '</div>' +
+           '</div>' +
+         '</div>' +
+         '<div class="CRUDBoxesRight">' +
+           '<div class="CRUDBoxesRightName">' +
+             '<h3>'+data[i]["name"]+'</h3>' +
+           '</div>' +
+           '<div class="CRUDBoxesRightDown">' +
+             '<div class="CRUDBoxesRightDownLine">' +
+               '<div class="CRUDBoxesRightDownLineSubline">' +
+               '</div>' +
+             '</div>' +
+            ' <div class="CRUDBoxesRightDownLine">' +
+               '<div class="CRUDBoxesRightDownLineSubline">' +
+               '</div>' +
+             '</div>' +
+            ' <div class="CRUDBoxesRightDownLine">' +
+               '<div class="CRUDBoxesRightDownLineSubline">' +
+               '</div>' +
+            ' </div>' +
+           '</div>' +
+         '</div>' +
+        '</div>' +
+        '<div class="BottonCRUDUpdate">' +
+          '<div class="relative">' +
+              '<img src="../1-3-Update/Images/update.png" alt="">' +
+          '</div>' +
+        '</div>' +
+       '</div>'
+       ;
+     }
+  }
+var globalIdUser;
+  function deleteUsers(idUser, name, email, password, userType) {
+    alert(name);
+         globalIdUser  = idUser;
+        /* $.ajax( "../App/Controller/Controller2.php", {
+                type: 'post',
+                async: false,
+                data: {
+                  module: "updateUsers",
+                  idUser: globalIdUser,
+                  name: updateName.value,
+                  email: updateEmail.value,
+                  password: updatePassword.value,
+                  userType: updateUserType.value
+                        },
+                success: function(data){
+                  alert(data);
+
+               }
+              }
+            )*/
+  }
+
+
+
+</script>
