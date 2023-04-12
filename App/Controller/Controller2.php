@@ -21,7 +21,7 @@ require_once('../Models/Users.php');
       $user->setName($_POST['name']);
       $user->setEmail($_POST['email']);
       $user->setPassword($_POST['password']);
-      $user->setUserType($_POST['userType']);//echo "Hola";exit;
+      $user->setUserType($_POST['userType']);echo "Hola";exit;
       $result = json_encode($user->createUser());
       echo $result;
     }
