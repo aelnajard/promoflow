@@ -149,8 +149,8 @@
   position: relative;
   top: 10px;
   width: 80%;
-  height: 40px;
-  border-radius: 5px;
+  height: 35px;
+  border-radius: 10px;
   font-weight: 500;
   text-align: center;
   margin: 0!important;
