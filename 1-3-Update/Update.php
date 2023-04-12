@@ -387,10 +387,7 @@ function setusers(data){
              module: "getUsers"
                    },
            success: function(data){
-             var data = jQuery.parseJSON(data);
-             containerBoxUsersUpdate.style.display = "flex";
-             formUpdate.style.display = "none";
-             setusers(data);
+             
           }
          }
         )
