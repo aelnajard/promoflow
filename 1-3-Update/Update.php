@@ -340,7 +340,7 @@ function setusers(data){
          'alert("buenas");' +
        '</script>'*/
        ;
-       containerBoxUsersUpdate.appendChild(boxUsers);
+       containerBoxUsersUpdate.appendChild("<h2>Update user</h2>");
 
 
      }
