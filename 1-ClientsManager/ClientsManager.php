@@ -271,7 +271,7 @@
 function openCreate(){
   alert("0");
 }
-  openCreate.addEventListener("click", function(){
+  //openCreate.addEventListener("click", function(){
   /*  $.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
@@ -287,7 +287,7 @@ function openCreate(){
           }
          }
        )*/
-  })
+  //})
 
 
 
