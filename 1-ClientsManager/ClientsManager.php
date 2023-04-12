@@ -175,7 +175,7 @@
         <img src="../1-ClientsManager/Images/update.png" alt="">
         <h3>Update</h3>
       </div>
-      <div class="itemUsersManager">
+      <div class="itemUsersManager" id="openDelete">
         <img src="../1-ClientsManager/Images/DeleteIcon.png" alt="">
         <h3>Delete</h3>
       </div>
@@ -213,6 +213,8 @@
 
  /*Update information of the user*/
  var openUpdate = document.getElementById("openUpdate");
+var openDelete = document.getElementById("openDelete");
+
  var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
  var formUpdate = document.getElementById("formUpdate");
 formUpdate.style.display = "none";
@@ -229,6 +231,24 @@ formUpdate.style.display = "none";
             containerBoxUsersUpdate.style.display = "flex";
             formUpdate.style.display = "none";
             setusers(data);
+         }
+        }
+       )
+ })
+
+ openDelete.addEventListener("click", function(){
+
+   $.ajax( "../App/Controller/Controller.php", {
+          type: 'post',
+          async: false,
+          data: {
+            module: "getUsers"
+                  },
+          success: function(data){
+          //  var data = jQuery.parseJSON(data);
+
+
+            alert(data);
          }
         }
        )
