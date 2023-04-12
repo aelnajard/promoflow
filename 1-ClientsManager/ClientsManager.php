@@ -121,7 +121,7 @@
 
 
 .formUpdate{
-  position: absolute;
+  position: relative;
   left: 0px;
   top: 50px;
   width: 100%;
