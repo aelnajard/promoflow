@@ -303,7 +303,7 @@ var clickUpdate = document.getElementById("clickUpdate");
 
 
 
-function setusers(data){
+function setusersUpdate(data){
   containerBoxUsersUpdate.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
        containerBoxUsersUpdate.innerHTML  +=

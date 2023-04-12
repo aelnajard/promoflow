@@ -76,7 +76,7 @@
   </div>
 </div>
 <script type="text/javascript">
-function setusersCreate(data){
+function setUsersCreate(data){
   containerBoxUsersRead.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
        containerBoxUsersRead.innerHTML  +=

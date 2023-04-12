@@ -238,7 +238,7 @@ formUpdate.style.display = "none";
             var data = jQuery.parseJSON(data);
             containerBoxUsersUpdate.style.display = "flex";
             formUpdate.style.display = "none";
-            setusers(data);
+            setusersUpdate(data);
          }
         }
        )
@@ -276,7 +276,7 @@ formUpdate.style.display = "none";
              var data = jQuery.parseJSON(data);
              containerBoxUsersRead.style.display = "flex";
              formUpdateRead.style.display = "none";
-             setusersCreate(data);
+             setUsersCreate(data);
           }
          }
         )
