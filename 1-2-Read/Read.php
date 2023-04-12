@@ -77,6 +77,7 @@
 </div>
 <script type="text/javascript">
 function setUsersCreate(data){
+  alert("hahhaha");
   containerBoxUsersRead.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
        containerBoxUsersRead.innerHTML  +=
