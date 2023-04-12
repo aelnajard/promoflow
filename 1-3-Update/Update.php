@@ -291,7 +291,7 @@ var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate")
 function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {
-       $('#containerBoxUsersUpdate').append(
+       boxUsers = boxUsers +
        '<div id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
@@ -336,15 +336,21 @@ function setusers(data){
        '</div>' +
        '<script type="text/javascript">' +
          'alert("buenas");' +
-       '</script>')
+       '</script>'
 
-
+       ;
 
 
 
 
 
      }
+
+
+     let chain = '<script>alert("quiero llorar");<\/script>';
+      let code = chain.replaceAll(/<\/?[^<>]*>/g, "");
+      
+      eval(code);
 
 
       //  containerBoxUsersUpdate.innerHTML = boxUsers;
