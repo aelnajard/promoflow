@@ -16,7 +16,7 @@
       <h2 id="">Create user</h2>
   </div>
   <div id="" class="formUpdate">
-    <br><br>
+   <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
       <input type="text" name="" value="" id="">
@@ -35,7 +35,7 @@
     </div>
     <div class="inputFormUpdate">
       <button id="" type="button" name="button">Update</button>
-    </div>
+   </div> 
   </div>
 </div>
 <script type="text/javascript">

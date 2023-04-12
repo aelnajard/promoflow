@@ -126,7 +126,6 @@
   top: 40px;
   width: 100%;
   height: 10px;
-  display: none;
 }
 .inputFormUpdate{
   position:relative;
@@ -216,7 +215,7 @@
  var openUpdate = document.getElementById("openUpdate");
  var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
  var formUpdate = document.getElementById("formUpdate");
-
+formUpdate.style.display = "none";
  openUpdate.addEventListener("click", function(){
 
    $.ajax( "../App/Controller/Controller.php", {
