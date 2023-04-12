@@ -56,23 +56,23 @@
   </div>
   <div id="formRead" class="formUpdate">
     <br><br><br><br>
-    <div class="inputFormUpdate">
+    <div class="inputFormRead">
       <label for="updateName">Name</label>
       <p id="readName"></p>
     </div><br>
-    <div class="inputFormUpdate">
+    <div class="inputFormRead">
       <label for="updateName">Email</label>
       <p  id="readEmail"></p>
     </div>
-    <div class="inputFormUpdate">
+    <div class="inputFormRead">
       <label for="updateName">Password</label>
       <p id="readPassword"></p>
     </div>
-    <div class="inputFormUpdate">
+    <div class="inputFormRead">
       <label for="updateName">Type of user</label>
       <p id="readUserType"></p>
     </div>
-    <div class="inputFormUpdate">
+    <div class="inputFormRead">
       <button id="" type="button" name="button">Read</button>
     </div>
   </div>
