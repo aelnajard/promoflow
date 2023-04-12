@@ -392,8 +392,8 @@ var globalIdUser;
              password: updatePassword.value,
              userType: updateUserType.value*/
                    },
-           success: function(data){
-             alert(data);
+           success: function(data2){
+             alert(data2);
 
           }
          }
