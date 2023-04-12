@@ -41,7 +41,7 @@
 </style>
 
 
-<div class="formUpdate">
+<div id="formUpdate" class="formUpdate">
   <br><br>
   <div class="inputFormUpdate">
     <label for="updateName">Name</label>

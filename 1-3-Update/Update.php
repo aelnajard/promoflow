@@ -286,11 +286,11 @@
 </div>
 
 <script type="text/javascript">
-function updateUsers(idUser, name, email, password, userType) {
-       alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
-       containerBoxUsersUpdate.style.block = "none";
-   }
+
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
+var formUpdate = document.getElementById("formUpdate");
+
+
 function setusers(data){
   containerBoxUsersUpdate.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
@@ -341,6 +341,12 @@ function setusers(data){
      }
 
   }
+
+  function updateUsers(idUser, name, email, password, userType) {
+         alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
+         containerBoxUsersUpdate.style.block = "none";
+         formUpdate.style.block = "none";
+     }
 
 
 
