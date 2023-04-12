@@ -336,16 +336,14 @@ function setusers(data){
           '</div>' +
         '</div>' +
        '</div>'
-      /* '<script type="text/javascript">' +
-         'alert("buenas");' +
-       '</script>'*/
+      
        ;
        containerBoxUsersUpdate.appendChild("<h2>Update user</h2>");
 
 
      }
 
-      //  containerBoxUsersUpdate.innerHTML = boxUsers;
+  
   }
 
 
