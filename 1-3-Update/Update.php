@@ -290,15 +290,15 @@
   </div>
   <div class="inputFormUpdate">
     <label for="updateName">Email</label>
-    <input type="text" name="" value="" id="updateName">
+    <input type="text" name="" value="" id="updateEmail">
   </div>
   <div class="inputFormUpdate">
     <label for="updateName">Password</label>
-    <input type="text" name="" value="" id="updateName">
+    <input type="text" name="" value="" id="updatePassword">
   </div>
   <div class="inputFormUpdate">
     <label for="updateName">Type of user</label>
-    <input type="text" name="" value="" id="updateName">
+    <input type="text" name="" value="" id="updateUserType">
   </div>
   <div class="inputFormUpdate">
     <button type="button" name="button">Update</button>
@@ -312,6 +312,9 @@
 <script type="text/javascript">
 
 var updateName = document.getElementById("updateName");
+var updateEmail = document.getElementById("updateEmail");
+var updatePassword = document.getElementById("updatePassword");
+var updateUserType = document.getElementById("updateUserType");
 
 function setusers(data){
   containerBoxUsersUpdate.innerHTML  = "";
@@ -368,6 +371,9 @@ function setusers(data){
          formUpdate.style.display = "block";
 
          updateName.value = name;
+         updateEmail.value = email;
+         updatePassword.value = password;
+         updateUserType.value = userType;
      }
 
 
