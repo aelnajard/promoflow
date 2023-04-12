@@ -336,14 +336,14 @@ function setusers(data){
           '</div>' +
         '</div>' +
        '</div>'
-      
+
        ;
-       containerBoxUsersUpdate.appendChild("<h2>Update user</h2>");
+       containerBoxUsersUpdate.appendChild("<h2>Update user7</h2>");
 
 
      }
 
-  
+
   }
 
 
