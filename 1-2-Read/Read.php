@@ -57,12 +57,12 @@
   <div id="formRead" class="formUpdate">
     <br><br><br><br>
 
+    <h3>Email: </h3><br>
+    <h3>Email: </h3><br>
     <h3>Email: </h3>
     <h3>Email: </h3>
     <h3>Email: </h3>
-    <h3>Email: </h3>
-    <h3>Email: </h3>
-    
+
       <button id="" type="button" name="button">Read</button>
 
   </div>
