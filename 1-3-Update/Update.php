@@ -301,7 +301,7 @@
     <input type="text" name="" value="" id="updateUserType">
   </div>
   <div class="inputFormUpdate">
-    <button type="button" name="button">Update</button>
+    <button id="clickUpdate" type="button" name="button">Update</button>
   </div>
 </div>
 
@@ -315,6 +315,9 @@ var updateName = document.getElementById("updateName");
 var updateEmail = document.getElementById("updateEmail");
 var updatePassword = document.getElementById("updatePassword");
 var updateUserType = document.getElementById("updateUserType");
+var clickUpdate = document.getElementById("clickUpdate");
+
+
 
 function setusers(data){
   containerBoxUsersUpdate.innerHTML  = "";
@@ -374,7 +377,11 @@ function setusers(data){
          updateEmail.value = email;
          updatePassword.value = password;
          updateUserType.value = userType;
-     }
+  }
+
+  clickUpdate.addEventListener("click", function(){
+    alert(updateName.value);
+  })
 
 
 </script>
