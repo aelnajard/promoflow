@@ -294,7 +294,7 @@ function setusers(data){
   containerBoxUsersUpdate.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
        containerBoxUsersUpdate.innerHTML  +=
-       '<div onclick="updateUsers(\''+data[i]["name"]+'\',  \''+data[i]["email"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers(\''+data[i]["idUser"]+'\',  \''+data[i]["email"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
