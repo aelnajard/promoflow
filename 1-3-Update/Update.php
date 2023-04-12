@@ -1,23 +1,5 @@
 <style media="screen">
-  .containerCRUDTitle{
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    top: 0px;
-  }
-
-  .containerCRUDTitle h2{
-    position: relative;
-    color: white;
-    font-size: 1.6em;
-    font-weight: 500;
-    text-align: center;
-    margin: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .containerCRUDWrap{
+    .containerCRUDWrap{
     position: absolute;
     top: 50px;
     left: 0px;

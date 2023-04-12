@@ -12,7 +12,9 @@
 </style>
 
 <div class="ContainerCRUD">
-  <h1>Create user</h1>
+  <div class="containerCRUDTitle">
+      <h2 id="">Create user</h2>
+  </div>
   <div id="" class="formUpdate">
     <br><br>
     <div class="inputFormUpdate">
