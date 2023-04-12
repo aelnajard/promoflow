@@ -292,7 +292,7 @@ function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {
        boxUsers = boxUsers +
-       '<div id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div  onclick="myFunction()" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
@@ -333,8 +333,7 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' 
-
+       '</div>'
        ;
 
 
@@ -344,11 +343,9 @@ function setusers(data){
      }
 
 
-     let chain = '<script>alert("quiero llorar");<\/script>';
-      let code = chain.replaceAll(/<\/?[^<>]*>/g, "");
-
-      eval(code);
-
+     function myFunction(){
+       alert("hahahah");
+     }
 
       //  containerBoxUsersUpdate.innerHTML = boxUsers;
   }
