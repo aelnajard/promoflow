@@ -343,12 +343,14 @@ function setusers(data){
      }
 
 
-     function showMsg(item) {
-            alert(item);
-        }
 
-      //  containerBoxUsersUpdate.innerHTML = boxUsers;
+
+        containerBoxUsersUpdate.innerHTML = boxUsers;
   }
+
+  function showMsg(item) {
+         alert(item);
+     }
 
 
 
