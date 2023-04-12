@@ -18,7 +18,9 @@
   }
 
   .containerCRUDWrap{
-    position: relative;
+    position: absolute;
+    top: 50px;
+    left: 0px;
     width: 100%;
     height: 500px;
     display: flex;
