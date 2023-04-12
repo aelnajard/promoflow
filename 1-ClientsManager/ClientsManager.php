@@ -96,7 +96,7 @@
     transform: translateX(-50%);
     border-radius: 5px;
     overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-x: hidden;
     margin-top: 30px;
 
 
@@ -126,7 +126,6 @@
   top: 50px;
   width: 100%;
   height: 100px;
-  background-color: blue;
 }
 .inputFormUpdate{
   position:relative;
@@ -136,7 +135,6 @@
   margin: 10px 0px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: orange;
 }
 .inputFormUpdate label{
   position: relative;
