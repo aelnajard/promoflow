@@ -59,12 +59,12 @@
                    '$this->password',
                    '$this->userType'
                  )";
-           $this->con->conn()->exec($sql);echo "hola2"; exit;
-           $this->con->close();
-           echo "The user has been created";
+           $this->conn->conn()->exec($sql);//echo "hola2"; exit;
+           $this->conn->close();
+           return "The user has been created";
              }
          catch(PDOException $e){
-             echo $query . "<br>" . $e->getMessage();
+             return $query . "<br>" . $e->getMessage();
            }
        }
        function updateUser(){
