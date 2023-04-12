@@ -61,7 +61,7 @@ function setUsersDelete(data){
   containerBoxUsersDelete.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
       containerBoxUsersDelete.innerHTML  +=
-       '<div onclick="deleteUsers(\''+data[i]["idUser"]+'\',  \''+data[i]["name"]+'\',  \''+data[i]["email"]+'\',  \''+data[i]["password"]+'\',  \''+data[i]["userType"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="deleteUsers(\''+data[i]["idUser"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
@@ -107,8 +107,8 @@ function setUsersDelete(data){
      }
   }
 var globalIdUser;
-  function deleteUsers(idUser, name, email, password, userType) {
-    alert(name);
+  function deleteUsers(idUser) {
+    alert(idUser);
          globalIdUser  = idUser;
         /* $.ajax( "../App/Controller/Controller2.php", {
                 type: 'post',
