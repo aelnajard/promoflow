@@ -59,21 +59,21 @@
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
       <input type="text" name="" value="" id="readName">
-    </div><br>
+    </div>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
       <input type="text" name="" value="" id="readEmail">
-    </div><br>
+    </div>
     <div class="inputFormUpdate">
       <label for="updateName">Password</label>
       <input type="text" name="" value="" id="readPassword">
-    </div><br>
-    <div class="inputFormUpdate">
-      <label for="updateName">Type of user</label>
-      <input type="text" name="" value="" id="readUserTyp">
     </div>
     <div class="inputFormUpdate">
-      <button id="" type="button" name="button">Update</button>
+      <label for="updateName">Type of user</label>
+      <input type="text" name="" value="" id="readUserType">
+    </div>
+    <div class="inputFormUpdate">
+      <button id="" type="button" name="button">Read</button>
     </div>
   </div>
 </div>
