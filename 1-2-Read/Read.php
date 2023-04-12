@@ -54,7 +54,7 @@
 
   -->
   </div>
-  <div id="formUpdateRead" class="formUpdate">
+  <div id="formRead" class="formUpdate">
     <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>

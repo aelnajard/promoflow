@@ -220,7 +220,6 @@
 
  /*Update information of the user*/
 
- var openCreate = document.getElementById("openCreate");
  var openUpdate = document.getElementById("openUpdate");
 var openDelete = document.getElementById("openDelete");
 
@@ -267,11 +266,12 @@ formUpdate.style.display = "none";
        )
  })
 
- var formUpdateRead = document.getElementById("formUpdateRead");
- formUpdateRead.style.display = "none";
+ var openCreate = document.getElementById("openCreate");
+ var formRead = document.getElementById("formRead");
+ formRead.style.display = "none";
 
   openCreate.addEventListener("click", function(){
-    aleert("0");
+    alert("0");
   /*  $.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
