@@ -287,14 +287,14 @@
 
 <script type="text/javascript">
 function updateUsers(idUser, name, email, password, userType) {
-       alert(idUser + "  " + name + "  " + email + "  " + password + "  " + UserType);
+       alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
    }
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
   containerBoxUsersUpdate.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
        containerBoxUsersUpdate.innerHTML  +=
-       '<div onclick="updateUsers(\''+data[i]["idUser"]+'\',  \''+data[i]["name"]+'\',  \''+data[i]["email"]+'\',  \''+data[i]["password"]+'\',  \''+data[i]["UserType"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers(\''+data[i]["idUser"]+'\',  \''+data[i]["name"]+'\',  \''+data[i]["email"]+'\',  \''+data[i]["password"]+'\',  \''+data[i]["userType"]+'\');" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
