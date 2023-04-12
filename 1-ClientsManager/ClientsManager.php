@@ -172,10 +172,10 @@
         <h3>Create</h3>
       </div>
 
-      <div class="itemUsersManager" id="openRead">
+    <!--  <div class="itemUsersManager" id="openRead">
         <img src="../1-ClientsManager/Images/Read.png" alt="">
         <h3>Read</h3>
-      </div>
+      </div>-->
 
       <div class="itemUsersManager" id="openUpdate">
         <img src="../1-ClientsManager/Images/update.png" alt="">
@@ -189,7 +189,7 @@
 
     </div>
     <?php include "../1-1-Create/Create.php" ?>
-    <?php include "../1-2-Read/Read.php" ?>
+    <?php //include "../1-2-Read/Read.php" ?>
     <?php include "../1-3-Update/Update.php" ?>
     <?php include "../1-4-Delete/Update.php" ?>
   </section>
