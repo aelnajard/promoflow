@@ -292,7 +292,7 @@ function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {
        boxUsers = boxUsers +
-       '<div id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="showMsg("Juli espero de corazon que estes bien")" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
@@ -347,6 +347,10 @@ function setusers(data){
 
         containerBoxUsersUpdate.innerHTML = boxUsers;
   }
+
+  function showMsg(item) {
+         alert(item);
+     }
 
 
 
