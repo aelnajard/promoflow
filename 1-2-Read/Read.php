@@ -55,11 +55,11 @@
   -->
   </div>
   <div id="formRead" class="formUpdate">
-    <br><br>
+    <br><br><br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
       <p id="readName"></p>
-    </div>
+    </div><br>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
       <p  id="readEmail"></p>
