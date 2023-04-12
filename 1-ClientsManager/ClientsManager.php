@@ -121,14 +121,12 @@
 
 
 .formUpdate{
-  position: relative;
+  position: absolute;
   left: 0px;
-  top: 40px;
+  top: 50px;
   width: 100%;
   height: 100px;
   background-color: blue;
-
-  
 }
 .inputFormUpdate{
   position:relative;
