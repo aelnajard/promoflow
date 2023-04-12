@@ -166,7 +166,7 @@
     <h2 class="titleBodyLogin">Clients Manager</h2>
     <div class="containerUsersManagerBottoms">
 
-      <div class="itemUsersManager " onclick="openCreate">
+      <div class="itemUsersManager" id="openCreate7">
         <img src="../1-ClientsManager/Images/create.png" alt="">
         <h3>Create</h3>
       </div>
@@ -264,14 +264,12 @@
        )
  })
  var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
- var openCreate = document.getElementById("openCreate");
+ var openCreate = document.getElementById("openCreate7");
  var formRead = document.getElementById("formRead");
  formRead.style.display = "none";
 
-function openCreate(){
-  alert("0");
-}
-  //openCreate.addEventListener("click", function(){
+  openCreate.addEventListener("click", function(){
+    alert("0");
   /*  $.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
@@ -287,7 +285,7 @@ function openCreate(){
           }
          }
        )*/
-  //})
+  })
 
 
 
