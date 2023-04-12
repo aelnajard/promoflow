@@ -58,7 +58,7 @@
                    '$this->email',
                    '$this->password',
                    '$this->userType'
-                 )";
+                 )"; echo "hola2"; exit;
            $this->con->conn()->exec($sql);
            $this->con->close();
            echo "The user has been created";
