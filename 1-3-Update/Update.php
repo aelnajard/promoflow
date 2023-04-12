@@ -286,10 +286,10 @@
 </div>
 
 <script type="text/javascript">
+window.onload = function() {
 var script = "";
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
-     var boxUsers = "";
      for (var i = 0; i < data.length; i++) {//
 
        containerBoxUsersUpdate.innerHTML  +=
@@ -346,5 +346,5 @@ function setusers(data){
 
 
 
-
+};
 </script>
