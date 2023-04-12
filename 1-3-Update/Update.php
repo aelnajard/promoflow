@@ -295,7 +295,7 @@ function setusers(data){
     //   col.innerHTML='<div onclick="test(123);">Text</div>';
 
        containerBoxUsersUpdate.innerHTML  +=
-       '<div onclick="updateUsers(456564);" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers("456564");" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
