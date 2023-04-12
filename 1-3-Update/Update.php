@@ -235,7 +235,6 @@
       <h2 id="test">Update user</h2>
   </div>
 <div class="containerCRUDWrap" id="containerBoxUsersUpdate">
-
 <!--
   <div class="CRUDBoxes">
     <div class="RoundBoxes">
@@ -281,10 +280,7 @@
   </div>
 
 -->
-
 </div>
-
-
 
 <div id="formUpdate" class="formUpdate">
   <br><br>
@@ -315,7 +311,7 @@
 
 <script type="text/javascript">
 
-
+var updateName = document.getElementById("updateName");
 
 function setusers(data){
   containerBoxUsersUpdate.innerHTML  = "";
@@ -365,13 +361,13 @@ function setusers(data){
        '</div>'
        ;
      }
-
   }
 
   function updateUsers(idUser, name, email, password, userType) {
-      //   alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
          containerBoxUsersUpdate.style.display = "none";
          formUpdate.style.display = "block";
+
+         updateName.value = name;
      }
 
 
