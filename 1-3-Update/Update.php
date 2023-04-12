@@ -291,9 +291,9 @@ var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate")
 function setusers(data){
      var boxUsers = "";
      for (var i = 0; i < data.length; i++) {//
-       alert( data[i]["name"]);
+      
        boxUsers = boxUsers +
-       '<div onclick="updateUsers()" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
+       '<div onclick="updateUsers("Message")" id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
            '<div class="CRUDBoxesLeftTop">' +
@@ -340,8 +340,8 @@ function setusers(data){
         containerBoxUsersUpdate.innerHTML = boxUsers;
   }
 
-  function updateUsers() {
-         alert("item");
+  function updateUsers(item) {
+         alert(item);
      }
 
 
