@@ -13,7 +13,7 @@
 
 <div class="ContainerCRUD">
   <h1>Create user</h1>
-  <div id="formUpdate" class="formUpdate">
+  <div id="" class="formUpdate">
     <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
