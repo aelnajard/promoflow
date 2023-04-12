@@ -99,19 +99,23 @@
             }
         }
 
+        function deleteUser(){
+            try{
+
+              echo $this->sectionName2;
+              $sql =  "DELETE FROM `Users` WHERE `iduser`= '$this->idUser' ";
+              $this->con->conn()->exec($sql);
+              $this->con->close();
+              return "The user has been deleted"
+                }
+            catch(PDOException $e){
+                echo $query . "<br>" . $e->getMessage();
+                return "The user has not been deleted"
+              }
+        }
+
   /*
-        function setIdUser($idUser){
-          $this->idUser = $idUser;
-        }
-        function setNIT($NIT){
-          $this->NIT = $NIT;
-        }
-        function setEmail($email){
-          $this->email = $email;
-        }
-        function setPhone($phone){
-          $this->phone = $phone;
-        }
+
 
 
         function readUserLastId(){//"LAST_INSERT_ID()"
@@ -147,55 +151,6 @@
 
 
 
-
-
-        function updatePhone(){
-          try{
-            $sql = "UPDATE
-            `Users`
-            SET `phoneNumber` =  '$this->phone'
-
-            WHERE `idUser` = '$this->idUser'
-            ";
-            $this->con->conn()->exec($sql);
-            $this->con->close();
-              }
-          catch(PDOException $e){
-              echo $query . "<br>" . $e->getMessage();
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        function readEmail(){
-          try{
-          $sql = $this->con->conn()->query("SELECT COUNT(*)  FROM `Users` WHERE email = '$this->email'");
-            $data = $sql->fetch(PDO::FETCH_ASSOC);
-            $this->con->close();
-            return $data;
-              }
-          catch(PDOException $e){
-              echo $query . "<br>" . $e->getMessage();
-            }
-        }
 
 */
 
