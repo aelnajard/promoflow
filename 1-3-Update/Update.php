@@ -288,6 +288,7 @@
 <script type="text/javascript">
 function updateUsers(idUser, name, email, password, userType) {
        alert(idUser + "  " + name + "  " + email + "  " + password + "  " + userType);
+       containerBoxUsersUpdate.style.block = "none";
    }
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
