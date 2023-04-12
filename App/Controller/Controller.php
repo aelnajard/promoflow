@@ -26,7 +26,8 @@ require_once('../Models/Users.php');
       echo "hola tu";
     }*/
     if ($_POST['module']=="updateUsers2") {
-      echo json_encode($_POST['idUser'].$_POST['name'].$_POST['email'].$_POST['password'].$_POST['userType']);
+      //echo json_encode($_POST['idUser'].$_POST['name'].$_POST['email'].$_POST['password'].$_POST['userType']);
+      echo "Quiero llorar otra vez";
     }
 
 
