@@ -10,10 +10,10 @@
       function __construct($conn) {
           $this->conn = $conn;
       }
-      function setidUser($idUser ){
+      function setIdUser($idUser ){
         $this->idUser  = $idUser ;
       }
-      function setname($name ){
+      function setName($name ){
         $this->name  = $name ;
       }
       function setEmail($email){
@@ -22,7 +22,7 @@
       function setPassword($password){
         $this->password = $password;
       }
-      function set($userType ){
+      function setUserType($userType ){
         $this->userType  = $userType;
       }
 
