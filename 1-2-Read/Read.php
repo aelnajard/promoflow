@@ -118,7 +118,7 @@ function setUsersCreate(data){
         '</div>' +
         '<div class="BottonCRUDUpdate">' +
           '<div class="relative">' +
-              '<img src="../1-3-Update/Images/Read.png" alt="">' +
+              '<img src="../1-ClientsManager/Images/Read.png" alt="">' +
           '</div>' +
         '</div>' +
        '</div>'
