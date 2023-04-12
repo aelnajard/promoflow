@@ -283,7 +283,34 @@
 -->
 
 </div>
-<?php include '../1-5-Form/Form.php'; ?>
+
+
+
+<div id="formUpdate" class="formUpdate">
+  <br><br>
+  <div class="inputFormUpdate">
+    <label for="updateName">Name</label>
+    <input type="text" name="" value="" id="updateName">
+  </div>
+  <div class="inputFormUpdate">
+    <label for="updateName">Email</label>
+    <input type="text" name="" value="" id="updateName">
+  </div>
+  <div class="inputFormUpdate">
+    <label for="updateName">Password</label>
+    <input type="text" name="" value="" id="updateName">
+  </div>
+  <div class="inputFormUpdate">
+    <label for="updateName">Type of user</label>
+    <input type="text" name="" value="" id="updateName">
+  </div>
+  <div class="inputFormUpdate">
+    <button type="button" name="button">Update</button>
+  </div>
+</div>
+
+
+
 </div>
 
 <script type="text/javascript">
