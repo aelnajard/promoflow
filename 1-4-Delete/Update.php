@@ -99,7 +99,7 @@ function setUsersDelete(data){
         '</div>' +
         '<div class="BottonCRUDUpdate">' +
           '<div class="relative">' +
-              '<img src="../1-3-Update/Images/update.png" alt="">' +
+              '<img src="../1-3-Update/Images/DeleteIcon.png" alt="">' +
           '</div>' +
         '</div>' +
        '</div>'
