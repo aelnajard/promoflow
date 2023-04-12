@@ -385,12 +385,12 @@ var globalIdUser;
            type: 'post',
            async: false,
            data: {
-             moduleUserManager: "updateUsers",
+             module: "updateUsers"/*,
              idUser: globalIdUser,
              name: updateName.value,
              email: updateEmail.value,
              password: updatePassword.value,
-             userType: updateUserType.value
+             userType: updateUserType.value*/
                    },
            success: function(data){
              alert(data);
