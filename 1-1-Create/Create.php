@@ -14,6 +14,7 @@
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
       <h2 id="">Create user</h2>
+      <h1>Hola</h1>
   </div>
   <!--<div id="" class="formUpdate">
     <br><br>
