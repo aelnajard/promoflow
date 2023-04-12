@@ -76,7 +76,7 @@
   </div>
 </div>
 <script type="text/javascript">
-function setusers(data){
+function setusersCreate(data){
   containerBoxUsersRead.innerHTML  = "";
      for (var i = 0; i < data.length; i++) {//
        containerBoxUsersRead.innerHTML  +=
@@ -131,6 +131,6 @@ var globalIdUser;
          formUpdate.style.display = "block";
 
          globalIdUser  = idUser;
-         
+
   }
 </script>
