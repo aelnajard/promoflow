@@ -104,8 +104,8 @@
 
               echo $this->sectionName2;
               $sql =  "DELETE FROM `Users` WHERE `iduser`= '$this->idUser' ";
-              $this->con->conn()->exec($sql);
-              $this->con->close();
+              $this->conn->conn()->exec($sql);
+              $this->conn->close();
               return "The user has been deleted"
                 }
             catch(PDOException $e){
