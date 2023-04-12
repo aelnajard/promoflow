@@ -173,7 +173,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 flex-direction: row;
-margin-bottom: 15px;
+margin-bottom: 105px;
 }
 
 .CRUDBoxes{
