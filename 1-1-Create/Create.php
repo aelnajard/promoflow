@@ -14,9 +14,8 @@
 <div class="ContainerCRUD">
   <div class="containerCRUDTitle">
       <h2 id="">Create user</h2>
-      <h1>Hola</h1>
   </div>
-  <!--<div id="" class="formUpdate">
+  <div id="" class="formUpdate">
     <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
@@ -37,10 +36,10 @@
     <div class="inputFormUpdate">
       <button id="" type="button" name="button">Update</button>
     </div>
-  </div>-->
+  </div>
 </div>
 <script type="text/javascript">
-  var name = document.getElementById("name");
+/*  var name = document.getElementById("name");
   var email = document.getElementById("email");
   var password = document.getElementById("password");
   var createUserClick = document.getElementById("createUserClick");
@@ -53,12 +52,11 @@
              module: "createUser"
                    },
            success: function(data){
-        //     var data = jQuery.parseJSON(data);
              alert(data);
           }
          }
        )
        alert("hola hermanitas");
   })
-
+*/
 </script>
