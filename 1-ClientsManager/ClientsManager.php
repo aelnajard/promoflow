@@ -165,7 +165,7 @@
   <section class="bodyLogin">
     <h2 class="titleBodyLogin">Clients Manager</h2>
     <div class="containerUsersManagerBottoms">
-      <div class="itemUsersManager">
+      <div class="itemUsersManager "id="openCreate">
         <img src="../1-ClientsManager/Images/create.png" alt="">
         <h3>Create</h3>
       </div>
@@ -214,11 +214,16 @@
   }
 
  /*Update information of the user*/
+
+ var openCreate = document.getElementById("openCreate");
  var openUpdate = document.getElementById("openUpdate");
 var openDelete = document.getElementById("openDelete");
 
+  var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
  var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
  var containerBoxUsersDelete = document.getElementById("containerBoxUsersDelete");
+
+
  var formUpdate = document.getElementById("formUpdate");
 formUpdate.style.display = "none";
  openUpdate.addEventListener("click", function(){
@@ -256,6 +261,27 @@ formUpdate.style.display = "none";
         }
        )
  })
+
+ var formUpdateRead = document.getElementById("formUpdateRead");
+ formUpdateRead.style.display = "none";
+  openCreate.addEventListener("click", function(){
+
+    $.ajax( "../App/Controller/Controller.php", {
+           type: 'post',
+           async: false,
+           data: {
+             module: "getUsers"
+                   },
+           success: function(data){
+             var data = jQuery.parseJSON(data);
+             containerBoxUsersRead.style.display = "flex";
+             formUpdateRead.style.display = "none";
+             setusersCreate(data);
+          }
+         }
+        )
+  })
+
 
 
 </script>
