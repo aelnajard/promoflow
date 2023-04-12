@@ -290,8 +290,10 @@ var script = "";
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
 function setusers(data){
      var boxUsers = "";
+     containerBoxUsersUpdate.div.append("");
+
      for (var i = 0; i < data.length; i++) {
-       boxUsers = boxUsers +
+       boxUsers =
        '<div id="CRUDBoxesUpdate'+i+'" class="CRUDBoxes">' +
          '<div class="RoundBoxes">' +
          '<div class="CRUDBoxesLeft">' +
@@ -333,20 +335,17 @@ function setusers(data){
               '<img src="../1-3-Update/Images/update.png" alt="">' +
           '</div>' +
         '</div>' +
-       '</div>' +
-       '<script type="text/javascript">' +    
+       '</div>'
+      /* '<script type="text/javascript">' +
          'alert("buenas");' +
-       '</script>';
-
-
-
-
+       '</script>'*/
+       ;
+       containerBoxUsersUpdate.appendChild(boxUsers);
 
 
      }
 
-     $( "#containerBoxUsersUpdate" ).append( boxUsers );
-
+      //  containerBoxUsersUpdate.innerHTML = boxUsers;
   }
 
 
