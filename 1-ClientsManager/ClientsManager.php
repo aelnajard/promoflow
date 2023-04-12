@@ -33,7 +33,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  /*.containerUsersManagerBottoms{
+  .containerUsersManagerBottoms{
     position: relative;
     background-color: rgba(210, 220, 234, .3);
     border-radius: 5px;
@@ -44,6 +44,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: red;
   }
   .itemUsersManager{
     position: relative;
@@ -53,6 +54,7 @@
     height: 40px;
     margin: 15px;
     cursor: pointer;
+    background-color: blue;
   }
   .itemUsersManager img{
     position: relative;
@@ -62,6 +64,7 @@
     transform: translate(-50%, -50%);
     filter: drop-shadow(1px 1px 2px black);
     transition: .6s;
+    background-color: yellow;
   }
   .itemUsersManager:hover > img{
     filter: drop-shadow(1px 1px 3px black);
@@ -78,6 +81,7 @@
     font-size: .9em;
     padding-left: 5px;
     transition: font-weight .6;
+    background-color: pink;
   }
   .itemUsersManager:hover > h3{
     font-weight: 500;
@@ -104,6 +108,8 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction:column;
+
+    background-color: green;
   }
   .ContainerCRUD::-webkit-scrollbar {
   width: 1.5em;
@@ -375,7 +381,7 @@ filter: drop-shadow(3px 3px 5px Black);
 }
 .CRUDBoxes:active > .BottonCRUDUpdate img{
 filter: drop-shadow(0px 0px 3px Black);
-}*/
+}
 
 </style>
 
