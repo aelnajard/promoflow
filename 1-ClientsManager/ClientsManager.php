@@ -130,10 +130,9 @@
 .inputFormUpdate{
   position:relative;
   width: 250px;
-  height: 140px;
+  height: 80px;
   margin: 10px 0px;
   left: 50%;
-
   transform: translateX(-50%);
 }
 .inputFormUpdate label{
@@ -150,6 +149,8 @@
   position: relative;
   top: 10px;
   width: 80%;
+  height: 40px;
+  border-radius: 5px;
   font-weight: 500;
   text-align: center;
   margin: 0!important;
