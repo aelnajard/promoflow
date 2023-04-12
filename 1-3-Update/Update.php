@@ -286,6 +286,7 @@
 </div>
 
 <script type="text/javascript">
+window.onload = function() {
 
 var script = "";
 var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
@@ -345,6 +346,6 @@ function setusers(data){
      }
 
 
-
+};
 
 </script>
