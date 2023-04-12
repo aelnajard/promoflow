@@ -15,7 +15,7 @@
   <div class="containerCRUDTitle">
       <h2 id="">Create user</h2>
   </div>
-  <div id="" class="formUpdate">
+  <!--<div id="" class="formUpdate">
     <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
@@ -36,7 +36,7 @@
     <div class="inputFormUpdate">
       <button id="" type="button" name="button">Update</button>
     </div>
-  </div>
+  </div>-->
 </div>
 <script type="text/javascript">
   var name = document.getElementById("name");
