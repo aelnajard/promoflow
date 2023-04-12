@@ -59,15 +59,15 @@
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
       <input type="text" name="" value="" id="">
-    </div>
+    </div><br>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
       <input type="text" name="" value="" id="">
-    </div>
+    </div><br>
     <div class="inputFormUpdate">
       <label for="updateName">Password</label>
       <input type="text" name="" value="" id="">
-    </div>
+    </div><br>
     <div class="inputFormUpdate">
       <label for="updateName">Type of user</label>
       <input type="text" name="" value="" id="">
