@@ -32,6 +32,7 @@
     height: 120px;
     width: 160px;
     margin: 20px;
+    cursor: pointer;
   }
 
   .RoundBoxes{
