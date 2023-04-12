@@ -128,10 +128,7 @@
   height: 100px;
   background-color: blue;
 
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction:column;
+  
 }
 .inputFormUpdate{
   position:relative;
