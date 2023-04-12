@@ -104,11 +104,11 @@
               $sql =  "DELETE FROM `Users` WHERE `iduser`= '$this->idUser' ";
               $this->conn->conn()->exec($sql);
               $this->conn->close();
-              return "The user has been deleted"
+              return "The user has been deleted";
                 }
             catch(PDOException $e){
                 echo $query . "<br>" . $e->getMessage();
-                return "The user has not been deleted"
+                return "The user has not been deleted";
               }
         }
 
