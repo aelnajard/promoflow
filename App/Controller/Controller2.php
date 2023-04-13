@@ -44,7 +44,12 @@ require_once('../Models/Users.php');
     }
 
       elseif ($_POST['module']=="verifyLogin") {
-        echo "buenas";
+        if ($_SESSION['loginUser'] == 'active') {
+          echo "entramos";
+        }
+        else {
+          echo "no entramos";
+        }
       }
 
 
