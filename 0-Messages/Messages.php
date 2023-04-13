@@ -27,14 +27,14 @@
     background-color: rgba(47, 69, 96, 0.9);
   }
   .headMessage img{
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     height: 30%;
     right: 10px;
   }
   .headMessage h2{
-    position: absolute;
+    position: relative;
     left: 10px;
     margin: 0;
     padding: 0;
