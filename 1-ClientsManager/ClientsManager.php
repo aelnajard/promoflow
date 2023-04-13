@@ -81,7 +81,8 @@
     font-size: .9em;
     padding-left: 5px;
     transition: font-weight .6;
-    background-color: pink;
+
+
   }
   .itemUsersManager:hover > h3{
     font-weight: 500;
@@ -108,8 +109,6 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction:column;
-
-    background-color: green;
   }
   .ContainerCRUD::-webkit-scrollbar {
   width: 1.5em;
