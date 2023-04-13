@@ -494,7 +494,6 @@
         module: "verifyLogin",
       },
       success: function(data){
-        alert(data);
         var data = jQuery.parseJSON(data);
         if (data == 1) {
 
