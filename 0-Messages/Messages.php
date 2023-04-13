@@ -30,7 +30,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 80%;
+    height: 50%;
     right: 10px;
   }
   .headMessage h2{
