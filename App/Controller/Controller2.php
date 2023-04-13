@@ -19,7 +19,7 @@ require_once('../Models/Users.php');
       $db = new Database();
       $user = new Users($db);
       $user->setEmail($_POST['email']);
-      $user->setPassword($_POST['password']); echo "string";exit;
+      $user->setPassword($_POST['password']); //echo "string";exit;
       $result = json_encode($user->readUserExist());
       echo $result;
       $_SESSION['loginUser'] = 'active';
