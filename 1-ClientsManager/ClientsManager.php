@@ -80,10 +80,7 @@
     padding-left: 5px;
     transition: font-weight .6;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 5062dd00be5b8d59e5afef43d5b3597d711dbf11
   }
   .itemUsersManager:hover > h3{
     font-weight: 500;
@@ -109,12 +106,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction:column;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 5062dd00be5b8d59e5afef43d5b3597d711dbf11
   }
   .ContainerCRUD::-webkit-scrollbar {
   width: 1.5em;
@@ -170,7 +161,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 1em;
-  
+
 }
 
 
@@ -402,10 +393,10 @@ filter: drop-shadow(0px 0px 3px Black);
         <h3>Create</h3>
       </div>
 
-    <!--  <div class="itemUsersManager" id="openRead">
+      <div class="itemUsersManager" id="openRead">
         <img src="../1-ClientsManager/Images/Read.png" alt="">
         <h3>Read</h3>
-      </div>-->
+      </div>
 
       <div class="itemUsersManager" id="openUpdate">
         <img src="../1-ClientsManager/Images/update.png" alt="">
@@ -419,7 +410,7 @@ filter: drop-shadow(0px 0px 3px Black);
 
     </div>
     <?php include "../1-1-Create/Create.php" ?>
-    <?php //include "../1-2-Read/Read.php" ?>
+    <?php include "../1-2-Read/Read.php" ?>
     <?php include "../1-3-Update/Update.php" ?>
     <?php include "../1-4-Delete/Update.php" ?>
   </section>
