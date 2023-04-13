@@ -43,6 +43,9 @@ require_once('../Models/Users.php');
       echo $result;
     }
 
+      elseif ($_POST['module']=="verifyLogin") {
+        echo "buenas";
+      }
 
 
 

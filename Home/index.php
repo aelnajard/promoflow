@@ -314,14 +314,14 @@
 
 
     access.addEventListener("click", function(){
-    login();
+      login();
     })
 
-              document.querySelector('#passwordData').addEventListener('keypress', function (e) {
-              if (e.key === 'Enter') {
-                login();
-              }
-          });
+    document.querySelector('#passwordData').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          login();
+        } 
+    });
 
     function login(){
       spanLoading.display = "block";

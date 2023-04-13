@@ -484,6 +484,27 @@
 
 
     <script type="text/javascript">
+    /* verifyLogin */
+    verifyLogin();
+    function verifyLogin() {
+      $.ajax( "../App/Controller/Controller.php", {
+      type: 'post',
+      async: false,
+      data: {
+        module: "verifyLogin",
+      },
+      success: function(data){
+        alert(data);
+      //  var data = jQuery.parseJSON(data);
+
+     }
+    }
+    )
+    }
+
+
+
+
     /* Menu */
 
     /* Declaration of variables*/
@@ -500,22 +521,6 @@
     menuContainer.style.display = "block";
     })
 
-    verifyLogin();
-    function verifyLogin() {
-      $.ajax( "../App/Controller/Controller.php", {
-      type: 'post',
-      async: false,
-      data: {
-        module: "verifyLogin",
-      },
-      success: function(data){
-        //alert(data);
-      //  var data = jQuery.parseJSON(data);
-
-     }
-    }
-    )
-    }
 
 
 
