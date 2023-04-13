@@ -16,6 +16,9 @@
     width: 300px;
     height: 200px;
     background-color: rgba(225, 228, 235, 0.9);
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
   }
   .headMessage{
     position: relative;
