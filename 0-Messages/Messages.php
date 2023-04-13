@@ -17,7 +17,7 @@
     height: 200px;
     background-color: rgba(225, 228, 235, 0.9);
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
     box-shadow: 0px 0px 3px black;
@@ -59,7 +59,7 @@
     left: 10px;
     margin: 0;
     padding: 0;
-    font-size: 1em;
+    font-size: 1.1em;
     color: white;
     font-weight: 300;
     top: 50%;
