@@ -324,7 +324,7 @@
             password: data[1].value
           },
           success: function(data){
-            alert(data);
+            
             var data = jQuery.parseJSON(data);
         //    alert(data["COUNT(*)"]);
             if (data["COUNT(*)"]==1) {
