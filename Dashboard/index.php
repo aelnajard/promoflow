@@ -487,7 +487,7 @@
     /* verifyLogin */
     verifyLogin();
     function verifyLogin() {
-      $.ajax( "../App/Controller/Controller.php", {
+      $.ajax( "../App/Controller/Controller2.php", {
       type: 'post',
       async: false,
       data: {
