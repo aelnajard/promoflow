@@ -20,12 +20,18 @@
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
   }
   .headMessage{
     position: relative;
     height: 20%;
     width: 100%;
     background-color: rgba(47, 69, 96, 0.9);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .headMessage img{
+    filter: drop-shadow(2px 2px 0px black);
   }
   .logoMessage{
     position: absolute;
@@ -40,6 +46,13 @@
     transform: translateY(-50%);
     height: 30%;
     right: 10px;
+    filter: drop-shadow(1px 1px 0px black);
+  }
+  .closeMessage:hover{
+    filter: drop-shadow(2px 2px 0px black);
+  }
+  .closeMessage:active{
+    filter: drop-shadow(1px 1px 0px black);
   }
   .headMessage h2{
     position: relative;
@@ -51,20 +64,44 @@
     font-weight: 300;
     top: 50%;
     transform: translateY(-50%);
+    text-shadow: 2px 2px 2px black;
   }
+
 
   .bodyMessage{
     position: relative;
-    height: 85px;
-    width: 280px;
+    height: 50%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
     text-align: center;
     color: black;
-    font-weight: 300;
-    font-size: 1.2em;
+
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
   }
+  .bodyMessage p{
+    position: relative;
+    font-weight: 400;
+    font-size: 1em;
+    width: 90%;
+  }
+  .footerMessage{
+    position: relative;
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
 
 
 </style>
@@ -72,17 +109,21 @@
 
 <section >
   <div class="messageBackground">
-    <div class="relative">
+    <div class="relative">g
       <div class="message">
         <div class="headMessage">
           <h2>Promoflow</h2>
           <img src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
           <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage">
         </div>
-            <div class="bodyMessage">
-            <p>Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
-            </div>
-            <button type="" name="button">Create</botton >
+        <div class="bodyMessage">
+          <p>Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
+        </div>
+        <div class="footerMessage">
+          <button type="" name="button">Create</botton >
+          <button type="" name="button">Create</botton >
+        </div>
+
       </div>
 
     </div>

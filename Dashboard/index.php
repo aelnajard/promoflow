@@ -23,21 +23,17 @@
         position: relative;
         padding: 5px;
         background-color: #2F4560;
-        left: 50%;
-        height: 31px;
-        transform: translateX(-50%);
-        margin-top: 20px;
+        height: 35px;
         border-radius: 5px;
         width: 100px;
         cursor: pointer;
         box-shadow: 0px 0px 2px rgb(50,50,50);
         text-align: center;
         color: white;
-        padding: 4px 0;
-        margin: 0;
+        margin: 10px;
         font-weight: 200;
         font-size: 1.2em;
-        
+
       }
         button:hover{
         background-color: #435267;
