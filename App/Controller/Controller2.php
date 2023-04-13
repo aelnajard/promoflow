@@ -15,6 +15,15 @@ require_once('../Models/Users.php');
       $result = json_encode($user->updateUser());
       echo $result;
     }
+    elseif ($_POST['module']=="loginUser") {
+      $db = new Database();
+      $user = new Users($db);
+      $user->setEmail($_POST['email']);
+      $user->setPassword($_POST['password']); echo "string";exit;
+      $result = json_encode($user->readUserExist());
+      echo $result;
+      $_SESSION['loginUser'] = 'active';
+    }
     elseif ($_POST['module']=="createUser") {
       $db = new Database();
       $user = new Users($db);
