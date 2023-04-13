@@ -5,7 +5,7 @@
     left: 0px;
     height: 100vw;
     width: 100vw;
-    border-right-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 </style>
 
