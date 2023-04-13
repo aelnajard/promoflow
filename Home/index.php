@@ -314,6 +314,16 @@
 
 
     access.addEventListener("click", function(){
+    login();
+    })
+
+              document.querySelector('#passwordData').addEventListener('keypress', function (e) {
+              if (e.key === 'Enter') {
+                login();
+              }
+          });
+
+    function login(){
       spanLoading.display = "block";
           $.ajax( "../App/Controller/Controller2.php", {
           type: 'post',
@@ -340,14 +350,7 @@
          }
         }
       )
-    })
-
-              document.querySelector('#passwordData').addEventListener('keypress', function (e) {
-              if (e.key === 'Enter') {
-                alert("hola");
-              }
-          });
-
+    }
     </script>
 
   </body>
