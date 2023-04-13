@@ -324,7 +324,7 @@
             password: data[1].value
           },
           success: function(data){
-            
+
             var data = jQuery.parseJSON(data);
         //    alert(data["COUNT(*)"]);
             if (data["COUNT(*)"]==1) {
@@ -342,7 +342,11 @@
       )
     })
 
-
+              document.querySelector('#passwordData').addEventListener('keypress', function (e) {
+              if (e.key === 'Enter') {
+                alert("hola");
+              }
+          });
 
     </script>
 
