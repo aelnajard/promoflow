@@ -383,7 +383,7 @@ filter: drop-shadow(0px 0px 3px Black);
 
 </style>
 
-
+<?php include "../0-Messages/Messages.php" ?>
   <section class="bodyLogin">
     <h2 class="titleBodyLogin">Clients Manager</h2>
     <div class="containerUsersManagerBottoms">
