@@ -44,7 +44,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: red;
   }
   .itemUsersManager{
     position: relative;
@@ -54,7 +53,6 @@
     height: 40px;
     margin: 15px;
     cursor: pointer;
-    background-color: blue;
   }
   .itemUsersManager img{
     position: relative;
@@ -64,7 +62,7 @@
     transform: translate(-50%, -50%);
     filter: drop-shadow(1px 1px 2px black);
     transition: .6s;
-    background-color: yellow;
+
   }
   .itemUsersManager:hover > img{
     filter: drop-shadow(1px 1px 3px black);
@@ -82,7 +80,10 @@
     padding-left: 5px;
     transition: font-weight .6;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5062dd00be5b8d59e5afef43d5b3597d711dbf11
   }
   .itemUsersManager:hover > h3{
     font-weight: 500;
@@ -109,6 +110,11 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction:column;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5062dd00be5b8d59e5afef43d5b3597d711dbf11
   }
   .ContainerCRUD::-webkit-scrollbar {
   width: 1.5em;
@@ -163,6 +169,8 @@
   padding: 0;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1em;
+  
 }
 
 

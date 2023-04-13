@@ -314,8 +314,18 @@
 
 
     access.addEventListener("click", function(){
+      login();
+    })
+
+    document.querySelector('#passwordData').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          login();
+        } 
+    });
+
+    function login(){
       spanLoading.display = "block";
-          $.ajax( "../App/Controller/Controller.php", {
+          $.ajax( "../App/Controller/Controller2.php", {
           type: 'post',
           async: false,
           data: {
@@ -324,6 +334,7 @@
             password: data[1].value
           },
           success: function(data){
+
             var data = jQuery.parseJSON(data);
         //    alert(data["COUNT(*)"]);
             if (data["COUNT(*)"]==1) {
@@ -339,10 +350,7 @@
          }
         }
       )
-    })
-
-
-
+    }
     </script>
 
   </body>

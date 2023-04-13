@@ -10,19 +10,19 @@
    <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
-      <input type="text" name="" value="" id="createName">
+      <input type="text" name="" placeholder="Enter the name " value="" id="createName">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
-      <input type="text" name="" value="" id="createEmail">
+      <input type="text" name="" placeholder="Enter the email "value="" id="createEmail">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Password</label>
-      <input type="text" name="" value="" id="createPassword">
+      <input type="text" name="" placeholder="Enter the password  " value="" id="createPassword">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Type of user</label>
-      <input type="text" name="" value="" id="createUserType">
+      <input type="text" name="" placeholder="Enter the user type " value="" id="createUserType">
     </div>
     <div class="inputFormUpdate">
       <button id="clickCreate" type="button" name="button">Create</button>

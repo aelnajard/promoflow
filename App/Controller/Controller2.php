@@ -15,6 +15,15 @@ require_once('../Models/Users.php');
       $result = json_encode($user->updateUser());
       echo $result;
     }
+    elseif ($_POST['module']=="loginUser") {
+      $db = new Database();
+      $user = new Users($db);
+      $user->setEmail($_POST['email']);
+      $user->setPassword($_POST['password']); //echo "string";exit;
+      $result = json_encode($user->readUserExist());
+      echo $result;
+      $_SESSION['loginUser'] = 'active';
+    }
     elseif ($_POST['module']=="createUser") {
       $db = new Database();
       $user = new Users($db);
@@ -34,7 +43,18 @@ require_once('../Models/Users.php');
       echo $result;
     }
 
+      elseif ($_POST['module']=="verifyLogin") {
+        if ($_SESSION['loginUser'] == 'active') {
+          echo json_encode(1);
+        }
+        else {
+          echo json_encode(0);
+        }
+      }
 
+      elseif ($_POST['module']=="logout") {
+        session_destroy();
+      }
 
 
 

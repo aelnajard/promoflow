@@ -484,6 +484,32 @@
 
 
     <script type="text/javascript">
+    /* verifyLogin */
+    verifyLogin();
+    function verifyLogin() {
+      $.ajax( "../App/Controller/Controller2.php", {
+      type: 'post',
+      async: false,
+      data: {
+        module: "verifyLogin",
+      },
+      success: function(data){
+        var data = jQuery.parseJSON(data);
+        if (data == 1) {
+
+        }
+        else {
+          window.open("../index.php", "_self");
+        }
+
+      }
+    }
+    )
+    }
+
+
+
+
     /* Menu */
 
     /* Declaration of variables*/
@@ -500,22 +526,6 @@
     menuContainer.style.display = "block";
     })
 
-    verifyLogin();
-    function verifyLogin() {
-      $.ajax( "../App/Controller/Controller.php", {
-      type: 'post',
-      async: false,
-      data: {
-        module: "verifyLogin",
-      },
-      success: function(data){
-        //alert(data);
-      //  var data = jQuery.parseJSON(data);
-
-     }
-    }
-    )
-    }
 
 
 
@@ -558,6 +568,19 @@
     var logout = document.getElementById('logout');
 
     logout.addEventListener("click", function(){
+      $.ajax( "../App/Controller/Controller2.php", {
+      type: 'post',
+      async: false,
+      data: {
+        module: "logout",
+      },
+      success: function(data){
+        //alert(data);
+      //  var data = jQuery.parseJSON(data);
+
+     }
+    }
+    )
       menuContainer.style.display = "none";
       window.open("../index.php", "_self");
     })
