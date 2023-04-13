@@ -8,10 +8,10 @@ require_once('../Models/Users.php');
       $db = new Database();
       $user = new Users($db);
       $user->setEmail($_POST['email']);
-      $user->setPassword($_POST['password']);
+      $user->setPassword($_POST['password']); echo "string";exit;
       $result = json_encode($user->readUserExist());
       echo $result;
-     $_SESSION['loginUser'] = 'active';
+      $_SESSION['loginUser'] = 'active';
     }
   /*  if ($_POST['module']=="verifyLogin") {
       echo "buenas";
