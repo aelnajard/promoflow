@@ -19,6 +19,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 5px;
   }
   .headMessage{
     position: relative;
@@ -57,16 +58,31 @@
     color: white;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 20px;
     border-radius: 5px;
     width: 100px;
+    height: 30px;
     text-align: center;
-
-    padding: 4px 0;
     margin: 0;
     font-weight: 200;
     font-size: 1.2em;
+    background-color: red;
   }
+  .textMessage{
+    position: relative;
+    top: 8px;
+    height: 100px;
+    width: 265px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-weight: 200;
+    font-size: 1em;
+
+  }
+
+
 </style>
 
 
@@ -79,9 +95,12 @@
           <img src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
           <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage">
         </div>
-        <button type="" name="button">Create</botton >
+            <button type="" name="button">Create</botton >
+            <div class="textMessage">
+            <p>Lorem ipsum dolor sit , Lorem ipsum dLorem ipsum dolor sit amet,olor sit amet,Lorem ipsum d .</p>
+            </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, conseelit esse cillumd est laborum.</p>
+
     </div>
   </div>
 </section>
