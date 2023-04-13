@@ -24,6 +24,7 @@
         padding: 5px;
         background-color: #2F4560;
         left: 50%;
+        height: 31px;
         transform: translateX(-50%);
         margin-top: 20px;
         border-radius: 5px;
@@ -36,6 +37,7 @@
         margin: 0;
         font-weight: 200;
         font-size: 1.2em;
+        
       }
         button:hover{
         background-color: #435267;

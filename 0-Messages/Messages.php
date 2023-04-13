@@ -52,34 +52,18 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  button{
+
+  .bodyMessage{
     position: relative;
-    top: 10px;
-    color: white;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    margin: 0;
-    font-weight: 200;
-    font-size: 1.2em;
-    background-color: red;
-  }
-  .textMessage{
-    position: relative;
-    top: 8px;
-    height: 100px;
-    width: 265px;
+    height: 85px;
+    width: 280px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
     text-align: center;
     color: black;
-    font-weight: 200;
-    font-size: 1em;
-
+    font-weight: 300;
+    font-size: 1.2em;
   }
 
 
@@ -95,10 +79,10 @@
           <img src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
           <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage">
         </div>
-            <button type="" name="button">Create</botton >
-            <div class="textMessage">
-            <p>Lorem ipsum dolor sit , Lorem ipsum dLorem ipsum dolor sit amet,olor sit amet,Lorem ipsum d .</p>
+            <div class="bodyMessage">
+            <p>Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
             </div>
+            <button type="" name="button">Create</botton >
       </div>
 
     </div>
