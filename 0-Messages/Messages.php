@@ -31,7 +31,7 @@
     top: 50%;
     transform: translateY(-50%);
     height: 30%;
-    left: 60px;
+    left: 80px;
   }
   .closeMessage{
     position: absolute;
