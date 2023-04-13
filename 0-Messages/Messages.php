@@ -3,7 +3,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
