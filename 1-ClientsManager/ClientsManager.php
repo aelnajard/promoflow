@@ -44,7 +44,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: red;
   }
   .itemUsersManager{
     position: relative;
@@ -54,7 +53,6 @@
     height: 40px;
     margin: 15px;
     cursor: pointer;
-    background-color: blue;
   }
   .itemUsersManager img{
     position: relative;
@@ -64,7 +62,7 @@
     transform: translate(-50%, -50%);
     filter: drop-shadow(1px 1px 2px black);
     transition: .6s;
-    background-color: yellow;
+
   }
   .itemUsersManager:hover > img{
     filter: drop-shadow(1px 1px 3px black);
@@ -109,7 +107,7 @@
     flex-wrap: wrap;
     flex-direction:column;
 
-    background-color: green;
+    
   }
   .ContainerCRUD::-webkit-scrollbar {
   width: 1.5em;
