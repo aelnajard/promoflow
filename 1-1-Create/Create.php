@@ -10,7 +10,7 @@
    <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
-      <input type="text" name="" placeholder="Enter the  name " value="" id="createName">
+      <input type="text" name="" placeholder="Enter the name " value="" id="createName">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
