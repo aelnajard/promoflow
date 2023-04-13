@@ -109,7 +109,7 @@
 
 <section >
   <div class="messageBackground">
-    <div class="relative">g
+    <div class="relative">
       <div class="message">
         <div class="headMessage">
           <h2>Promoflow</h2>
