@@ -496,7 +496,13 @@
       success: function(data){
         alert(data);
         var data = jQuery.parseJSON(data);
-      window.open("../index.php", "_self");
+        if (data == 1) {
+
+        }
+        else {
+          window.open("../index.php", "_self");
+        }
+
       }
     }
     )
