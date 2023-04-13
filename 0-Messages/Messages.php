@@ -17,7 +17,7 @@
     height: 200px;
     background-color: rgba(225, 228, 235, 0.9);
     left: 50%;
-    right: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
   .headMessage{
