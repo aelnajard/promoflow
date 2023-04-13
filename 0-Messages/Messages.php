@@ -53,16 +53,15 @@
   }
   button{
     position: relative;
-    padding: 5px;
+    
     color: white;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 20px;
     border-radius: 5px;
     width: 100px;
-
     text-align: center;
-    color: red;
+
     padding: 4px 0;
     margin: 0;
     font-weight: 200;
