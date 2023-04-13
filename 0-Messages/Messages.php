@@ -31,7 +31,7 @@
     top: 50%;
     transform: translateY(-50%);
     height: 30%;
-    left: 80px;
+    left: 100px;
   }
   .closeMessage{
     position: absolute;
@@ -51,6 +51,23 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  button{
+    position: relative;
+    padding: 5px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100px;
+
+    text-align: center;
+    color: red;
+    padding: 4px 0;
+    margin: 0;
+    font-weight: 200;
+    font-size: 1.2em;
+  }
 </style>
 
 
@@ -63,6 +80,8 @@
           <img src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
           <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage">
         </div>
+        <button type="" name="button">Create</botton >
+
       </div>
     </div>
   </div>
