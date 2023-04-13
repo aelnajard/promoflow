@@ -36,6 +36,8 @@
   .headMessage h2{
     position: absolute;
     left: 10px;
+    margin: 0;
+    padding: 0;
     font-size: 1em;
     color: white;
     font-weight: 300;
