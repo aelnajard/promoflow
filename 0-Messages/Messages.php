@@ -26,6 +26,22 @@
     width: 100%;
     background-color: rgba(47, 69, 96, 0.9);
   }
+  .headMessage img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    right: 10px;
+  }
+  .headMessage h2{
+    position: absolute;
+    left: 10px;
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 </style>
 
 
