@@ -26,14 +26,14 @@
     width: 100%;
     background-color: rgba(47, 69, 96, 0.9);
   }
-  .headMessage img:nth-child(1){
+  .logoMessage{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     height: 30%;
     left: 60px;
   }
-  .headMessage img:nth-child(2){
+  .closeMessage{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -60,8 +60,8 @@
       <div class="message">
         <div class="headMessage">
           <h2>Promoflow</h2>
-          <img src="../0-Messages/Images/Logo.png" alt="">
-          <img src="../0-Messages/Images/Close.png" alt="">
+          <img src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
+          <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage">
         </div>
       </div>
     </div>
