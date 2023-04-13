@@ -53,7 +53,7 @@
   }
   button{
     position: relative;
-    
+    top: 10px;
     color: white;
     left: 50%;
     transform: translateX(-50%);
@@ -80,8 +80,8 @@
           <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage">
         </div>
         <button type="" name="button">Create</botton >
-
       </div>
+      <p>Lorem ipsum dolor sit amet, conseelit esse cillumd est laborum.</p>
     </div>
   </div>
 </section>
