@@ -5,7 +5,7 @@
     left: 0px;
     height: 100vw;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
   }
 </style>
