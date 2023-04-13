@@ -495,9 +495,9 @@
       },
       success: function(data){
         alert(data);
-      //  var data = jQuery.parseJSON(data);
-
-     }
+        var data = jQuery.parseJSON(data);
+      window.open("../index.php", "_self");
+      }
     }
     )
     }
@@ -563,6 +563,19 @@
     var logout = document.getElementById('logout');
 
     logout.addEventListener("click", function(){
+      $.ajax( "../App/Controller/Controller2.php", {
+      type: 'post',
+      async: false,
+      data: {
+        module: "logout",
+      },
+      success: function(data){
+        //alert(data);
+      //  var data = jQuery.parseJSON(data);
+
+     }
+    }
+    )
       menuContainer.style.display = "none";
       window.open("../index.php", "_self");
     })

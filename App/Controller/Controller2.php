@@ -45,13 +45,16 @@ require_once('../Models/Users.php');
 
       elseif ($_POST['module']=="verifyLogin") {
         if ($_SESSION['loginUser'] == 'active') {
-          echo "entramos";
+          echo json_encode(1);
         }
         else {
-          echo "no entramos";
+          echo json_encode(0);
         }
       }
 
+      elseif ($_POST['module']=="logout") {
+        session_destroy();
+      }
 
 
 
