@@ -164,7 +164,7 @@
     containerBoxUsersRead.innerHTML  = "";
        for (var i = 0; i < data.length; i++) {//
          alert("numero de users" + i);
-         containerBoxUsersRead.innerHTML  +=
+         containerBoxUsersRead.innerHTML  =
          '<div class="boxUser">'+
              '<div class="boxUserName">'+
                '<h3 class="nameUserRead"></h3>'+
