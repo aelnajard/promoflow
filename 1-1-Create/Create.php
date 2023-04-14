@@ -46,26 +46,61 @@
     createUser();
   })
   function createUser(){
-    $.ajax( "../App/Controller/Controller2.php", {
-           type: 'post',
-           async: false,
-           data: {
-             module: "createUser",
-             name: createName.value,
-             email: createEmail.value,
-             password: createPassword.value,
-             userType: createUserType.value
-                   },
-           success: function(data){
-               message(1, "Ok", "button2", data);
-             messageSection.style.display = "block";
+    const verifyForm = verifyForm();
+    alert(verifyForm[0]);
+    /*if (verifyForm) {
+      $.ajax( "../App/Controller/Controller2.php", {
+             type: 'post',
+             async: false,
+             data: {
+               module: "createUser",
+               name: createName.value,
+               email: createEmail.value,
+               password: createPassword.value,
+               userType: createUserType.value
+                     },
+             success: function(data){
+                 message(1, "Ok", "button2", data);
+               messageSection.style.display = "block";
 
-             createName.value = "";
-             createEmail.value = "";
-             createPassword.value = "";
-             createUserType.value = "";
-          }
-         }
-        )
+               createName.value = "";
+               createEmail.value = "";
+               createPassword.value = "";
+               createUserType.value = "";
+            }
+           }
+          )
+    }
+    else {
+    //  message(1, "Ok", "button2", "The user has not been created");
+  }*/
+
+  }
+  function verifyForm(){
+    var answer;
+    var message;
+    if (createName.value == "" || createEmail.value == "" || createPassword.value == "") {
+       answer = 0;
+       message = "It appears that some values are missing, please fill them in";
+    }
+    else {
+      if (!createEmail.value.includes("@")) {
+        answer = 0;
+        message = "Please ensure you have entered a valid email address";
+      }
+      else {
+        if (!createEmail.value.includes(".")) {
+          answer = 0;
+          message = "Please ensure you have entered a valid email address";
+        }
+        else {
+          answer = 1;
+          message = "";
+        }
+      }
+    }
+
+  const array = [answer, message];
+    return array;
   }
 </script>
