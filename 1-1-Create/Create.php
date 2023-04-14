@@ -46,7 +46,7 @@
     createUser();
   })
   function createUser(){
-    if (verifyForm()[0]) {
+    if (verifyForm()[0] == 1) {
       $.ajax( "../App/Controller/Controller2.php", {
              type: 'post',
              async: false,
