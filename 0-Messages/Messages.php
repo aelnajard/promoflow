@@ -7,7 +7,6 @@
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
-    display: none;
   }
   .relative{
     position: relative;
@@ -108,15 +107,15 @@
       <div class="message">
         <div class="headMessage">
           <h2>Promoflow</h2>
-          <img src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
+          <img  src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
           <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage" id="closeMessage">
         </div>
         <div class="bodyMessage">
-          <p>Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
+          <p id="textMessages">Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
         </div>
         <div class="footerMessage">
-          <button type="" name="button">Create</botton>
-          <button type="" name="button">Create</botton>
+          <button class="buttonSelected" id="button1Message" type="" name="button">Create</botton>
+          <button class="buttonSelected" id="button2Message" type="" name="button">Create</botton>
         </div>
       </div>
     </div>
@@ -127,12 +126,33 @@
 <script type="text/javascript">
 var closeMessage = document.getElementById("closeMessage");
 var messageSection = document.getElementById("messageSection");
-
+var textMessages = document.getElementById("textMessages");
+var button1Message = document.getElementById("button1Message");
+var button2Message = document.getElementById("button2Message");
+var buttonSelected = document.querySelectorAll(".buttonSelected");
+messageSection.style.display = "none";
 closeMessage.addEventListener("click" , function (){
-  //alert("dskfjdlsdkdjf");
-  messageSection.style.block = "none";
+  alert(valueButtonSelected);
+  //messageSection.style.block = "none";
+
 })
+  var valueButtonSelected = 0;
+  for (let i = 0; i < buttonSelected.length; i++) {
+    buttonSelected[i].addEventListener("click", function(){
+      valueButtonSelected = i;
+    })
+  }
 
-
+function message(noButton, nameButton1, nameButton2, message){
+  if (noButton == 2) {
+    button1Message.innerHTML = nameButton1;
+    button2Message.innerHTML = nameButton2;
+  }
+  else if (noButton == 1) {
+    button1Message.innerHTML = nameButton1;
+    button2Message.style.display = "none";
+  }
+  textMessages.innerHTML = message;
+}
 
 </script>

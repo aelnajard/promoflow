@@ -48,8 +48,10 @@
              userType: createUserType.value
                    },
            success: function(data){
-             alert(data);
-             location.reload();
+               message(1, "Ok", "button2", data);
+             messageSection.style.display = "block";
+
+            // location.reload();
           }
          }
         )
