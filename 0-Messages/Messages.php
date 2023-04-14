@@ -146,6 +146,7 @@ closeMessage.addEventListener("click" , function (){
   }
 
 function message(noButton, nameButton1, nameButton2, message){
+    messageSection.style.display = "block";
   if (noButton == 2) {
     button1Message.innerHTML = nameButton1;
     button2Message.innerHTML = nameButton2;
