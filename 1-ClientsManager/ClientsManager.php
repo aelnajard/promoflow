@@ -103,9 +103,7 @@
     margin-top: 30px;
 
 
-    display: none;
-    justify-content: center;
-    flex-wrap: wrap;
+  
   }
   .ContainerCRUD::-webkit-scrollbar {
   width: 1.5em;
