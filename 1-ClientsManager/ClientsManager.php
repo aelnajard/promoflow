@@ -103,7 +103,7 @@
     margin-top: 30px;
 
 
-    display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
   }
