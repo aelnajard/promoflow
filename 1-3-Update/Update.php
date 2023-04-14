@@ -168,8 +168,10 @@ var globalIdUser;
              userType: updateUserType.value
                    },
            success: function(data){
-             alert(data);
-             location.reload();
+             message(1, "Ok", "button2", data);
+             updateName.value = "";
+             updateEmail.value = "";
+             updatePassword.value = "";
           }
          }
         )

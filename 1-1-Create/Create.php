@@ -65,7 +65,6 @@
                createName.value = "";
                createEmail.value = "";
                createPassword.value = "";
-               createUserType.value = "";
             }
            }
           )
