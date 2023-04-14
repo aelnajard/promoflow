@@ -92,6 +92,7 @@
   .ContainerCRUD{
     position: relative;
     padding: 5px;
+    display: none;
     background-color: rgba(210, 220, 234, .3);
     width: 80%;
     height: calc(100% - 200px);
@@ -101,9 +102,6 @@
     overflow-y: scroll;
     overflow-x: hidden;
     margin-top: 30px;
-
-
-  
   }
   .ContainerCRUD::-webkit-scrollbar {
   width: 1.5em;
