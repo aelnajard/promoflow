@@ -38,12 +38,14 @@
 
   document.querySelector('#formCreate').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') {
-      //  login();
-      alert("hola");
+        createUser();
       }
   });
 
   clickCreate.addEventListener("click", function(){
+    createUser();
+  })
+  function createUser(){
     $.ajax( "../App/Controller/Controller2.php", {
            type: 'post',
            async: false,
@@ -65,5 +67,5 @@
           }
          }
         )
-  })
+  }
 </script>
