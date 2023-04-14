@@ -51,10 +51,10 @@
                message(1, "Ok", "button2", data);
              messageSection.style.display = "block";
 
-             createName.innerHTML = "";
-             createEmail.innerHTML = "";
-             createPassword.innerHTML = "";
-             createUserType.innerHTML = "";
+             createName.value = " ";
+             createEmail.value = " ";
+             createPassword.value = " ";
+             createUserType.value = " ";
           }
          }
         )
