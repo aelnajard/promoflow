@@ -155,6 +155,7 @@ var globalIdUser;
   }
 
   clickUpdate.addEventListener("click", function(){
+    if (verifyForm(updateName.value, updateEmail.value, updatePassword.value)[0] == 1){
     $.ajax( "../App/Controller/Controller2.php", {
            type: 'post',
            async: false,
@@ -172,6 +173,10 @@ var globalIdUser;
           }
          }
         )
+      }
+      else {
+          message(1, "Ok", "", verifyForm(updateName.value, updateEmail.value, updatePassword.value)[1]);
+      }
   })
 
 
