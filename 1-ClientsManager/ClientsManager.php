@@ -502,7 +502,7 @@ filter: drop-shadow(0px 0px 3px Black);
              var data = jQuery.parseJSON(data);
              containerBoxUsersRead.style.display = "flex";
              formRead.style.display = "none";
-             setUsersCreate(data);
+             //setUsersCreate(data);
           }
          }
        )
