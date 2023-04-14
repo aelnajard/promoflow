@@ -420,19 +420,19 @@ filter: drop-shadow(0px 0px 3px Black);
 <script type="text/javascript">
   const itemUsersManager = document.querySelectorAll(".itemUsersManager");
   const ContainerCRUD  = document.querySelectorAll(".ContainerCRUD");
-  var onContainr = 0
+  var onContainer = 0
 
 
   for (let i = 0; i < itemUsersManager.length; i++) {
     ContainerCRUD[i].style.display = "none";
-    ContainerCRUD[0].style.display = "flex";
+    ContainerCRUD[1].style.display = "flex";
     itemUsersManager[i].addEventListener("click", function(){
       if (ContainerCRUD[i].style.display == "none") {
         ContainerCRUD[i].style.display = "flex";
-        onContainr = i;
+        onContainer = i;
 
         for (let j = 0; j < itemUsersManager.length; j++) {
-          if (j != onContainr ) {
+          if (j != onContainer ) {
             ContainerCRUD[j].style.display = "none";
           }
         }
