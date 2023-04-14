@@ -46,9 +46,7 @@
     createUser();
   })
   function createUser(){
-
-    alert(verifyForm()[1]);
-    /*if (verifyForm) {
+    if (verifyForm()[0]) {
       $.ajax( "../App/Controller/Controller2.php", {
              type: 'post',
              async: false,
@@ -72,8 +70,8 @@
           )
     }
     else {
-    //  message(1, "Ok", "button2", "The user has not been created");
-  }*/
+    message(1, "Ok", "", verifyForm()[1]);
+  }
 
   }
   function verifyForm(){
