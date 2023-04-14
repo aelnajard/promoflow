@@ -163,6 +163,7 @@
   function setUsersRead(data){
     containerBoxUsersRead.innerHTML  = "";
        for (var i = 0; i < data.length; i++) {//
+         alert("numero de users" + i);
          containerBoxUsersRead.innerHTML  +=
          '<div class="boxUser">'+
              '<div class="boxUserName">'+
