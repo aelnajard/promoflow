@@ -2,7 +2,6 @@
 .containerUsers{
   position: relative;
   width:300px;
-  background-color: blue;
   border-radius: 5px;
   overflow: hidden;
   margin-top: 13px;
@@ -10,7 +9,6 @@
 .boxUser{
   position: relative;
   width: 100%;
-  background-color: yellow;
 }
 .boxUserName{
   position: relative;
@@ -102,9 +100,9 @@
   <div class="containerCRUDWrap" >
     <div class="containerUsers" id="containerBoxUsersRead">
 
-      <div class="boxUser">
+  <!--    <div class="boxUser">
         <div class="boxUserName">
-          <h3>Laura</h3>
+          <h3 class="nameUserRead"></h3>
           <div class="toggleInformation">
             <img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">
             <img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">
@@ -115,22 +113,22 @@
             <div class="nameItemUserInformation">
               <p class="nameItemUserInformation">Email:</p>
             </div>
-            <p> laurazoro@gmail.com</p>
+            <p class="emailUserRead"> </p>
           </div>
           <div class="itemBoxUserInformation">
             <div class="nameItemUserInformation">
               <p class="nameItemUserInformation">Password:</p>
             </div>
-            <p> sfe4354</p>
+            <p class="passwordUserRead"> </p>
           </div>
           <div class="itemBoxUserInformation">
             <div class="nameItemUserInformation">
-              <p class="nameItemUserInformation">User type:</p>
+              <p class="nameItemUserInformation ">User type:</p>
             </div>
-            <p> Admin</p>
+            <p class="typeUserRead"> </p>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
 
@@ -158,13 +156,43 @@
   }
 
 
-  // Function read Users
+  // Function read Users  nameUserRead emailUserRead passwordUserRead typeUserRead
   var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
 
   function setUsersRead(data){
     containerBoxUsersRead.innerHTML  = "";
        for (var i = 0; i < data.length; i++) {//
-         alert("Hola");
+         containerBoxUsersRead.innerHTML  +=
+         '<div class="boxUser">'+
+           '<div class="boxUserName">'+
+             '<h3 class="nameUserRead"></h3>'+
+             '<div class="toggleInformation">'+
+               '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
+               '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
+             '</div>'+
+           '</div>'+
+           '<div class="boxUserInformation">'+
+             '<div class="itemBoxUserInformation">'+
+               '<div class="nameItemUserInformation">'+
+                 '<p class="nameItemUserInformation">Email:</p>'+
+               '</div>'+
+               '<p class="emailUserRead"> </p>'+
+             '</div>'+
+             '<div class="itemBoxUserInformation">'+
+               '<div class="nameItemUserInformation">'+
+                 '<p class="nameItemUserInformation">Password:</p>'+
+               '</div>'+
+               '<p class="passwordUserRead"> </p>'+
+             '</div>'+
+             '<div class="itemBoxUserInformation">'+
+               '<div class="nameItemUserInformation">'+
+                 '<p class="nameItemUserInformation ">User type:</p>'+
+               '</div>'+
+               '<p class="typeUserRead"> </p>'+
+            ' </div>'+
+           '</div>'+
+         '</div>';
+
        }
     }
 
