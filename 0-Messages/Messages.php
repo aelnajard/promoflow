@@ -128,7 +128,7 @@ var closeMessage = document.getElementById("closeMessage");
 var messageSection = document.getElementById("messageSection");
 
 closeMessage.addEventListener("click" , function (){
-  messageSection.style.block = "none";
+  messageSection.style.display = "none";
 })
 
 
