@@ -508,6 +508,33 @@ filter: drop-shadow(0px 0px 3px Black);
        )
   })
 
+  /*field´s form verification*/
+  function verifyForm(name, email, password){
+    var answer;
+    var message;
+    if (name == "" || email == "" || password == "") {
+       answer = 0;
+       message = "It appears that some values are missing, please fill them in";
+    }
+    else {
+      if (!email.includes("@")) {
+        answer = 0;
+        message = "Please ensure you have entered a valid email address";
+      }
+      else {
+        if (!email.includes(".")) {
+          answer = 0;
+          message = "Please ensure you have entered a valid email address";
+        }
+        else {
+          answer = 1;
+          message = "";
+        }
+      }
+    }
 
+  const array = [answer, message];
+    return array;
+  }
 
 </script>
