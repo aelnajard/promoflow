@@ -42,7 +42,7 @@
       h1, h2, h3, h4, h5{
         padding: 0;
         margin: 0;
-        
+
       }
 
       .menuLogin{
@@ -488,7 +488,7 @@
 
     <script type="text/javascript">
     /* verifyLogin */
-    verifyLogin();
+    //verifyLogin();
     function verifyLogin() {
       $.ajax( "../App/Controller/Controller2.php", {
       type: 'post',

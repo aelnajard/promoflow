@@ -17,7 +17,6 @@
   width: 100%;
   height: 40px;
   background-color: rgba(47, 69, 96, 1) ;
-  cursor: pointer;
   border: 1px solid black;
 }
 .boxUserName h3{
@@ -34,22 +33,22 @@
   top:50%;
   right:10px;
   transform: translateY(-50%);
-
+  cursor: pointer;
   }
-  .buttonLess{
-    position: absolute;
-    width: 25px;
-    height: 11px;
-    top:50%;
-    right: 10px;
-    transform: translateY(-50%);
-    display: none;
-    }
+.buttonLess{
+  position: absolute;
+  width: 25px;
+  height: 11px;
+  top:50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+  }
 .boxUserInformation{
   position: relative;
   width: 100%;
   background-color: rgba(225, 228, 235, 1);
-
 }
 .itemBoxUserInformation{
   position: relative;
@@ -65,13 +64,17 @@
   top: 0px;
   left: 50%;
   transform: translate(-50%,-50%);
+  padding-left: 30px;
+  font-weight: 300;
 }
  .nameItemUserInformation p{
   position: absolute;
   top: -5px;
-  left: 20px;
-  background-color: yellow;
-  font-size: 1em;
+  left: 30px;
+  font-size: 0.9em;
+  padding-left: 15px;
+  color: rgba(47, 69, 96, 1);
+  text-shadow: 0.5px 0.5px 1px black;
 }
 .itemBoxUserInformation::-webkit-scrollbar{
   display: none;
@@ -96,11 +99,12 @@
   <div class="containerCRUDTitle">
       <h2 id="">Users in the system</h2>
   </div>
-  <div class="containerCRUDWrap" id="containerBoxUsersRead">
-    <div class="containerUsers">
+  <div class="containerCRUDWrap" >
+    <div class="containerUsers" id="containerBoxUsersRead">
+
       <div class="boxUser">
         <div class="boxUserName">
-          <h3>Name</h3>
+          <h3>Laura</h3>
           <div class="toggleInformation">
             <img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">
             <img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">
@@ -114,47 +118,23 @@
             <p> laurazoro@gmail.com</p>
           </div>
           <div class="itemBoxUserInformation">
-
+            <div class="nameItemUserInformation">
+              <p class="nameItemUserInformation">Password:</p>
+            </div>
+            <p> sfe4354</p>
+          </div>
+          <div class="itemBoxUserInformation">
+            <div class="nameItemUserInformation">
+              <p class="nameItemUserInformation">User type:</p>
+            </div>
+            <p> Admin</p>
           </div>
         </div>
       </div>
 
-      <div class="boxUser">
-        <div class="boxUserName">
-        </div>
-        <div class="boxUserInformation">
-          <div class="itemBoxUserInformation">
-          </div>
-          <div class="itemBoxUserInformation">
 
-          </div>
-        </div>
-      </div>
 
-      <div class="boxUser">
-        <div class="boxUserName">
-        </div>
-        <div class="boxUserInformation">
-          <div class="itemBoxUserInformation">
 
-          </div>
-          <div class="itemBoxUserInformation">
-
-          </div>
-        </div>
-      </div>
-      <div class="boxUser">
-        <div class="boxUserName">
-        </div>
-        <div class="boxUserInformation">
-          <div class="itemBoxUserInformation">
-
-          </div>
-          <div class="itemBoxUserInformation">
-
-          </div>
-        </div>
-      </div>
 
 
     </div>
@@ -168,12 +148,25 @@
   const boxUserName = document.querySelectorAll(".boxUserName");
   const boxUserInformation = document.querySelectorAll(".boxUserInformation");
   for (let i = 0; i < toggleInformation.length; i++) {
+    boxUserInformation[i].classList.toggle("hideShow");
+
     toggleInformation[i].addEventListener("click", function(){
       boxUserInformation[i].classList.toggle("hideShow");
       buttonPlus[i].classList.toggle("hideShow");
       buttonLess[i].classList.toggle("showHide");
     })
   }
+
+
+  // Function read Users
+  var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
+
+  function setUsersRead(data){
+    containerBoxUsersRead.innerHTML  = "";
+       for (var i = 0; i < data.length; i++) {//
+         alert("Hola");
+       }
+    }
 
 
 </script>
