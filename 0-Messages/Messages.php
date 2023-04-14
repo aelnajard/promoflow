@@ -128,6 +128,7 @@ var closeMessage = document.getElementById("closeMessage");
 var messageSection = document.getElementById("messageSection");
 
 closeMessage.addEventListener("click" , function (){
+  alert("dskfjdlsdkdjf");
   messageSection.style.block = "none";
 })
 
