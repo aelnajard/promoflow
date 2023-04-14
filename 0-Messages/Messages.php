@@ -1,8 +1,4 @@
 <style media="screen">
-   #messageSection{
-
-
-   }
   .messageBackground{
     position: fixed;
     top: 0px;
@@ -145,7 +141,7 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
         messageSection.style.display = "none";
-      
+
     })
   }
 

@@ -133,6 +133,11 @@
   margin: 10px 0px;
   left: 50%;
   transform: translateX(-50%);
+  
+}
+.inputFormUpdate button{
+  left: 50%;
+  transform: translateX(-50%);
 }
 .inputFormUpdate label{
   position: relative;
