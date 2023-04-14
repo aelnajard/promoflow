@@ -48,6 +48,7 @@
   function createUser(){
     alert(verifyForm()[0] + " " + verifyForm()[1]);
     if (verifyForm()[0] == 1) {
+      alert("respuesta positiva");
       $.ajax( "../App/Controller/Controller2.php", {
              type: 'post',
              async: false,
@@ -71,6 +72,7 @@
           )
     }
     else {
+      alert("respuesta negativa");
     message(1, "Ok", "", verifyForm()[1]);
   }
 
