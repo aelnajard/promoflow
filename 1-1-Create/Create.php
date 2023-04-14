@@ -46,8 +46,8 @@
     createUser();
   })
   function createUser(){
-   
-    alert(verifyForm()[0]);
+
+    alert(verifyForm()[1]);
     /*if (verifyForm) {
       $.ajax( "../App/Controller/Controller2.php", {
              type: 'post',
