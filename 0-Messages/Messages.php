@@ -129,7 +129,6 @@ var messageSection = document.getElementById("messageSection");
 
 closeMessage.addEventListener("click" , function (){
   messageSection.style.block = "none";
-  alert("bueenas");
 })
 
 
