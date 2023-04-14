@@ -145,7 +145,7 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
         messageSection.style.display = "none";
-        alert("Buenas");
+      
     })
   }
 
