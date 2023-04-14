@@ -6,7 +6,7 @@
   <div class="containerCRUDTitle">
       <h2 id="">Create user</h2>
   </div>
-  <div id="formUpdate" class="formUpdate">
+  <div id="formCreate" class="formUpdate">
    <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
@@ -36,7 +36,7 @@
   var createUserType = document.getElementById("createUserType");
   var clickCreate = document.getElementById("clickCreate");
 
-  document.querySelector('#formUpdate').addEventListener('keypress', function (e) {
+  document.querySelector('#formCreate').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') {
       //  login();
       alert("hola");
