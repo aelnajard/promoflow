@@ -149,6 +149,7 @@
     boxUserInformation[i].classList.toggle("hideShow");
 
     toggleInformation[i].addEventListener("click", function(){
+      alert("esta leyendo el evento");
       boxUserInformation[i].classList.toggle("hideShow");
       buttonPlus[i].classList.toggle("hideShow");
       buttonLess[i].classList.toggle("showHide");
@@ -162,36 +163,36 @@
   function setUsersRead(data){
     containerBoxUsersRead.innerHTML  = "";
        for (var i = 0; i < data.length; i++) {//
-         containerBoxUsersRead.innerHTML  =
+         containerBoxUsersRead.innerHTML  +=
          '<div class="boxUser">'+
-           '<div class="boxUserName">'+
-             '<h3 class="nameUserRead"></h3>'+
-             '<div class="toggleInformation">'+
-               '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
-               '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
-             '</div>'+
-           '</div>'+
-           '<div class="boxUserInformation">'+
-             '<div class="itemBoxUserInformation">'+
-               '<div class="nameItemUserInformation">'+
-                 '<p class="nameItemUserInformation">Email:</p>'+
+             '<div class="boxUserName">'+
+               '<h3 class="nameUserRead"></h3>'+
+               '<div class="toggleInformation">'+
+                 '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
+                 '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
                '</div>'+
-               '<p class="emailUserRead"> </p>'+
              '</div>'+
-             '<div class="itemBoxUserInformation">'+
-               '<div class="nameItemUserInformation">'+
-                 '<p class="nameItemUserInformation">Password:</p>'+
+             '<div class="boxUserInformation">'+
+               '<div class="itemBoxUserInformation">'+
+                 '<div class="nameItemUserInformation">'+
+                   '<p class="nameItemUserInformation">Email:</p>'+
+                 '</div>'+
+                 '<p class="emailUserRead"> </p>'+
                '</div>'+
-               '<p class="passwordUserRead"> </p>'+
+               '<div class="itemBoxUserInformation">'+
+                 '<div class="nameItemUserInformation">'+
+                   '<p class="nameItemUserInformation">Password:</p>'+
+                 '</div>'+
+                 '<p class="passwordUserRead"> </p>'+
+               '</div>'+
+               '<div class="itemBoxUserInformation">'+
+                 '<div class="nameItemUserInformation">'+
+                   '<p class="nameItemUserInformation ">User type:</p>'+
+                 '</div>'+
+                 '<p class="typeUserRead"> </p>'+
+               '</div>'+
              '</div>'+
-             '<div class="itemBoxUserInformation">'+
-               '<div class="nameItemUserInformation">'+
-                 '<p class="nameItemUserInformation ">User type:</p>'+
-               '</div>'+
-               '<p class="typeUserRead"> </p>'+
-            ' </div>'+
-           '</div>'+
-         '</div>';
+           '</div>';
 
        }
     }
