@@ -143,7 +143,6 @@
   const toggleInformation = document.querySelectorAll(".toggleInformation");
   const buttonPlus = document.querySelectorAll(".buttonPlus");
   const buttonLess = document.querySelectorAll(".buttonLess");
-  const boxUserName = document.querySelectorAll(".boxUserName");
   const boxUserInformation = document.querySelectorAll(".boxUserInformation");
   for (let i = 0; i < toggleInformation.length; i++) {
     boxUserInformation[i].classList.toggle("hideShow");
@@ -163,7 +162,7 @@
   function setUsersRead(data){
     containerBoxUsersRead.innerHTML  = "";
        for (var i = 0; i < data.length; i++) {//
-         alert("numero de users" + i);
+
          containerBoxUsersRead.innerHTML  =
          '<div class="boxUser">'+
              '<div class="boxUserName">'+
@@ -193,7 +192,7 @@
                  '<p class="typeUserRead"> </p>'+
                '</div>'+
              '</div>'+
-           '</div>';
+           '</div><br><br>';
 
        }
     }
