@@ -1,6 +1,6 @@
 <style media="screen">
    #messageSection{
-     
+
 
    }
   .messageBackground{
@@ -137,14 +137,14 @@ var button2Message = document.getElementById("button2Message");
 var buttonSelected = document.querySelectorAll(".buttonSelected");
 messageSection.style.display = "none";
 closeMessage.addEventListener("click" , function (){
-  messageSection.style.block = "none";
+  messageSection.style.display = "none";
 
 })
   var valueButtonSelected ;
   for (let i = 0; i < buttonSelected.length; i++) {
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
-        messageSection.style.block = "none";
+        messageSection.style.display = "none";
         alert("Buenas");
     })
   }
