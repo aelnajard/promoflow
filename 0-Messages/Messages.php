@@ -1,4 +1,8 @@
 <style media="screen">
+   #messageSection{
+     display: none;
+     
+   }
   .messageBackground{
     position: fixed;
     top: 0px;
@@ -101,6 +105,7 @@
   }
 
 </style>
+
 <section id="messageSection">
   <div class="messageBackground">
     <div class="relative">
@@ -140,7 +145,7 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
         messageSection.style.block = "none";
-        alert("Buenas")
+        alert("Buenas");
     })
   }
 
