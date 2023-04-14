@@ -7,6 +7,7 @@
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
+    display: none;
   }
   .relative{
     position: relative;
@@ -128,7 +129,7 @@ var closeMessage = document.getElementById("closeMessage");
 var messageSection = document.getElementById("messageSection");
 
 closeMessage.addEventListener("click" , function (){
-  alert("dskfjdlsdkdjf");
+  //alert("dskfjdlsdkdjf");
   messageSection.style.block = "none";
 })
 
