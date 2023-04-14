@@ -488,8 +488,7 @@ filter: drop-shadow(0px 0px 3px Black);
  })
  var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
  var openRead = document.getElementById("openRead");
- var formRead = document.getElementById("formRead");
- formRead.style.display = "none";
+
 
   openRead.addEventListener("click", function(){
     $.ajax( "../App/Controller/Controller.php", {
@@ -501,7 +500,6 @@ filter: drop-shadow(0px 0px 3px Black);
            success: function(data){
              var data = jQuery.parseJSON(data);
              containerBoxUsersRead.style.display = "flex";
-             formRead.style.display = "none";
              setUsersRead(data);
           }
          }
