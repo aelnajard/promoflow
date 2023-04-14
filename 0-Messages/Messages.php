@@ -1,7 +1,7 @@
 <style media="screen">
    #messageSection{
-     display: none;
      
+
    }
   .messageBackground{
     position: fixed;
