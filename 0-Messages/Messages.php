@@ -140,6 +140,7 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
         messageSection.style.block = "none";
+        alert("Buenas")
     })
   }
 
