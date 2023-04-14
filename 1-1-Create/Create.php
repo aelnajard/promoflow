@@ -46,7 +46,8 @@
     createUser();
   })
   function createUser(){
-    if (verifyForm()[0] == 1) {
+
+    if (verifyForm(createName.value, createEmail.value, createPassword.value)[0] == 1) {
       $.ajax( "../App/Controller/Controller2.php", {
              type: 'post',
              async: false,
@@ -70,24 +71,24 @@
           )
     }
     else {
-    message(1, "Ok", "", verifyForm()[1]);
+    message(1, "Ok", "", verifyForm(createName.value, createEmail.value, createPassword.value)[1]);
   }
 
   }
-  function verifyForm(){
+  function verifyForm(name, email, password){
     var answer;
     var message;
-    if (createName.value == "" || createEmail.value == "" || createPassword.value == "") {
+    if (name == "" || email == "" || password == "") {
        answer = 0;
        message = "It appears that some values are missing, please fill them in";
     }
     else {
-      if (!createEmail.value.includes("@")) {
+      if (!email.includes("@")) {
         answer = 0;
         message = "Please ensure you have entered a valid email address";
       }
       else {
-        if (!createEmail.value.includes(".")) {
+        if (!email.includes(".")) {
           answer = 0;
           message = "Please ensure you have entered a valid email address";
         }
