@@ -100,6 +100,7 @@
     flex-direction: row;
   }
 
+
 </style>
 <section id="messageSection">
   <div class="messageBackground">
@@ -111,11 +112,11 @@
           <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage" id="closeMessage">
         </div>
         <div class="bodyMessage">
-          <p>Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
+          <p id="textMessage">Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
         </div>
         <div class="footerMessage">
-          <button type="" name="button">Create</botton >
-          <button type="" name="button">Create</botton >
+          <button id="button1Message" type="" name="button">Create</botton >
+          <button id="button2Message"type="" name="button">Create</botton >
         </div>
       </div>
     </div>
@@ -126,11 +127,19 @@
 <script type="text/javascript">
 var closeMessage = document.getElementById("closeMessage");
 var messageSection = document.getElementById("messageSection");
-
+var textMessage = document.getElementById("textMessage");
+var button1Message = document.getElementById("button1Message");
+var button2Message = document.getElementById("button2Message");
 closeMessage.addEventListener("click" , function (){
   messageSection.style.display = "none";
 })
+function message(noButton, nameButton1, nameButton2, message){
+textMessage.innerHTML = message;
+if (noButton == 2) {
+  button1Message.innerHTML = nameButton1;
+  button2Message.innerHTML = nameButton2;
+}
+}
 
-
-
+message(2,"aleja", "laura", "ok");
 </script>
