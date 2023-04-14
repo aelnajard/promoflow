@@ -47,6 +47,7 @@
     height: 30%;
     right: 10px;
     filter: drop-shadow(1px 1px 0px black);
+    cursor: pointer;
   }
   .closeMessage:hover{
     filter: drop-shadow(2px 2px 0px black);
@@ -66,8 +67,6 @@
     transform: translateY(-50%);
     text-shadow: 2px 2px 2px black;
   }
-
-
   .bodyMessage{
     position: relative;
     height: 50%;
@@ -77,7 +76,6 @@
     border-radius: 5px;
     text-align: center;
     color: black;
-
 
     display: flex;
     justify-content: center;
@@ -102,19 +100,15 @@
     flex-direction: row;
   }
 
-
-
 </style>
-
-
-<section >
+<section id="messageSection">
   <div class="messageBackground">
     <div class="relative">
       <div class="message">
         <div class="headMessage">
           <h2>Promoflow</h2>
           <img src="../0-Messages/Images/Logo.png" alt="" class="logoMessage">
-          <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage">
+          <img src="../0-Messages/Images/Close.png" alt="" class="closeMessage" id="closeMessage">
         </div>
         <div class="bodyMessage">
           <p>Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
@@ -123,14 +117,20 @@
           <button type="" name="button">Create</botton >
           <button type="" name="button">Create</botton >
         </div>
-
       </div>
-
     </div>
   </div>
 </section>
 
 
 <script type="text/javascript">
+var closeMessage = document.getElementById("closeMessage");
+var messageSection = document.getElementById("messageSection");
+
+closeMessage.addEventListener("click" , function (){
+  messageSection.style.block = "none";
+})
+
+
 
 </script>
