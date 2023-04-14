@@ -140,20 +140,7 @@
 
 </div>
 <script type="text/javascript">
-  const toggleInformation = document.querySelectorAll(".toggleInformation");
-  const buttonPlus = document.querySelectorAll(".buttonPlus");
-  const buttonLess = document.querySelectorAll(".buttonLess");
-  const boxUserInformation = document.querySelectorAll(".boxUserInformation");
-  for (let i = 0; i < toggleInformation.length; i++) {
-    boxUserInformation[i].classList.toggle("hideShow");
 
-    toggleInformation[i].addEventListener("click", function(){
-      alert("esta leyendo el evento");
-      boxUserInformation[i].classList.toggle("hideShow");
-      buttonPlus[i].classList.toggle("hideShow");
-      buttonLess[i].classList.toggle("showHide");
-    })
-  }
 
 
   // Function read Users  nameUserRead emailUserRead passwordUserRead typeUserRead
@@ -195,6 +182,22 @@
            '</div><br><br>';
 
        }
+    }
+
+
+    const toggleInformation = document.querySelectorAll(".toggleInformation");
+    const buttonPlus = document.querySelectorAll(".buttonPlus");
+    const buttonLess = document.querySelectorAll(".buttonLess");
+    const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+    for (let i = 0; i < toggleInformation.length; i++) {
+      boxUserInformation[i].classList.toggle("hideShow");
+
+      toggleInformation[i].addEventListener("click", function(){
+        alert("esta leyendo el evento");
+        boxUserInformation[i].classList.toggle("hideShow");
+        buttonPlus[i].classList.toggle("hideShow");
+        buttonLess[i].classList.toggle("showHide");
+      })
     }
 
 
