@@ -6,7 +6,7 @@
   <div class="containerCRUDTitle">
       <h2 id="">Create user</h2>
   </div>
-  <div id="" class="formUpdate">
+  <div id="formUpdate" class="formUpdate">
    <br><br>
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
@@ -35,6 +35,13 @@
   var createPassword = document.getElementById("createPassword");
   var createUserType = document.getElementById("createUserType");
   var clickCreate = document.getElementById("clickCreate");
+
+  document.querySelector('#formUpdate').addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+      //  login();
+      alert("hola");
+      }
+  });
 
   clickCreate.addEventListener("click", function(){
     $.ajax( "../App/Controller/Controller2.php", {
