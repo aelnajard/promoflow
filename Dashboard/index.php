@@ -39,6 +39,11 @@
         background-color: #435267;
         transition: .4s;
       }
+      h1, h2, h3, h4, h5{
+        padding: 0;
+        margin: 0;
+        
+      }
 
       .menuLogin{
         position: relative;
