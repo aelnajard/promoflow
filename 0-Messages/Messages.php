@@ -145,7 +145,7 @@ closeMessage.addEventListener("click" , function (){
     })
   }
 
-  const buttonSelected = document.querySelectorAll(".buttonSelected");
+  const buttonSelected7 = document.querySelectorAll(".buttonSelected");
 
 
 function message(noButton, nameButton1, nameButton2, message){
@@ -162,8 +162,8 @@ function message(noButton, nameButton1, nameButton2, message){
   }
   textMessages.innerHTML = message;
   var buttonSelectedValue;
-  for (let i = 0; i < buttonSelected.length; i++) {
-    buttonSelected[i].addEventListener("click", function(){
+  for (let i = 0; i < buttonSelected7.length; i++) {
+    buttonSelected7[i].addEventListener("click", function(){
       buttonSelectedValue = i;
     })
   }
