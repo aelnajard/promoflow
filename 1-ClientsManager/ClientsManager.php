@@ -490,9 +490,9 @@ filter: drop-shadow(0px 0px 3px Black);
              const buttonLess = document.querySelectorAll(".buttonLess");
              const boxUserName = document.querySelectorAll(".boxUserName");
              const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+             boxUserInformation[0].style.display = "none";
 
              for (let i = 0; i < toggleInformation.length; i++) {
-            //   boxUserInformation[i].style.display = "none";
 
              }
 
