@@ -109,10 +109,9 @@ function setUsersDelete(data){
   }
 var globalIdUser;
   function deleteUsers(idUser) {
-    message(2, "Delete", "Cancel", "Would you like to confirm the deletion of this user?");
+    message(2, "Cancel", "Delete", "Would you like to confirm the deletion of this user?");
     alert("deleteUsers" + valueButtonSelected);
-    if (valueButtonSelected == 0) {
-
+    if (valueButtonSelected == 1){
       globalIdUser  = idUser;
       $.ajax( "../App/Controller/Controller2.php", {
              type: 'post',
