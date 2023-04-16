@@ -463,7 +463,7 @@ filter: drop-shadow(0px 0px 3px Black);
           success: function(data){
            var data = jQuery.parseJSON(data);
 
-           valueButtonSelected = -1;
+          valueButtonSelected = -1;
           setUsersDelete(data);
          }
         }
