@@ -110,7 +110,6 @@ function setUsersDelete(data){
 var globalIdUser;
   function deleteUsers(idUser) {
     message(2, "Delete", "Cancel", "Would you like to confirm the deletion of this user?");
-    await delay(1);
     alert("deleteUsers" + valueButtonSelected);
     if (valueButtonSelected == 0) {
 
@@ -124,7 +123,7 @@ var globalIdUser;
                      },
              success: function(data){
 
-               message(2, "Ok", "", "The user has been removed from the system");
+               message(1, "Ok", "", "The user has been removed from the system");
                location.reload();
             }
            }
