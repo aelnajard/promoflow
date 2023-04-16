@@ -141,12 +141,11 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
       messageSection.style.display = "none";
-      alert(valueButtonSelected);
     })
   }
 
 function message(noButton, nameButton1, nameButton2, message){
-
+  valueButtonSelected = -1;
 
     messageSection.style.display = "block";
   if (noButton == 2) {

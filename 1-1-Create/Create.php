@@ -60,7 +60,6 @@
                      },
              success: function(data){
                  message(1, "Ok", "button2", data);
-                 valueButtonSelected = -1;
 
                messageSection.style.display = "block";
 
@@ -74,7 +73,6 @@
     else {
 
     message(1, "Ok", "", verifyForm(createName.value, createEmail.value, createPassword.value)[1]);
-    valueButtonSelected = -1;
 
   }
 
