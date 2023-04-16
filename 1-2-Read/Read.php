@@ -182,10 +182,8 @@
     }
 
     function  showInformationUser(data){
+
       
-      boxUserInformation[data].classList.toggle("hideShow");
-      buttonPlus[data].classList.toggle("hideShow");
-      buttonLess[data].classList.toggle("showHide");
     }
 
 
