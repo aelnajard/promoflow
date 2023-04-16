@@ -153,7 +153,7 @@
          '<div class="boxUser" >'+
              '<div class="boxUserName">'+
                '<h3 class="nameUserRead">'+data[i]["name"]+'</h3>'+
-               '<div class="toggleInformation" onclick="test();>'+
+               '<div class="toggleInformation" onclick="test(\''+data[i]["idUser"]+'\');">'+
                  '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
                  '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
                '</div>'+
@@ -200,8 +200,8 @@
     }*/
 
 
-    function  test(){
-      alert("buenas");
+    function  test(data){
+      alert(data);
     }
 
 
