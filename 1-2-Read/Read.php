@@ -153,7 +153,7 @@
          '<div class="boxUser" >'+
              '<div class="boxUserName">'+
                '<h3 class="nameUserRead">'+data[i]["name"]+'</h3>'+
-               '<div class="toggleInformation" onclick="updateUsers()>'+
+               '<div class="toggleInformation" onclick="toggleInformation('+i+')>'+
                  '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
                  '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
                '</div>'+
@@ -197,6 +197,10 @@
         buttonLess[i].classList.toggle("showHide");
       })
 
+    }
+
+    function toggleInformation(noUser){
+      alert(noUser);
     }
 
 
