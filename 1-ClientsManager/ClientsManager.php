@@ -497,8 +497,8 @@ filter: drop-shadow(0px 0px 3px Black);
 
                toggleInformation[i].addEventListener("click",  function (){
                  alert("ahahha");
-                 /*boxUserInformation[data].classList.toggle("showHide");
-                 buttonPlus[data].classList.toggle("hideShow");
+                 boxUserInformation[data].classList.toggle("showHide");
+                 /*/*buttonPlus[data].classList.toggle("hideShow");
                  buttonLess[data].classList.toggle("showHide");*/
                })
 
