@@ -109,7 +109,7 @@ function setUsersDelete(data){
   }
 var globalIdUser;
   function deleteUsers(idUser) {
-
+    valueButtonSelected = -1;
     message(2, "Delete", "Cancel", "Would you like to confirm the deletion of this user?");
     if (valueButtonSelected == 0) {
       globalIdUser  = idUser;
@@ -123,7 +123,6 @@ var globalIdUser;
              success: function(data){
 
                message(1, "Ok", "", "The user has been removed from the system");
-               valueButtonSelected = -1;
                location.reload();
             }
            }
