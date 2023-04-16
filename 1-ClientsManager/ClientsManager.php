@@ -491,12 +491,9 @@ filter: drop-shadow(0px 0px 3px Black);
              const boxUserInformation = document.querySelectorAll(".boxUserInformation");
              const boxUserName = document.querySelectorAll(".boxUserName");
 
-             for (let i = 0; i < boxUserName.length; i++) {
-            //   boxUserInformation[data].classList.toggle("hideShow");
-               boxUserName[i].addEventListener("click", function(){
-                 boxUserInformation[data].classList.toggle("hideShow");
-                 buttonPlus[data].classList.toggle("hideShow");
-                 buttonLess[data].classList.toggle("showHide");
+             for (let i = 0; i < toggleInformation.length; i++) {
+               toggleInformation[i].addEventListener("click", function(){
+                 alert(i);
                })
              }
 
@@ -504,7 +501,11 @@ filter: drop-shadow(0px 0px 3px Black);
          }
        )
   })
-
+/*
+boxUserInformation[data].classList.toggle("hideShow");
+buttonPlus[data].classList.toggle("hideShow");
+buttonLess[data].classList.toggle("showHide");
+*/
   /*field´s form verification*/
   function verifyForm(name, email, password){
     var answer;
