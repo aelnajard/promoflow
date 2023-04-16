@@ -110,7 +110,7 @@ function setUsersDelete(data){
 var globalIdUser;
   function deleteUsers(idUser) {
     message(2, "Delete", "Cancel", "Would you like to confirm the deletion of this user?");
-    await delay(5000);
+    await delay(1000);
     alert("deleteUsers" + valueButtonSelected);
     if (valueButtonSelected == 0) {
 
