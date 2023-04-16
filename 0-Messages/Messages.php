@@ -141,7 +141,6 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
         messageSection.style.display = "none";
-        alert(valueButtonSelected);
     })
   }
 
@@ -159,7 +158,6 @@ function message(noButton, nameButton1, nameButton2, message){
   }
   textMessages.innerHTML = message;
 
-  return buttonSelectedValue;
 }
 
 </script>

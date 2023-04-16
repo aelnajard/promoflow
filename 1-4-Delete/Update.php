@@ -110,21 +110,26 @@ function setUsersDelete(data){
 var globalIdUser;
   function deleteUsers(idUser) {
 
-         globalIdUser  = idUser;
-         $.ajax( "../App/Controller/Controller2.php", {
-                type: 'post',
-                async: false,
-                data: {
-                  module: "deleteUser",
-                  idUser: globalIdUser
-                        },
-                success: function(data){
-                  alert(data);
-                  location.reload();
+    message(2, "Delete", "Cancel", "Would you like to confirm the deletion of this user?");
+    if (valueButtonSelected == 0) {
+      globalIdUser  = idUser;
+      $.ajax( "../App/Controller/Controller2.php", {
+             type: 'post',
+             async: false,
+             data: {
+               module: "deleteUser",
+               idUser: globalIdUser
+                     },
+             success: function(data){
 
-               }
-              }
-            )
+               message(1, "Ok", "", "The user has been removed from the system");
+               valueButtonSelected = -1;
+
+            }
+           }
+         )
+    }
+
   }
 
 
