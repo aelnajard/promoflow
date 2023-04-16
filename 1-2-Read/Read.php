@@ -187,7 +187,7 @@
       const buttonPlus = document.querySelectorAll(".buttonPlus");
       const buttonLess = document.querySelectorAll(".buttonLess");
       const boxUserInformation = document.querySelectorAll(".boxUserInformation");
-      boxUserInformation[data].classList.toggle("hideShow");
+      boxUserInformation[data].classList.toggle("showHide");
       buttonPlus[data].classList.toggle("hideShow");
       buttonLess[data].classList.toggle("showHide");
     }
