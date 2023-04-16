@@ -199,9 +199,9 @@
 
     }
 
-  /*  function toggleInformation3(noUser){
-      alert(noUser);
-    }*/
+    function toggleInformation3(){
+      alert("noUser");
+    }
 
 
 </script>
