@@ -177,7 +177,7 @@
                  '<p class="typeUserRead"> </p>'+
                '</div>'+
              '</div>'+
-           '</div><br><br>';
+           '</div>';
        }
     }
 
