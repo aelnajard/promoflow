@@ -474,7 +474,7 @@ filter: drop-shadow(0px 0px 3px Black);
 
 
   openRead.addEventListener("click", function(){
-    /*$.ajax( "../App/Controller/Controller.php", {
+    $.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
            data: {
@@ -482,12 +482,11 @@ filter: drop-shadow(0px 0px 3px Black);
                    },
            success: function(data){
              var data = jQuery.parseJSON(data);
-             containerBoxUsersRead.style.display = "flex";
+             containerBoxUsersRead.style.display = "block";
              setUsersRead(data);
           }
          }
-       )*/
-        setUsersRead("data");
+       )
   })
 
   /*field´s form verification*/
