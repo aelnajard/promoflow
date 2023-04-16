@@ -493,7 +493,7 @@ filter: drop-shadow(0px 0px 3px Black);
 
              for (let i = 0; i < toggleInformation.length; i++) {
                toggleInformation[i].addEventListener("click", function(){
-                 alert(i);
+                 boxUserInformation.style.display = "none";
                })
              }
 
