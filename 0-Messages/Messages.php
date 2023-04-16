@@ -136,13 +136,13 @@ closeMessage.addEventListener("click" , function (){
   messageSection.style.display = "none";
 
 })
-  var valueButtonSelected ;
+/*  var valueButtonSelected ;
   for (let i = 0; i < buttonSelected.length; i++) {
     buttonSelected[i].addEventListener("click", function(){
       messageSection.style.display = "none";
       valueButtonSelected = i;
     })
-  }
+  }*/
 
 function message(noButton, nameButton1, nameButton2, message){
   valueButtonSelected = -1;
@@ -157,7 +157,6 @@ function message(noButton, nameButton1, nameButton2, message){
     button2Message.style.display = "none";
   }
   textMessages.innerHTML = message;
-
 }
 
 </script>

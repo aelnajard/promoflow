@@ -495,7 +495,6 @@ filter: drop-shadow(0px 0px 3px Black);
                boxUserInformation[i].classList.toggle("hideShow");
 
                toggleInformation[i].addEventListener("click",  function (){ //Queda pendiente por investigar
-                // / alert("ahahha");
                  /*boxUserInformation[data].classList.toggle("showHide");
                  buttonPlus[data].classList.toggle("hideShow");
                  buttonLess[data].classList.toggle("showHide");*/
