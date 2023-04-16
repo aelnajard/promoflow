@@ -488,11 +488,12 @@ filter: drop-shadow(0px 0px 3px Black);
              const toggleInformation = document.querySelectorAll(".toggleInformation");
              const buttonPlus = document.querySelectorAll(".buttonPlus");
              const buttonLess = document.querySelectorAll(".buttonLess");
-             const boxUserInformation = document.querySelectorAll(".boxUserInformation");
              const boxUserName = document.querySelectorAll(".boxUserName");
 
              for (let i = 0; i < toggleInformation.length; i++) {
                toggleInformation[i].addEventListener("click", function(){
+                 const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+
                  boxUserInformation.style.display = "none";
                })
              }
