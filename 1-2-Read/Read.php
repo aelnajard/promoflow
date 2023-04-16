@@ -89,6 +89,7 @@
   height: 100%;
   top: 0px;
   right: 0px;
+  background-color: blue;
 }
 
 </style>
