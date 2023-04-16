@@ -464,6 +464,21 @@ filter: drop-shadow(0px 0px 3px Black);
            var data = jQuery.parseJSON(data);
 
           setUsersDelete(data);
+
+          for (let i = 0; i < buttonSelected.length; i++) {
+            buttonSelected[i].classList.add("deleteOption");
+          }
+          const deleteOption = document.querySelectorAll("deleteOption");
+
+          for (let i = 0; i < deleteOption.length; i++) {
+            deleteOption[i].addEventListener("click", function(){
+              alert("lo logramos");
+            })
+          }
+
+
+
+
          }
         }
        )

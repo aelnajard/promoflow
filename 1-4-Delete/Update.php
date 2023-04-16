@@ -134,17 +134,7 @@ var globalIdUser;
   }
 
 
-  var valueButtonSelected ;
-  for (let i = 0; i < buttonSelected.length; i++) {
-    buttonSelected[i].classList.add("deleteOption");
-  }
-  const deleteOption = document.querySelectorAll("deleteOption");
 
-  for (let i = 0; i < deleteOption.length; i++) {
-    deleteOption[i].addEventListener("click", function(){
-      alert("lo logramos");
-    })
-  }
 
 
 
