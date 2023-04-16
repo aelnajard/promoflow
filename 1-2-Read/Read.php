@@ -47,6 +47,7 @@
   position: relative;
   width: 100%;
   background-color: rgba(225, 228, 235, 1);
+  display: block;
 }
 .itemBoxUserInformation{
   position: relative;
