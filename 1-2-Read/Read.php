@@ -192,16 +192,16 @@
       boxUserInformation[i].classList.toggle("hideShow");
 
       toggleInformation[i].addEventListener("click", function(){
-        boxUserInformation[i].classList.toggle("hideShow");
-        buttonPlus[i].classList.toggle("hideShow");
-        buttonLess[i].classList.toggle("showHide");
+
       })
 
     }*/
 
 
     function  test(data){
-      alert(data);
+      boxUserInformation[data].classList.toggle("hideShow");
+      buttonPlus[data].classList.toggle("hideShow");
+      buttonLess[data].classList.toggle("showHide");
     }
 
 
