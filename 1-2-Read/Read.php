@@ -152,7 +152,7 @@
          '<div class="boxUser" >'+
              '<div class="boxUserName">'+
                '<h3 class="nameUserRead">'+data[i]["name"]+'</h3>'+
-               '<div class="toggleInformation">'+
+               '<div class="toggleInformation" onclick="showInformationUser(\''+i+'\');">'+
                  '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
                  '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
                '</div>'+
@@ -181,7 +181,15 @@
        }
     }
 
+    function  showInformationUser(data){
+      const toggleInformation = document.querySelectorAll(".toggleInformation");
+      const buttonPlus = document.querySelectorAll(".buttonPlus");
+      const buttonLess = document.querySelectorAll(".buttonLess");
+      const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+      boxUserInformation[data].classList.toggle("hideShow");
+      buttonPlus[data].classList.toggle("hideShow");
+      buttonLess[data].classList.toggle("showHide");
+    }
 
-// '<div class="toggleInformation" onclick="showInformationUser(\''+i+'\');">'+
 
 </script>
