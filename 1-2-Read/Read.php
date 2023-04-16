@@ -153,7 +153,7 @@
          '<div class="boxUser" >'+
              '<div class="boxUserName">'+
                '<h3 class="nameUserRead">'+data[i]["name"]+'</h3>'+
-               '<div class="toggleInformation" onclick="toggleInformation3()>'+
+               '<div class="toggleInformation" onclick="toggleInformation3(\''+data[i]["idUser"]+'\')>'+
                  '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
                  '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
                '</div>'+
@@ -199,8 +199,8 @@
 
     }
 
-    function toggleInformation3(){
-      alert("noUser");
+    function toggleInformation3(data2){
+      alert(data2);
     }
 
 
