@@ -146,7 +146,13 @@ closeMessage.addEventListener("click" , function (){
   }
 
   const buttonSelected7 = document.querySelectorAll(".buttonSelected");
-
+  var buttonSelectedValue;
+  for (let i = 0; i < buttonSelected7.length; i++) {
+    buttonSelected7[i].addEventListener("click", function(){
+      buttonSelectedValue = i;
+      alert(buttonSelectedValue);
+    })
+  }
 
 function message(noButton, nameButton1, nameButton2, message){
 
@@ -161,12 +167,7 @@ function message(noButton, nameButton1, nameButton2, message){
     button2Message.style.display = "none";
   }
   textMessages.innerHTML = message;
-  var buttonSelectedValue;
-  for (let i = 0; i < buttonSelected7.length; i++) {
-    buttonSelected7[i].addEventListener("click", function(){
-      buttonSelectedValue = i;
-    })
-  }
+
   return buttonSelectedValue;
 }
 
