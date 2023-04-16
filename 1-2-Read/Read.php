@@ -47,6 +47,7 @@
   position: relative;
   width: 100%;
   background-color: rgba(225, 228, 235, 1);
+  display: none;
 }
 .itemBoxUserInformation{
   position: relative;
@@ -89,7 +90,6 @@
   height: 100%;
   top: 0px;
   right: 0px;
-  background-color: blue;
 }
 
 </style>
@@ -153,7 +153,7 @@
          '<div class="boxUser" >'+
              '<div class="boxUserName">'+
                '<h3 class="nameUserRead">'+data[i]["name"]+'</h3>'+
-               '<div class="toggleInformation" onclick="test(\''+i+'\');">'+
+               '<div class="toggleInformation" onclick="showInformationUser(\''+i+'\');">'+
                  '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
                  '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
                '</div>'+
@@ -182,20 +182,7 @@
        }
     }
 
-
-
-    /*for (let i = 0; i < toggleInformation.length; i++) {
-
-      boxUserInformation[i].classList.toggle("hideShow");
-
-      toggleInformation[i].addEventListener("click", function(){
-
-      })
-
-    }*/
-
-
-    function  test(data){
+    function  showInformationUser(data){
       const toggleInformation = document.querySelectorAll(".toggleInformation");
       const buttonPlus = document.querySelectorAll(".buttonPlus");
       const buttonLess = document.querySelectorAll(".buttonLess");
