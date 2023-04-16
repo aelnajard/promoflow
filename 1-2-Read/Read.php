@@ -47,7 +47,6 @@
   position: relative;
   width: 100%;
   background-color: rgba(225, 228, 235, 1);
-  display: none;
 }
 .itemBoxUserInformation{
   position: relative;
@@ -90,8 +89,6 @@
   height: 100%;
   top: 0px;
   right: 0px;
-  cursor: pointer;
-  background-color: blue;
 }
 
 </style>
@@ -100,7 +97,7 @@
   <div class="containerCRUDTitle">
       <h2 id="">Users in the system</h2>
   </div>
-  <div class="containerCRUDWrap">
+  <div class="containerCRUDWrap" >
     <div class="containerUsers" id="containerBoxUsersRead">
 
   <!--    <div class="boxUser">
@@ -140,8 +137,8 @@
 
     </div>
   </div>
-</div>
 
+</div>
 <script type="text/javascript">
 
   // Function read Users  nameUserRead emailUserRead passwordUserRead typeUserRead
@@ -149,7 +146,8 @@
 
   function setUsersRead(data){
     containerBoxUsersRead.innerHTML  = "";
-       for (var i = 0; i < 8; i++) {
+       for (var i = 0; i < data.length; i++) {//
+
          containerBoxUsersRead.innerHTML  +=
          '<div class="boxUser" >'+
              '<div class="boxUserName">'+
@@ -179,7 +177,7 @@
                  '<p class="typeUserRead"> </p>'+
                '</div>'+
              '</div>'+
-           '</div>';
+           '</div><br><br>';
        }
     }
 
@@ -188,18 +186,16 @@
     const buttonPlus = document.querySelectorAll(".buttonPlus");
     const buttonLess = document.querySelectorAll(".buttonLess");
     const boxUserInformation = document.querySelectorAll(".boxUserInformation");
-
-
     for (let i = 0; i < toggleInformation.length; i++) {
 
-    //  boxUserInformation[i].classList.toggle("hideShow");
+      boxUserInformation[i].classList.toggle("hideShow");
 
       toggleInformation[i].addEventListener("click", function(){
-
         boxUserInformation[i].classList.toggle("hideShow");
         buttonPlus[i].classList.toggle("hideShow");
         buttonLess[i].classList.toggle("showHide");
       })
+
     }
 
 
