@@ -491,8 +491,9 @@ filter: drop-shadow(0px 0px 3px Black);
              const boxUserName = document.querySelectorAll(".boxUserName");
 
              for (let i = 0; i < toggleInformation.length; i++) {
+               const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+
                toggleInformation[i].addEventListener("click", function(){
-                 const boxUserInformation = document.querySelectorAll(".boxUserInformation");
 
                  boxUserInformation.style.display = "none";
                })
