@@ -141,6 +141,7 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       messageSection.style.display = "none";
       valueButtonSelected = i;
+      alert("inside" + valueButtonSelected);
 
     })
   }
