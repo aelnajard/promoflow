@@ -485,8 +485,18 @@ filter: drop-shadow(0px 0px 3px Black);
 
              containerBoxUsersRead.style.display = "block";
              setUsersRead(data);
+             const toggleInformation = document.querySelectorAll(".toggleInformation");
+             const buttonPlus = document.querySelectorAll(".buttonPlus");
+             const buttonLess = document.querySelectorAll(".buttonLess");
+             const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+             const boxUserName = document.querySelectorAll(".boxUserName");
 
-             
+             for (let i = 0; i < boxUserName.length; i++) {
+               boxUserName[i].addEventListener("click", function(){
+                 alert(i);
+               })
+             }
+
           }
          }
        )

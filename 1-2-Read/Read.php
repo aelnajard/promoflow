@@ -47,7 +47,6 @@
   position: relative;
   width: 100%;
   background-color: rgba(225, 228, 235, 1);
-  display: none;
 }
 .itemBoxUserInformation{
   position: relative;
@@ -183,10 +182,7 @@
     }
 
     function  showInformationUser(data){
-      const toggleInformation = document.querySelectorAll(".toggleInformation");
-      const buttonPlus = document.querySelectorAll(".buttonPlus");
-      const buttonLess = document.querySelectorAll(".buttonLess");
-      const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+      
       boxUserInformation[data].classList.toggle("hideShow");
       buttonPlus[data].classList.toggle("hideShow");
       buttonLess[data].classList.toggle("showHide");
