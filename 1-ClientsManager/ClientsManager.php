@@ -493,8 +493,8 @@ filter: drop-shadow(0px 0px 3px Black);
 
 
              for (let i = 0; i < toggleInformation.length; i++) {
-               boxUserInformation[i].style.display = "none";
-              // boxUserInformation[i].style.display = "none";
+               boxUserInformation[i].classList.toggle("showHide");
+
 
              }
 
