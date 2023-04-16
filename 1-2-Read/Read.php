@@ -59,7 +59,7 @@
   position: absolute;
   font-size: 0.8em;
   font-weight: 400;
-  top: 0px;
+  top: 5px;
   left: 50%;
   transform: translate(-50%,-50%);
   padding-left: 30px;
