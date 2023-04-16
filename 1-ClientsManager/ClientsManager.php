@@ -62,7 +62,6 @@
     transform: translate(-50%, -50%);
     filter: drop-shadow(1px 1px 2px black);
     transition: .6s;
-
   }
   .itemUsersManager:hover > img{
     filter: drop-shadow(1px 1px 3px black);
@@ -79,8 +78,6 @@
     font-size: .9em;
     padding-left: 5px;
     transition: font-weight .6;
-
-
   }
   .itemUsersManager:hover > h3{
     font-weight: 500;
@@ -88,7 +85,6 @@
   .itemUsersManager:active > h3{
     font-weight: 300;
   }
-
   .ContainerCRUD{
     position: relative;
     padding: 5px;
@@ -113,11 +109,6 @@
   background:rgba(47, 69, 96, 1);
   border: 1px solid black;
 }
-
-
-
-
-
 .formUpdate{
   position: absolute;
   left: 0px;
@@ -133,7 +124,6 @@
   margin: 10px 0px;
   left: 50%;
   transform: translateX(-50%);
-
 }
 .inputFormUpdate button{
   left: 50%;
@@ -162,12 +152,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 1em;
-
 }
-
-
-
-
 .containerCRUDWrap{
 position: absolute;
 top: 50px;
@@ -178,9 +163,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 flex-direction: row;
-
 }
-
 .CRUDBoxes{
 position: relative;
 height: 120px;
@@ -491,7 +474,7 @@ filter: drop-shadow(0px 0px 3px Black);
 
 
   openRead.addEventListener("click", function(){
-    $.ajax( "../App/Controller/Controller.php", {
+    /*$.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
            data: {
@@ -503,7 +486,8 @@ filter: drop-shadow(0px 0px 3px Black);
              setUsersRead(data);
           }
          }
-       )
+       )*/
+        setUsersRead("data");
   })
 
   /*field´s form verification*/
@@ -534,5 +518,6 @@ filter: drop-shadow(0px 0px 3px Black);
   const array = [answer, message];
     return array;
   }
+
 
 </script>

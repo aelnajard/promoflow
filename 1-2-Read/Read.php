@@ -47,6 +47,7 @@
   position: relative;
   width: 100%;
   background-color: rgba(225, 228, 235, 1);
+  display: none;
 }
 .itemBoxUserInformation{
   position: relative;
@@ -89,6 +90,8 @@
   height: 100%;
   top: 0px;
   right: 0px;
+  cursor: pointer;
+  background-color: blue;
 }
 
 </style>
@@ -97,7 +100,7 @@
   <div class="containerCRUDTitle">
       <h2 id="">Users in the system</h2>
   </div>
-  <div class="containerCRUDWrap" >
+  <div class="containerCRUDWrap">
     <div class="containerUsers" id="containerBoxUsersRead">
 
   <!--    <div class="boxUser">
@@ -137,8 +140,8 @@
 
     </div>
   </div>
-
 </div>
+
 <script type="text/javascript">
 
   // Function read Users  nameUserRead emailUserRead passwordUserRead typeUserRead
@@ -146,12 +149,11 @@
 
   function setUsersRead(data){
     containerBoxUsersRead.innerHTML  = "";
-       for (var i = 0; i < data.length; i++) {//
-
+       for (var i = 0; i < 8; i++) {
          containerBoxUsersRead.innerHTML  +=
          '<div class="boxUser" >'+
              '<div class="boxUserName">'+
-               '<h3 class="nameUserRead">'+data[i]["name"]+'</h3>'+
+               '<h3 class="nameUserRead"></h3>'+
                '<div class="toggleInformation" onclick="updateUsers()>'+
                  '<img class="buttonPlus"src="../1-2-Read/Images/mas.png" alt="">'+
                  '<img class="buttonLess"src="../1-2-Read/Images/menos.png" alt="">'+
@@ -162,23 +164,22 @@
                  '<div class="nameItemUserInformation">'+
                    '<p class="nameItemUserInformation">Email:</p>'+
                  '</div>'+
-                 '<p class="emailUserRead">'+data[i]["email"]+' </p>'+
+                 '<p class="emailUserRead"> </p>'+
                '</div>'+
                '<div class="itemBoxUserInformation">'+
                  '<div class="nameItemUserInformation">'+
                    '<p class="nameItemUserInformation">Password:</p>'+
                  '</div>'+
-                 '<p class="passwordUserRead">'+data[i]["password"]+' </p>'+
+                 '<p class="passwordUserRead"> </p>'+
                '</div>'+
                '<div class="itemBoxUserInformation">'+
                  '<div class="nameItemUserInformation">'+
                    '<p class="nameItemUserInformation ">User type:</p>'+
                  '</div>'+
-                 '<p class="typeUserRead">'+data[i]["userType"]+' </p>'+
+                 '<p class="typeUserRead"> </p>'+
                '</div>'+
              '</div>'+
-           '</div><br><br>';
-
+           '</div>';
        }
     }
 
@@ -187,11 +188,14 @@
     const buttonPlus = document.querySelectorAll(".buttonPlus");
     const buttonLess = document.querySelectorAll(".buttonLess");
     const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+
+
     for (let i = 0; i < toggleInformation.length; i++) {
-      boxUserInformation[i].classList.toggle("hideShow");
+
+    //  boxUserInformation[i].classList.toggle("hideShow");
 
       toggleInformation[i].addEventListener("click", function(){
-        alert("esta leyendo el evento");
+
         boxUserInformation[i].classList.toggle("hideShow");
         buttonPlus[i].classList.toggle("hideShow");
         buttonLess[i].classList.toggle("showHide");
