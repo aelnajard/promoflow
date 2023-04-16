@@ -57,7 +57,7 @@
 }
 .itemBoxUserInformation p{
   position: absolute;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 400;
   top: 0px;
   left: 50%;
