@@ -162,19 +162,19 @@
                  '<div class="nameItemUserInformation">'+
                    '<p class="nameItemUserInformation">Email:</p>'+
                  '</div>'+
-                 '<p class="emailUserRead"> </p>'+
+                 '<p class="emailUserRead">'+data[i]["email"]+' </p>'+
                '</div>'+
                '<div class="itemBoxUserInformation">'+
                  '<div class="nameItemUserInformation">'+
                    '<p class="nameItemUserInformation">Password:</p>'+
                  '</div>'+
-                 '<p class="passwordUserRead"> </p>'+
+                 '<p class="passwordUserRead">'+data[i]["password"]+' </p>'+
                '</div>'+
                '<div class="itemBoxUserInformation">'+
                  '<div class="nameItemUserInformation">'+
                    '<p class="nameItemUserInformation ">User type:</p>'+
                  '</div>'+
-                 '<p class="typeUserRead"> </p>'+
+                 '<p class="typeUserRead">'+data[i]["userType"]+'</p>'+
                '</div>'+
              '</div>'+
            '</div>';
