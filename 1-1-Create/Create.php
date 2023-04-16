@@ -70,8 +70,8 @@
           )
     }
     else {
-      
-    message(1, "Ok", "", verifyForm(createName.value, createEmail.value, createPassword.value)[1]);
+
+    message(2, "Ok", "", verifyForm(createName.value, createEmail.value, createPassword.value)[1]);
   }
 
   }

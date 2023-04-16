@@ -141,16 +141,7 @@ closeMessage.addEventListener("click" , function (){
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
         messageSection.style.display = "none";
-
-    })
-  }
-
-  const buttonSelected7 = document.querySelectorAll(".buttonSelected");
-  var buttonSelectedValue;
-  for (let i = 0; i < buttonSelected7.length; i++) {
-    buttonSelected7[i].addEventListener("click", function(){
-      buttonSelectedValue = i;
-      alert(buttonSelectedValue);
+        alert(valueButtonSelected);
     })
   }
 
