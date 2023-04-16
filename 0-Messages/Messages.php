@@ -140,7 +140,8 @@ closeMessage.addEventListener("click" , function (){
   for (let i = 0; i < buttonSelected.length; i++) {
     buttonSelected[i].addEventListener("click", function(){
       valueButtonSelected = i;
-        messageSection.style.display = "none";
+      messageSection.style.display = "none";
+      alert(valueButtonSelected);
     })
   }
 
