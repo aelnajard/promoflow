@@ -485,19 +485,16 @@ filter: drop-shadow(0px 0px 3px Black);
 
              containerBoxUsersRead.style.display = "block";
              setUsersRead(data);
-            /* const toggleInformation = document.querySelectorAll(".toggleInformation");
+             const toggleInformation = document.querySelectorAll(".toggleInformation");
              const buttonPlus = document.querySelectorAll(".buttonPlus");
              const buttonLess = document.querySelectorAll(".buttonLess");
              const boxUserName = document.querySelectorAll(".boxUserName");
+             const boxUserInformation = document.querySelectorAll(".boxUserInformation");
 
              for (let i = 0; i < toggleInformation.length; i++) {
-               const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+               boxUserInformation[i].style.display = "none";
 
-               toggleInformation[i].addEventListener("click", function(){
-
-                 boxUserInformation.style.display = "none";
-               })
-             }*/
+             }
 
           }
          }
