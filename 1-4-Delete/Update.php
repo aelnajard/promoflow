@@ -128,6 +128,24 @@ var globalIdUser;
             }
            }
          )
+
+
+
+
+         $.ajax( "../App/Controller/Controller.php", {
+                type: 'post',
+                async: false,
+                data: {
+                  module: "getUsers"
+                        },
+                success: function(data){
+                 var data = jQuery.parseJSON(data);
+
+
+                setUsersDelete(data);
+               }
+              }
+             )
     }
 
   }
