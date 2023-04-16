@@ -486,10 +486,7 @@ filter: drop-shadow(0px 0px 3px Black);
              containerBoxUsersRead.style.display = "block";
              setUsersRead(data);
 
-             const toggleInformation = document.querySelectorAll(".toggleInformation");
-             const buttonPlus = document.querySelectorAll(".buttonPlus");
-             const buttonLess = document.querySelectorAll(".buttonLess");
-             const boxUserInformation = document.querySelectorAll(".boxUserInformation");
+             
           }
          }
        )
