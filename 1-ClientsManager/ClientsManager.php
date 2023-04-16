@@ -492,7 +492,7 @@ filter: drop-shadow(0px 0px 3px Black);
              const boxUserName = document.querySelectorAll(".boxUserName");
 
              for (let i = 0; i < boxUserName.length; i++) {
-               boxUserInformation[data].classList.toggle("hideShow");
+            //   boxUserInformation[data].classList.toggle("hideShow");
                boxUserName[i].addEventListener("click", function(){
                  boxUserInformation[data].classList.toggle("hideShow");
                  buttonPlus[data].classList.toggle("hideShow");
