@@ -145,7 +145,12 @@ closeMessage.addEventListener("click" , function (){
     })
   }
 
+  const buttonSelected = document.querySelectorAll(".buttonSelected");
+
+
 function message(noButton, nameButton1, nameButton2, message){
+
+
     messageSection.style.display = "block";
   if (noButton == 2) {
     button1Message.innerHTML = nameButton1;
@@ -156,6 +161,13 @@ function message(noButton, nameButton1, nameButton2, message){
     button2Message.style.display = "none";
   }
   textMessages.innerHTML = message;
+  var buttonSelectedValue;
+  for (let i = 0; i < buttonSelected.length; i++) {
+    buttonSelected[i].addEventListener("click", function(){
+      buttonSelectedValue = i;
+    })
+  }
+  return buttonSelectedValue;
 }
 
 </script>
