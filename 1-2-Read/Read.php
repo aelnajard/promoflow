@@ -182,13 +182,13 @@
     }
 
     function  showInformationUser(data){
-      const toggleInformation = document.querySelectorAll(".toggleInformation");
+    /*  const toggleInformation = document.querySelectorAll(".toggleInformation");
       const buttonPlus = document.querySelectorAll(".buttonPlus");
       const buttonLess = document.querySelectorAll(".buttonLess");
       const boxUserInformation = document.querySelectorAll(".boxUserInformation");
       boxUserInformation[data].classList.toggle("showHide");
       buttonPlus[data].classList.toggle("hideShow");
-      buttonLess[data].classList.toggle("showHide");
+      buttonLess[data].classList.toggle("showHide");*/
     }
 
 
