@@ -114,17 +114,18 @@ var globalIdUser;
     message(2, "Cancel", "Delete", "Would you like to confirm the deletion of this user?");
 
     for (let i = 0; i < buttonSelected.length; i++) {
-        buttonSelected[i].classList.add("test");
-        alert();
+        buttonSelected[i].classList.add("optionDeleteSelected");
     }
-
-
   }
 
 
+  const optionDeleteSelected = document.querySelectorAll(".optionDeleteSelected");
 
-
-
+  for (let i = 0; i < optionDeleteSelected.length; i++) {
+    optionDeleteSelected[i].addEventListener("click", function(){
+      alert("selection was: "  + i);
+    })
+  }
 
   /*
   if (valueButtonSelected == 1){
