@@ -408,10 +408,8 @@ filter: drop-shadow(0px 0px 3px Black);
 
   for (let i = 0; i < itemUsersManager.length; i++) {
     ContainerCRUD[i].style.display = "none";
+    openReadPanel();
     ContainerCRUD[1].style.display = "flex";
-
-  
-
 
     itemUsersManager[i].addEventListener("click", function(){
       if (ContainerCRUD[i].style.display == "none") {
@@ -430,34 +428,41 @@ filter: drop-shadow(0px 0px 3px Black);
 
  /*Update information of the user*/
 
+
+
+ openUpdate.addEventListener("click", function(){
+   openUpdate();
+ })
+
  var openUpdate = document.getElementById("openUpdate");
  var containerBoxUsersUpdate = document.getElementById("containerBoxUsersUpdate");
  var formUpdate = document.getElementById("formUpdate");
  formUpdate.style.display = "none";
 
- openUpdate.addEventListener("click", function(){
-
-   $.ajax( "../App/Controller/Controller.php", {
-          type: 'post',
-          async: false,
-          data: {
-            module: "getUsers"
-                  },
-          success: function(data){
-            var data = jQuery.parseJSON(data);
-            containerBoxUsersUpdate.style.display = "flex";
-            formUpdate.style.display = "none";
-            setusersUpdate(data);
-         }
+function openUpdate(){
+  $.ajax( "../App/Controller/Controller.php", {
+         type: 'post',
+         async: false,
+         data: {
+           module: "getUsers"
+                 },
+         success: function(data){
+           var data = jQuery.parseJSON(data);
+           containerBoxUsersUpdate.style.display = "flex";
+           formUpdate.style.display = "none";
+           setusersUpdate(data);
         }
-       )
- })
+       }
+      )
+}
 
- var openDelete = document.getElementById("openDelete");
- var containerBoxUsersDelete = document.getElementById("containerBoxUsersDelete");
 
  openDelete.addEventListener("click", function(){
-
+   openDeletePanel();
+ })
+ var openDelete = document.getElementById("openDelete");
+ var containerBoxUsersDelete = document.getElementById("containerBoxUsersDelete");
+ function openDeletePanel(){
    $.ajax( "../App/Controller/Controller.php", {
           type: 'post',
           async: false,
@@ -472,12 +477,16 @@ filter: drop-shadow(0px 0px 3px Black);
          }
         }
        )
- })
- var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
- var openRead = document.getElementById("openRead");
+ }
+
 
 
   openRead.addEventListener("click", function(){
+    openReadPanel();
+  })
+  var containerBoxUsersRead = document.getElementById("containerBoxUsersRead");
+  var openRead = document.getElementById("openRead");
+  function openReadPanel(){
     $.ajax( "../App/Controller/Controller.php", {
            type: 'post',
            async: false,
@@ -503,7 +512,7 @@ filter: drop-shadow(0px 0px 3px Black);
           }
          }
        )
-  })
+  }
 /*
 boxUserInformation[data].classList.toggle("hideShow");
 buttonPlus[data].classList.toggle("hideShow");

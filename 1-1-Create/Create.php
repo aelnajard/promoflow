@@ -69,6 +69,8 @@
                createName.value = "";
                createEmail.value = "";
                createPassword.value = "";
+
+               openReadPanel();
             }
            }
           )
