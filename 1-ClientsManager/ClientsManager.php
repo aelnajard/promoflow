@@ -439,10 +439,10 @@ filter: drop-shadow(0px 0px 3px Black);
  formUpdate.style.display = "none";
 
  openUpdate.addEventListener("click", function(){
-   openUpdate();
+   openUpdatePanel();
  })
 
-function openUpdate(){
+function openUpdatePanel(){
   $.ajax( "../App/Controller/Controller.php", {
          type: 'post',
          async: false,
