@@ -66,7 +66,9 @@
 
                messageSection.style.display = "block";
 
-
+               createName.value = "";
+               createEmail.value = "";
+               createPassword.value = "";
             }
            }
           )
