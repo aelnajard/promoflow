@@ -177,6 +177,9 @@ var globalIdUser;
         )
       }
       else {
+        for (let i = 0; i < buttonSelected.length; i++) {
+            buttonSelected[i].classList.remove("optionDeleteSelected");
+        }
           message(1, "Ok", "", verifyForm(updateName.value, updateEmail.value, updatePassword.value)[1]);
       }
   })

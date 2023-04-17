@@ -46,7 +46,9 @@
     createUser();
   })
   function createUser(){
-
+    for (let i = 0; i < buttonSelected.length; i++) {
+        buttonSelected[i].classList.remove("optionDeleteSelected");
+    }
     if (verifyForm(createName.value, createEmail.value, createPassword.value)[0] == 1) {
       $.ajax( "../App/Controller/Controller2.php", {
              type: 'post',
@@ -59,6 +61,7 @@
                userType: createUserType.value
                      },
              success: function(data){
+
                  message(1, "Ok", "button2", data);
 
                messageSection.style.display = "block";
