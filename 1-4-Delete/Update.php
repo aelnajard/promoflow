@@ -121,7 +121,8 @@ var globalIdUser;
 
   for (let i = 0; i < buttonSelected.length; i++) {
     buttonSelected[i].addEventListener("click", function(){
-      alert("");
+      buttonSelected[i].classList.add("test");
+      alert();
     })
   }
 
