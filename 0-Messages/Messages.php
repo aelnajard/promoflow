@@ -145,6 +145,8 @@
   }*/
 
 function message(noButton, nameButton1, nameButton2, message){
+  button2Message.style.display = "block";
+
   valueButtonSelected = -1;
 
     messageSection.style.display = "block";
