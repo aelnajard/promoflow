@@ -125,7 +125,6 @@ var globalIdUser;
   for (let i = 0; i < optionDeleteSelected.length; i++) {
     optionDeleteSelected[i].addEventListener("click", function(){
       if (i == 1){
-        globalIdUser  = idUser;
         $.ajax( "../App/Controller/Controller2.php", {
                type: 'post',
                async: false,
