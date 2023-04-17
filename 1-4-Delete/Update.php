@@ -124,28 +124,28 @@ var globalIdUser;
 
   for (let i = 0; i < optionDeleteSelected.length; i++) {
     optionDeleteSelected[i].addEventListener("click", function(){
-      alert("selection was: "  + i);
+      if (i == 1){
+        globalIdUser  = idUser;
+        $.ajax( "../App/Controller/Controller2.php", {
+               type: 'post',
+               async: false,
+               data: {
+                 module: "deleteUser",
+                 idUser: globalIdUser
+                       },
+               success: function(data){
+
+                 message(1, "Ok", "", "The user has been removed from the system");
+                 location.reload();
+              }
+             }
+           )
+      }
     })
   }
 
   /*
-  if (valueButtonSelected == 1){
-    globalIdUser  = idUser;
-    $.ajax( "../App/Controller/Controller2.php", {
-           type: 'post',
-           async: false,
-           data: {
-             module: "deleteUser",
-             idUser: globalIdUser
-                   },
-           success: function(data){
 
-             message(1, "Ok", "", "The user has been removed from the system");
-             location.reload();
-          }
-         }
-       )
-  }
   */
 
 
