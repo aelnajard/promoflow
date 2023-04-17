@@ -115,8 +115,8 @@
           <p id="textMessages">Lorem ipsum dolor sit , Lorem ipsu ipsumolor sit amet,olor sit amet,Lorem ipsumd.</p>
         </div>
         <div class="footerMessage">
-          <button class="buttonSelected" id="button1Message" type="" name="button">Create</botton>
-          <button class="buttonSelected" id="button2Message" type="" name="button">Create</botton>
+          <button class="buttonSelected optionDeleteSelected" id="button1Message" type="" name="button">Create</botton>
+          <button class="buttonSelected optionDeleteSelected" id="button2Message" type="" name="button">Create</botton>
         </div>
       </div>
     </div>
