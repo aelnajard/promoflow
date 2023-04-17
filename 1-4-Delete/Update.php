@@ -109,29 +109,42 @@ function setUsersDelete(data){
   }
 var globalIdUser;
 
-  function deleteUsers(idUser) {
+  function deleteUsers (idUser) {
+    globalIdUser = idUser;
     message(2, "Cancel", "Delete", "Would you like to confirm the deletion of this user?");
 
-    if (valueButtonSelected == 1){
-      globalIdUser  = idUser;
-      $.ajax( "../App/Controller/Controller2.php", {
-             type: 'post',
-             async: false,
-             data: {
-               module: "deleteUser",
-               idUser: globalIdUser
-                     },
-             success: function(data){
+    const buttonSelected = document.querySelectorAll("buttonSelected");
 
-               message(1, "Ok", "", "The user has been removed from the system");
-               location.reload();
-            }
-           }
-         )
-
+    for (let i = 0; i < buttonSelected.length; i++) {
+      buttonSelected[i].addEventListener("click", function(){
+        alert("");
+      })
     }
 
+
   }
+
+
+
+  /*
+  if (valueButtonSelected == 1){
+    globalIdUser  = idUser;
+    $.ajax( "../App/Controller/Controller2.php", {
+           type: 'post',
+           async: false,
+           data: {
+             module: "deleteUser",
+             idUser: globalIdUser
+                   },
+           success: function(data){
+
+             message(1, "Ok", "", "The user has been removed from the system");
+             location.reload();
+          }
+         }
+       )
+  }
+  */
 
 
 

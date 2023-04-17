@@ -125,17 +125,17 @@
 
 
 <script type="text/javascript">
-var closeMessage = document.getElementById("closeMessage");
-var messageSection = document.getElementById("messageSection");
-var textMessages = document.getElementById("textMessages");
-var button1Message = document.getElementById("button1Message");
-var button2Message = document.getElementById("button2Message");
-var buttonSelected = document.querySelectorAll(".buttonSelected");
-messageSection.style.display = "none";
-closeMessage.addEventListener("click" , function (){
+  var closeMessage = document.getElementById("closeMessage");
+  var messageSection = document.getElementById("messageSection");
+  var textMessages = document.getElementById("textMessages");
+  var button1Message = document.getElementById("button1Message");
+  var button2Message = document.getElementById("button2Message");
+  var buttonSelected = document.querySelectorAll(".buttonSelected");
   messageSection.style.display = "none";
+  closeMessage.addEventListener("click" , function (){
+    messageSection.style.display = "none";
+  })
 
-})
 /*  var valueButtonSelected ;
   for (let i = 0; i < buttonSelected.length; i++) {
     buttonSelected[i].addEventListener("click", function(){

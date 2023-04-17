@@ -178,7 +178,6 @@ var globalIdUser;
       }
       else {
           message(1, "Ok", "", verifyForm(updateName.value, updateEmail.value, updatePassword.value)[1]);
-
       }
   })
 
