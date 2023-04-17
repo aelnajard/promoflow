@@ -133,7 +133,22 @@ var globalIdUser;
                success: function(data){
 
                  message(1, "Ok", "", "The user has been removed from the system");
-                 location.reload();
+
+
+                 $.ajax( "../App/Controller/Controller.php", {
+                        type: 'post',
+                        async: false,
+                        data: {
+                          module: "getUsers"
+                                },
+                        success: function(data){
+                         var data = jQuery.parseJSON(data);
+
+                        setUsersDelete(data);
+
+                       }
+                      }
+                     )
               }
              }
            )
