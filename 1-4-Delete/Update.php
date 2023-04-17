@@ -118,7 +118,6 @@ var globalIdUser;
 
   }
 
-  const buttonSelected = document.querySelectorAll("buttonSelected");
 
   for (let i = 0; i < buttonSelected.length; i++) {
     buttonSelected[i].addEventListener("click", function(){
