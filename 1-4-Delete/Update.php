@@ -135,7 +135,6 @@ var globalIdUser;
                success: function(data){
 
                  message(1, "Ok", "", "The user has been removed from the system");
-                 location.reload();
               }
              }
            )
