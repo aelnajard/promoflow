@@ -135,7 +135,7 @@ var globalIdUser;
                  message(1, "Ok", "", "The user has been removed from the system");
 
 
-                 openReadPanel();
+                 openDeletePanel();
               }
              }
            )

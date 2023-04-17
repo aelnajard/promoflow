@@ -169,7 +169,7 @@ var globalIdUser;
                    },
            success: function(data){
              message(1, "Ok", "button2", data);
-             openReadPanel();
+             openUpdatePanel();
           }
          }
         )
