@@ -113,15 +113,17 @@ var globalIdUser;
     globalIdUser = idUser;
     message(2, "Cancel", "Delete", "Would you like to confirm the deletion of this user?");
 
-    const buttonSelected = document.querySelectorAll("buttonSelected");
-
-    for (let i = 0; i < buttonSelected.length; i++) {
-      buttonSelected[i].addEventListener("click", function(){
-        alert("");
-      })
-    }
 
 
+
+  }
+
+  const buttonSelected = document.querySelectorAll("buttonSelected");
+
+  for (let i = 0; i < buttonSelected.length; i++) {
+    buttonSelected[i].addEventListener("click", function(){
+      alert("");
+    })
   }
 
 
