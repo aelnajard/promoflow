@@ -387,6 +387,16 @@
         border-radius: 5px;
         overflow: scroll;
       }
+      .containerTableW3P::-webkit-scrollbar {
+      width: 1.5em;
+      }
+      .containerTableW3P::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+      .containerTableW3P::-webkit-scrollbar-thumb {
+      background:rgba(47, 69, 96, 1);
+      border: 1px solid black;
+    }
       .containerTableW3P table{
         position: relative;
 
@@ -412,7 +422,13 @@
       }
 
       .containerCenterTable{
-        padding: 2px;
+        position: relative;
+        width: 280px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 13px;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
 
@@ -534,14 +550,14 @@
 
   const items = document.querySelectorAll(".items");
     const bodyLogin = document.querySelectorAll(".bodyLogin");
-    var containerOn = 0;
+    var containerOn = 1;
 
 
 
     for (let i = 0; i < items.length; i++) {
 
       bodyLogin[i].style.display = "none";
-      bodyLogin[0].style.display = "block";
+      bodyLogin[containerOn].style.display = "block";
 
 
       items[i].addEventListener("click", function(){

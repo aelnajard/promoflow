@@ -14,7 +14,7 @@
   position: relative;
   width: 100%;
   height: 40px;
-  background-color: rgba(47, 69, 96, 1) ;
+  background-color: rgba(47, 69, 96, 1);
   border: 1px solid black;
 }
 .boxUserName h3{
@@ -23,6 +23,13 @@
   color: white;
   top: 50%;
   transform: translateY(-50%);
+}
+.toggleInformation{
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  top: 0px;
+  right: 0px;
 }
 .buttonPlus {
   position: absolute;
@@ -83,13 +90,7 @@
 .showHide{
   display: block;
 }
-.toggleInformation{
-  position: absolute;
-  width: 40px;
-  height: 100%;
-  top: 0px;
-  right: 0px;
-}
+
 
 </style>
 
@@ -100,7 +101,7 @@
   <div class="containerCRUDWrap" >
     <div class="containerUsers" id="containerBoxUsersRead">
 
-  <!--    <div class="boxUser">
+    <div class="boxUser">
         <div class="boxUserName">
           <h3 class="nameUserRead"></h3>
           <div class="toggleInformation">

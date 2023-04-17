@@ -29,56 +29,13 @@
 
 
 
-  <!--  Table 1  -->
-
-  <div class="containerTableW3P">
-    <div class="containerCenterTable">
-
-    <table>
-      <thead>
-        <tr>
-          <th>Code</th>
-          <th>Name</th>
-
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>BAGS</td>
-          <td>Bags Zone</td>
-
-        </tr>
-        <tr>
-          <td>GIVEAWAY</td>
-          <td>Giveaway Gifts Zone</td>
-
-        </tr>
-        <tr>
-          <td>PACKGING</td>
-          <td>Packaging Zone</td>
-
-        </tr>
-        <tr>
-          <td>SPECLPRJ</td>
-          <td>Special Projects **Offline Only** Zone</td>
-
-        </tr>
-        <tr>
-          <td>XMAS</td>
-          <td>The Colour of Christmas Zone</td>
-
-        </tr>
-
-      </tbody>
-    </table>
-  </div>
- </div>
+  <?php include "../2-1-Products/Products.php" ?>
 
   <!--  Table 2  -->
 
   <div class="containerTableW3P">
     <div class="containerCenterTable">
-
+<!--
     <table>
       <thead>
         <tr>
@@ -127,12 +84,14 @@
 
       </tbody>
     </table>
+-->
   </div>
   </div>
 
   <!--  Table 3  -->
 
   <div class="containerTableW3P">
+<!--
     <table>
       <thead>
         <tr>
@@ -217,11 +176,13 @@
         </tr>
       </tbody>
     </table>
+-->
   </div>
 
   <!--  Table 4  -->
 
   <div class="containerTableW3P">
+<!--
     <table>
       <thead>
         <tr>
@@ -384,12 +345,13 @@
         </tr>
       </tbody>
     </table>
+-->
   </div>
 
   <!--  Table 5  -->
   <div class="containerTableW3P">
     <div class="containerCenterTable">
-
+<!--
       <table>
         <thead>
           <tr>
@@ -577,7 +539,7 @@
           </tr>
         </tbody>
       </table>
-
+-->
     </div>
 
 
@@ -586,7 +548,7 @@
   <!--  Table 6  -->
 
   <div class="containerTableW3P">
-
+<!--
     <table>
       <thead>
         <tr>
@@ -697,7 +659,7 @@
         </tr>
       </tbody>
     </table>
-
+-->
 
   </div>
 </div>
