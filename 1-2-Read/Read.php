@@ -100,7 +100,7 @@
   </div>
   <div class="containerCRUDWrap" >
     <div class="containerUsers" id="containerBoxUsersRead">
-
+<!--
     <div class="boxUser">
         <div class="boxUserName">
           <h3 class="nameUserRead"></h3>
