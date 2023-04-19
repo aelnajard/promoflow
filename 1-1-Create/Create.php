@@ -2,6 +2,13 @@
 .redBorder{
   border: 3px solid rgba(162, 22, 15, 1) ;
 }
+.asterisk{
+  position: absolute;
+  top: 52%;
+  left: 0px;
+  height: 8px;
+  display: block;
+}
 
 </style>
 
@@ -14,15 +21,17 @@
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
       <input type="text" name="" placeholder="Enter the name " value="" id="createName">
-      <img class="asterisk" src="../1-1-Create/Asterisk.png" alt="">
+        <img class="asterisk" src="../1-1-Create/Asterisk.png" alt="">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
       <input type="text" name="" placeholder="Enter the email "value="" id="createEmail">
+      <img class="asterisk" src="../1-1-Create/Asterisk.png" alt="">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Password</label>
       <input type="text" name="" placeholder="Enter the password  " value="" id="createPassword">
+      <img class="asterisk" src="../1-1-Create/Asterisk.png" alt="">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Type of user</label>
@@ -39,6 +48,10 @@
   var createPassword = document.getElementById("createPassword");
   var createUserType = document.getElementById("createUserType");
   var clickCreate = document.getElementById("clickCreate");
+  const asterisk = document.querySelectorAll(".asterisk");
+  for (var i = 0; i < asterisk.length; i++) {
+    asterisk[i].style.display = "none";
+  }
 
   document.querySelector('#formCreate').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') {
@@ -74,6 +87,15 @@
                createEmail.value = "";
                createPassword.value = "";
 
+               createName.classList.remove("redBorder");
+               asterisk[0].style.display = "none";
+
+               createEmail.classList.remove("redBorder");
+               asterisk[1].style.display = "none";
+
+               createPassword.classList.remove("redBorder");
+               asterisk[2].style.display = "none";
+
                openReadPanel();
             }
            }
@@ -82,9 +104,17 @@
     else {
     if (verifyForm(createName.value, createEmail.value, createPassword.value)[2] == 3) {
       createName.classList.add("redBorder");
+      asterisk[0].style.display = "block";
+
+      createEmail.classList.add("redBorder");
+      asterisk[1].style.display = "block";
+
+      createPassword.classList.add("redBorder");
+      asterisk[2].style.display = "block";
     }
     else if (verifyForm(createName.value, createEmail.value, createPassword.value)[2] == 1) {
-
+      createEmail.classList.add("redBorder");
+      asterisk[1].style.display = "block";
     }
 
     message(1, "Ok", "", verifyForm(createName.value, createEmail.value, createPassword.value)[1]);
