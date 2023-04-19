@@ -14,7 +14,7 @@
     color: white;
     text-align: center;
     font-weight: 300;
-    padding-top: 15px;
+    padding: 15px;
   }
   .containerCRUDTitle{
     position: absolute;
