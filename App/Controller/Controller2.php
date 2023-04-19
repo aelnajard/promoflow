@@ -28,7 +28,7 @@ require_once('../Models/Users.php');
       $db = new Database();
       $user = new Users($db);
       $user->setEmail($_POST['email']);
-      $result = json_encode($user->verifyRepeatUser());
+      $result = json_encode($user->verifyRepeatUser()["COUNT(*)"]);
       echo $result;
       if (true) {
         /*$db = new Database();
