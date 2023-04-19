@@ -27,12 +27,22 @@ require_once('../Models/Users.php');
     elseif ($_POST['module']=="createUser") {
       $db = new Database();
       $user = new Users($db);
-      $user->setName($_POST['name']);
       $user->setEmail($_POST['email']);
-      $user->setPassword($_POST['password']);
-      $user->setUserType($_POST['userType']);
-      $result = json_encode($user->createUser());
+      $result = json_encode($user->verifyRepeatUser());
       echo $result;
+      if (true) {
+        /*$db = new Database();
+        $user = new Users($db);
+        $user->setName($_POST['name']);
+        $user->setEmail($_POST['email']);
+        $user->setPassword($_POST['password']);
+        $user->setUserType($_POST['userType']);
+        $result = json_encode($user->createUser());
+        echo $result;*/
+        // code...
+      }
+
+
     }
     elseif ($_POST['module']=="deleteUser") {
 

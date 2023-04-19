@@ -29,7 +29,7 @@
 
       function readUserExist(){
        try{
-         $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users` WHERE `email` = '$this->email' AND  `password` = '$this->password'");
+        $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users` WHERE `email` = '$this->email' AND  `password` = '$this->password'");
         $data = $sql->fetch(PDO::FETCH_OBJ);
         $this->conn->close();
         return $data;
@@ -85,6 +85,17 @@
           catch(PDOException $e){
               echo "The information is not refreshed." . "<br>" .$query . "<br>"."Error: " . $e->getMessage();
             }
+        }
+        function verifyRepeatUser(){
+          try{
+           $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users` WHERE `email` = '$this->email'");
+           $data = $sql->fetch(PDO::FETCH_OBJ);
+           $this->conn->close();
+           return $data;
+               }
+           catch(PDOException $e){
+               echo $query . "<br>" . $e->getMessage();
+             }
         }
 
         function lastIdUser(){

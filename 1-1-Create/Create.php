@@ -78,8 +78,8 @@
                userType: createUserType.value
                      },
              success: function(data){
-
-                 message(1, "Ok", "button2", data);
+               alert(data);
+              /*   message(1, "Ok", "button2", data);
 
                messageSection.style.display = "block";
 
@@ -96,7 +96,7 @@
                createPassword.classList.remove("redBorder");
                asterisk[2].style.display = "none";
 
-               openReadPanel();
+               openReadPanel();*/
             }
            }
           )
