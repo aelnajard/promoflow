@@ -1,4 +1,7 @@
 <style media="screen">
+.redBorder{
+  border: 3px solid rgba(162, 22, 15, 1) ;
+}
 
 </style>
 
@@ -11,6 +14,7 @@
     <div class="inputFormUpdate">
       <label for="updateName">Name</label>
       <input type="text" name="" placeholder="Enter the name " value="" id="createName">
+      <img class="asterisk" src="../1-1-Create/Asterisk.png" alt="">
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Email</label>
@@ -76,6 +80,12 @@
           )
     }
     else {
+    if (verifyForm(createName.value, createEmail.value, createPassword.value)[2] == 3) {
+      createName.classList.add("redBorder");
+    }
+    else if (verifyForm(createName.value, createEmail.value, createPassword.value)[2] == 1) {
+
+    }
 
     message(1, "Ok", "", verifyForm(createName.value, createEmail.value, createPassword.value)[1]);
 

@@ -531,28 +531,33 @@ var containerBoxUsersDelete = document.getElementById("containerBoxUsersDelete")
   function verifyForm(name, email, password){
     var answer;
     var message;
+    var borderOptions = 0; // 0: No red border, 1: One red border, 3: Three red borders
     if (name == "" || email == "" || password == "") {
        answer = 0;
        message = "It appears that some values are missing, please fill them in";
+       borderOption = 3;
     }
     else {
       if (!email.includes("@")) {
         answer = 0;
         message = "Please ensure you have entered a valid email address";
+        borderOption = 1;
       }
       else {
         if (!email.includes(".")) {
           answer = 0;
           message = "Please ensure you have entered a valid email address";
+          borderOption = 1;
         }
         else {
           answer = 1;
           message = "";
+          borderOption = 0;
         }
       }
     }
 
-  const array = [answer, message];
+  const array = [answer, message, borderOption];
     return array;
   }
 
