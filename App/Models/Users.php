@@ -91,7 +91,7 @@
            $sql = $this->conn->conn()->query("SELECT COUNT(*) FROM `Users` WHERE `email` = '$this->email'");
            $data = $sql->fetch(PDO::FETCH_BOTH);
            $this->conn->close();
-           return $data;
+           return $data->count;
                }
            catch(PDOException $e){
                echo $query . "<br>" . $e->getMessage();
