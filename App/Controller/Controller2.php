@@ -38,7 +38,7 @@ require_once('../Models/Users.php');
         $user->setPassword($_POST['password']);
         $user->setUserType($_POST['userType']);
         $result = json_encode($user->createUser());
-        echo $result;
+        echo 1;
         // code...
       }
       elseif ($result == 1 ) {
