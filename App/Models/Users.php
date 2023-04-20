@@ -88,10 +88,10 @@
         }
         function verifyRepeatUser(){
           try{
-           $sql = $this->conn->conn()->query("SELECT COUNT(*) AS count FROM `Users` WHERE `email` = '$this->email'");
+           $sql = $this->conn->conn()->query("SELECT COUNT(*) AS `count` FROM `Users` WHERE `email` = '$this->email'");
            $data = $sql->fetch(PDO::FETCH_OBJ);
            $this->conn->close();
-           return $data['count'];
+           return $data;
                }
            catch(PDOException $e){
                echo $query . "<br>" . $e->getMessage();
