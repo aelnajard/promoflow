@@ -29,7 +29,7 @@ require_once('../Models/Users.php');
       $user = new Users($db);
       $user->setEmail($_POST['email']);
       $result = ($user->verifyRepeatUser()["COUNT(*)"]);
-      echo $result."hola4";
+      echo $result;
       if (true) {
         /*$db = new Database();
         $user = new Users($db);
