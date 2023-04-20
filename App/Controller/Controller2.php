@@ -28,7 +28,7 @@ require_once('../Models/Users.php');
       $db = new Database();
       $user = new Users($db);
       $user->setEmail($_POST['email']);
-      $result = ($user->verifyRepeatUser()->count());
+      $result = ($user->verifyRepeatUser()[0]);
       echo $result;
       if (true) {
         /*$db = new Database();
