@@ -78,7 +78,6 @@
                userType: createUserType.value
                      },
              success: function(data){
-               alert(data);
                if (data == 0) {
 
                   message(1, "Ok", "button2", "The user has been created");
