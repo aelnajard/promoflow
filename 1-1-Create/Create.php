@@ -101,6 +101,14 @@
                }
                else if (data == 1) {
                  message(1, "Ok", "button2", "The user cannot be created as they already exist.");
+                 createName.classList.add("redBorder");
+                 asterisk[0].style.display = "block";
+
+                 createEmail.classList.add("redBorder");
+                 asterisk[1].style.display = "block";
+
+                 createPassword.classList.add("redBorder");
+                 asterisk[2].style.display = "block";
                }
 
             }
