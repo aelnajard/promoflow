@@ -41,6 +41,9 @@ require_once('../Models/Users.php');
         echo $result;
         // code...
       }
+      elseif ($result == 1 ) {
+        echo "The user cannot be created as they already exist.";
+      }
 
 
     }
