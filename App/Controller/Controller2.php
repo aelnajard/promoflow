@@ -28,9 +28,9 @@ require_once('../Models/Users.php');
       $db = new Database();
       $user = new Users($db);
       $user->setEmail($_POST['email']);
-      $result = ($user->verifyRepeatUser()["COUNT(*)"]);
+      $countUsers = ($user->verifyRepeatUser()["COUNT(*)"]);
 
-      if ($result == 0) {
+      if ($countUsers == 0) {
         $db = new Database();
         $user = new Users($db);
         $user->setName($_POST['name']);
@@ -38,13 +38,9 @@ require_once('../Models/Users.php');
         $user->setPassword($_POST['password']);
         $user->setUserType($_POST['userType']);
         $result = json_encode($user->createUser());
-        echo 1;
         // code...
       }
-      elseif ($result == 1 ) {
-        echo "The user cannot be created as they already exist.";
-      }
-
+      echo $countUsers;
 
     }
     elseif ($_POST['module']=="deleteUser") {

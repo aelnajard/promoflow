@@ -79,24 +79,31 @@
                      },
              success: function(data){
                alert(data);
-              /*   message(1, "Ok", "button2", data);
+               if (data == 0) {
 
-               messageSection.style.display = "block";
+                  message(1, "Ok", "button2", "The user has been created");
 
-               createName.value = "";
-               createEmail.value = "";
-               createPassword.value = "";
+                  messageSection.style.display = "block";
 
-               createName.classList.remove("redBorder");
-               asterisk[0].style.display = "none";
+                  createName.value = "";
+                  createEmail.value = "";
+                  createPassword.value = "";
 
-               createEmail.classList.remove("redBorder");
-               asterisk[1].style.display = "none";
+                  createName.classList.remove("redBorder");
+                  asterisk[0].style.display = "none";
 
-               createPassword.classList.remove("redBorder");
-               asterisk[2].style.display = "none";
+                  createEmail.classList.remove("redBorder");
+                  asterisk[1].style.display = "none";
 
-               openReadPanel();*/
+                  createPassword.classList.remove("redBorder");
+                  asterisk[2].style.display = "none";
+
+                  openReadPanel();
+               }
+               else if (data == 1) {
+                 message(1, "Ok", "button2", "The user cannot be created as they already exist.");
+               }
+
             }
            }
           )
