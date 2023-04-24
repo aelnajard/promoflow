@@ -28,20 +28,19 @@ require_once('../Models/Users.php');
       $db = new Database();
       $user = new Users($db);
       $user->setEmail($_POST['email']);
-      $result = ($user->verifyRepeatUser()[0]);
-      echo $result;
-      if (true) {
-        /*$db = new Database();
+      $countUsers = ($user->verifyRepeatUser()["COUNT(*)"]);
+
+      if ($countUsers == 0) {
+        $db = new Database();
         $user = new Users($db);
         $user->setName($_POST['name']);
         $user->setEmail($_POST['email']);
         $user->setPassword($_POST['password']);
         $user->setUserType($_POST['userType']);
         $result = json_encode($user->createUser());
-        echo $result;*/
         // code...
       }
-
+      echo $countUsers;
 
     }
     elseif ($_POST['module']=="deleteUser") {
