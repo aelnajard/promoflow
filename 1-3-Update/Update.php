@@ -72,7 +72,7 @@
   </div>
   <div class="inputFormUpdate">
     <label for="updateName">Type of user</label>
-    <input type="text" name="" value="" id="updateUserType">
+    <input type="text" name="" id="updateUserType" value="Admin" disabled>
   </div>
   <div class="inputFormUpdate">
     <button id="clickUpdate" type="button" name="button">Update</button>
