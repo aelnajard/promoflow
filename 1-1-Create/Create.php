@@ -35,7 +35,7 @@
     </div>
     <div class="inputFormUpdate">
       <label for="updateName">Type of user</label>
-      <input type="text" name="" placeholder="Enter the user type " value="" id="createUserType">
+      <input type="text" name="" placeholder="Enter the user type " value="Admin" id="createUserType" disabled>
     </div>
     <div class="inputFormUpdate">
       <button id="clickCreate" type="button" name="button">Create</button>
