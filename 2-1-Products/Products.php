@@ -226,8 +226,13 @@
                   <div class="ProductoInformationSubitemNameW3P">
                     <h3>Price 1</h3>
                   </div>
+                  <div class="ProductoInformationSubitemNameW3P">
+                    <h3>Price 2</h3>
+                  </div>
                 </div>
-              </div>
+
+              </div><!-- end  Product Information -->
+
             </div><!-- end  Product W3P -->
 
           </div> <!-- end Group Product -->
