@@ -142,7 +142,7 @@
     position: relative;
     width: 100%;
     height: 40px;
-    background-color: rgba(225, 228, 235, 0.5);
+    background-color: rgba(225, 228, 235, 0.6);
     border: 1px solid black;
   }
   .ProductoInformationSubitemNameW3P h3{
