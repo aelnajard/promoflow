@@ -102,6 +102,9 @@
     top: 0px;
     right: 0px;
   }
+
+
+
   .boxProductInformationW3P{
     position: relative;
     width: 100%;
@@ -128,6 +131,29 @@
     top: 0px;
     right: 0px;
   }
+
+
+  .ProductoInformationSubitemW3P{
+    position: relative;
+    width: 100%;
+  }
+
+  .ProductoInformationSubitemNameW3P{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(225, 228, 235, 0.9);
+    border: 1px solid black;
+  }
+  .ProductoInformationSubitemNameW3P h3{
+    position: relative;
+    text-align: center;
+    color: Black;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 300;
+  }
+
 </style>
 <!--  Table 1  -->
 
@@ -194,6 +220,11 @@
                   <div class="openToggleProductInformationW3P">
                     <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
                     <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
+                  </div>
+                </div>
+                <div class="ProductoInformationSubitemW3P">
+                  <div class="ProductoInformationSubitemNameW3P">
+                    <h3>Price 1</h3>
                   </div>
                 </div>
               </div>
