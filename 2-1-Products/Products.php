@@ -153,10 +153,20 @@
     transform: translateY(-50%);
     font-weight: 300;
   }
+  .exampleAPI{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  width: 170px;
+  }
 
 </style>
 <!--  Table 1  -->
-
+<button class="exampleAPI" id="requestProductsExample" type="button" name="button" >Request products</button>
 <div class="containerTableW3P">
   <div class="containerCenterTable">
 
@@ -283,3 +293,20 @@
 -->
 </div>
 </div>
+<script type="text/javascript">
+  var requestProductsExample = document.getElementById("requestProductsExample");
+
+  requestProductsExample.addEventListener("click" , function(){
+    $.ajax( "../App/Controller/Controller2.php", {
+           type: 'post',
+           async: false,
+           data: {
+             module: "requestProductsExample"
+                   },
+           success: function(data){
+             alert(data);
+          }
+         }
+        )
+  })
+</script>
