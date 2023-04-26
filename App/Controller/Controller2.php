@@ -69,7 +69,7 @@ require_once('../Models/Users.php');
         $url = 'https://NKA1.API:46fKgJsZP7@dev-7.flyerlink.com/api.php/runs?state=waiting&days=60&prod_workgrp=NKA1&format=json';
 
         // Realizamos la solicitud GET utilizando la función file_get_contents() en una sola línea
-        $data = json_decode(file_get_contents($url));
+        $data = json_encode(file_get_contents($url));
 
         // Imprimimos los datos en la pantalla
         echo($data);
