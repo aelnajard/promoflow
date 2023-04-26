@@ -304,7 +304,8 @@
              module: "requestProductsExample"
                    },
            success: function(data){
-             console.log(data);
+             //console.log(data);
+             alert(data);
           }
          }
         )
