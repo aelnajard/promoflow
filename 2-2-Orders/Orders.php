@@ -48,7 +48,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-weight: 300;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 300;
     padding-left: 15px;
   }
@@ -88,7 +88,7 @@
         <div class="subitemOrder">
           <h3><strong>Contact:</strong> 1542200</h3>
         </div>
-      </div> 
+      </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
           <h3><strong>Quantity_allocated:</strong> 250</h3>
