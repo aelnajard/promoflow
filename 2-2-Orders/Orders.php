@@ -49,7 +49,8 @@
     transform: translateY(-50%);
     font-weight: 300;
     font-size: 0.9em;
-    font-weight: 400;
+    font-weight: 300;
+    padding-left: 15px;
   }
 
 </style>
@@ -61,7 +62,7 @@
     <div class="containerItemsOrder">
 
       <div class="itemOrder">
-        <h3>Order: 12 - 01 - 2023</h3>
+        <h3><strong>Order:</strong> 12 - 01 - 2023</h3>
         <div class="openToggleBigCategoryW3P">
           <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
           <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
