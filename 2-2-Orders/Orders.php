@@ -19,7 +19,7 @@
     font-size: 1em;
     font-weight: 400;
   }
-  .openToggleBigCategoryW3P{
+  .openToggleSubitemOrder{
     position: absolute;
     width: 40px;
     height: 100%;
@@ -62,10 +62,10 @@
     <div class="containerItemsOrder">
 
       <div class="itemOrder">
-        <h3>Order: 12 - 01 - 2023</h3>
-        <div class="openToggleBigCategoryW3P">
-          <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
-          <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
+        <h3>Order: 2023-04-05</h3>
+        <div class="openToggleSubitemOrder">
+          <img class="buttonPlusOrder"src="../2-1-Products/Images/mas.png" alt="">
+          <img class="buttonLessOrder"src="../2-1-Products/Images/menos.png" alt="">
         </div>
       </div>
 
@@ -248,3 +248,9 @@
 
 </div>
 </div>
+
+
+<script type="text/javascript">
+const
+
+</script>
