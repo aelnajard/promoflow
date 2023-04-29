@@ -71,142 +71,142 @@
 
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>id:</strong> 234535</h3>
+          <h3><strong>Id:</strong> 234535</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>status:</strong> 081</h3>
+          <h3><strong>Status:</strong> 081</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>customer:</strong> OEBATH24</h3>
+          <h3><strong>Customer:</strong> OEBATH24</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>contact:</strong> 1542200</h3>
+          <h3><strong>Contact:</strong> 1542200</h3>
+        </div>
+      </div> 
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>Quantity_allocated:</strong> 250</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>quantity_allocated:</strong> 250</h3>
+          <h3><strong>Quantity_printed:</strong> 0</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>quantity_printed:</strong> 0</h3>
+          <h3><strong>Quantity_despatched:</strong> 0</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>quantity_despatched:</strong> 0</h3>
+          <h3><strong>Total_transfer:</strong> 833.80</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>total_transfer:</strong> 833.80</h3>
+          <h3><strong>Total_selling:</strong> 1072.26</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>total_selling:</strong> 1072.26</h3>
+          <h3><strong>Total:</strong> 1286.71</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>total:</strong> 1286.71</h3>
+          <h3><strong>Product_code:</strong> YKAMPS2</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>product_code:</strong> YKAMPS2</h3>
+          <h3><strong>Client_reference:</strong> Branded Bags</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>client_reference:</strong> Branded Bags</h3>
+          <h3><strong>Total_prcost:</strong> 647.50</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>total_prcost:</strong> 647.50</h3>
+          <h3><strong>Title: REO: REP:</strong> Branded bags</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>title: REO: REP:</strong> Branded bags</h3>
+          <h3><strong>Category:</strong> 993</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>category:</strong> 993</h3>
+          <h3><strong>Quantity:</strong> 250</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>quantity:</strong> 250</h3>
+          <h3><strong>Auto081:</strong> false</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>auto081:</strong> false</h3>
+          <h3><strong>Service:</strong> N</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>service:</strong> N</h3>
+          <h3><strong>Supplier_reference:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>supplier_reference:</strong> null</h3>
+          <h3><strong>Reprintof:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>reprintof:</strong> null</h3>
+          <h3><strong>Reprintas:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>reprintas:</strong> null</h3>
+          <h3><strong>Reorderof:</strong> 5154580</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>reorderof:</strong> 5154580</h3>
+          <h3><strong>Reorderas:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>reorderas:</strong> null</h3>
+          <h3><strong>Product_name:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>product_name:</strong> null</h3>
+          <h3><strong>Spec:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>spec:</strong> null</h3>
+          <h3><strong>Turnaround:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>turnaround:</strong> null</h3>
+          <h3><strong>Schedule:</strong> null</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>schedule:</strong> null</h3>
-        </div>
-      </div>
-      <div class="containerSubitemOrder">
-        <div class="subitemOrder">
-          <h3><strong>weight:</strong> 0.000</h3>
+          <h3><strong>Weight:</strong> 0.000</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
@@ -216,27 +216,27 @@
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>status_note:</strong> </h3>
+          <h3><strong>Status_note:</strong> </h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>height:</strong> 230.0000</h3>
+          <h3><strong>Height:</strong> 230.0000</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>width:</strong> 380.0000</h3>
+          <h3><strong>Width:</strong> 380.0000</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>bleed:</strong> 0.0000</h3>
+          <h3><strong>Bleed:</strong> 0.0000</h3>
         </div>
       </div>
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>reseller_workgroup:</strong> F331</h3>
+          <h3><strong>Reseller_workgroup:</strong> F331</h3>
         </div>
       </div>
 
