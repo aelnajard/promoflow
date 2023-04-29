@@ -28,6 +28,15 @@
   }
 
 
+  .subitemOrder{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(225, 228, 235, 0.9);
+    border: 1px solid black;
+  }
+
+
 </style>
 <!--  Table 1  -->
 
@@ -43,6 +52,9 @@
         <div class="openToggleBigCategoryW3P">
           <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
           <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
+        </div>
+        <div class="subitemOrder">
+          <h3>id: 234535</h3>
         </div>
       </div>
 
