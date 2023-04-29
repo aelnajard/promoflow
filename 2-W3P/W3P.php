@@ -11,7 +11,7 @@
     <div class="textNavigatorTable">
       <h3>Category products</h3>
     </div>
-    <div class="textNavigatorTable">
+  <!--  <div class="textNavigatorTable">
       <h3>Group products</h3>
     </div>
     <div class="textNavigatorTable">
@@ -22,7 +22,7 @@
     </div>
     <div class="textNavigatorTable">
       <h3>Orders</h3>
-    </div>
+    </div> -->
     <img id="rightArrowW3P" src="Images/arrow.png" alt="">
   </div>
   <br><br>
