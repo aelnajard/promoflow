@@ -6,7 +6,7 @@
   .itemOrder{
     position: relative;
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     background-color: rgba(47, 69, 96, 1);
     border: 1px solid black;
   }
@@ -68,13 +68,14 @@
           <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
           <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
         </div>
-      </div>
-
-      <div class="containerSubitemOrder">
-        <div class="subitemOrder">
-          <h3>id: 234535</h3>
+        <div class="containerSubitemOrder">
+          <div class="subitemOrder">
+            <h3>id: 234535</h3>
+          </div>
         </div>
       </div>
+
+
 
 
 
