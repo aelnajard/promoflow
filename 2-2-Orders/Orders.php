@@ -48,7 +48,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 300;
     padding-left: 15px;
   }
