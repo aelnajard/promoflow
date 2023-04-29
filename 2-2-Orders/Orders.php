@@ -66,7 +66,28 @@
         </div>
       </div>
 
-      
+
+    </div>
+
+    <div class="containerItemsOrder">
+
+
+
+      <div class="itemOrder">
+        <h3>Order: 12 - 01 - 2023</h3>
+        <div class="openToggleBigCategoryW3P">
+          <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
+          <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
+        </div>
+      </div>
+
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3>id: 234535</h3>
+        </div>
+      </div>
+
+
     </div>
 
 
