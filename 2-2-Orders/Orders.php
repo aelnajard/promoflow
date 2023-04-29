@@ -163,7 +163,7 @@
 
       <div class="boxBigCategoryW3P">
         <div class="boxBigCategoryNameW3P">
-          <h3>Big Category Name</h3>
+          <h3>Big Category NameNNNNNN</h3>
           <div class="openToggleBigCategoryW3P">
             <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
             <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
