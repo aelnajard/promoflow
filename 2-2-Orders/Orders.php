@@ -43,13 +43,13 @@
   }
   .subitemOrder h3{
     position: relative;
-    text-align: center;
+    text-align: left;
     color: black;
     top: 50%;
     transform: translateY(-50%);
     font-weight: 300;
     font-size: 0.9em;
-    font-weight: 300;
+    font-weight: 400;
   }
 
 </style>
