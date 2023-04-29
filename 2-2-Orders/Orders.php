@@ -86,8 +86,8 @@
       <div class="itemOrder">
         <h3>Order: 2023-04-05</h3>
         <div class="openToggleSubitemOrder">
-          <img class="buttonPlusOrder"src="../2-1-Products/Images/mas.png" alt="">
-          <img class="buttonLessOrder"src="../2-1-Products/Images/menos.png" alt="">
+          <img id="buttonPlusOrder" class="buttonPlusOrder"src="../2-1-Products/Images/mas.png" alt="">
+          <img id="buttonLessOrder" class="buttonLessOrder"src="../2-1-Products/Images/menos.png" alt="">
         </div>
       </div>
 
@@ -278,8 +278,8 @@
 
 const openToggleSubitemOrder = document.querySelectorAll(".openToggleSubitemOrder");
 
-const buttonPlusOrder = document.querySelectorAll(".buttonPlus");
-const buttonLessOrder = document.querySelectorAll(".buttonLess");
+const buttonPlusOrder = document.querySelectorAll(".buttonPlusOrder");
+const buttonLessOrder = document.querySelectorAll(".buttonLessOrder");
 const containerSubitemOrder = document.querySelectorAll(".containerSubitemOrder");
 
 for (let i = 0; i < openToggleSubitemOrder.length; i++) {
