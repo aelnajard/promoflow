@@ -285,7 +285,7 @@ const containerSubitemOrder = document.querySelectorAll(".containerSubitemOrder"
 for (let i = 0; i < openToggleSubitemOrder.length; i++) {
   openToggleSubitemOrder[i].addEventListener("click", function(){
     buttonPlusOrder[i].classList.toggle("hideShow");
-    buttonLessOrder[i].classList.toggle("showHide");
+    buttonLessOrder[i].classList.toggle("hideShow");
   //  containerSubitemOrder[i].classList.toggle("showHide");
 
   })
