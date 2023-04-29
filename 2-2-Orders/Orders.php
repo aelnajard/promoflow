@@ -284,7 +284,10 @@ const containerSubitemOrder = document.querySelectorAll(".containerSubitemOrder"
 
 for (let i = 0; i < openToggleSubitemOrder.length; i++) {
   openToggleSubitemOrder[i].addEventListener("click", function(){
-    alert("entramos");
+    buttonPlusOrder[i].classList.toggle("hideShow");
+    buttonLessOrder[i].classList.toggle("showHide");
+    containerSubitemOrder[i].classList.toggle("showHide");
+
   })
 }
 
