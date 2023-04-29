@@ -1,4 +1,26 @@
 <style media="screen">
+.buttonPlusOrder {
+  position: absolute;
+  width: 25px;
+  height: 21px;
+  top:50%;
+  right:10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  }
+.buttonLessOrder{
+  position: absolute;
+  width: 25px;
+  height: 11px;
+  top:50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+  }
+
+
+
   .containerItemsOrder{
     position: relative;
     width: 100%;
