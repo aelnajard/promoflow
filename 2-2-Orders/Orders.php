@@ -41,6 +41,16 @@
     background-color: rgba(225, 228, 235, 0.9);
     border: 1px solid black;
   }
+  .subitemOrder h3{
+    position: relative;
+    text-align: center;
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 300;
+    font-size: 0.9em;
+    font-weight: 300;
+  }
 
 </style>
 <!--  Table 1  -->
