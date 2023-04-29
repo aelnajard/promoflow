@@ -19,6 +19,13 @@
     font-size: 1em;
     font-weight: 400;
   }
+  .openToggleBigCategoryW3P{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+  }
 
 
 </style>
