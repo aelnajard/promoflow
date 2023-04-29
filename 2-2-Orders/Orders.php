@@ -28,6 +28,12 @@
   }
 
 
+
+
+  .containerSubitemOrder{
+    position: relative;
+    width: 100%;
+  }
   .subitemOrder{
     position: relative;
     width: 100%;
@@ -35,7 +41,6 @@
     background-color: rgba(225, 228, 235, 0.9);
     border: 1px solid black;
   }
-
 
 </style>
 <!--  Table 1  -->
@@ -63,9 +68,12 @@
           <img class="buttonPlus"src="../2-1-Products/Images/mas.png" alt="">
           <img class="buttonLess"src="../2-1-Products/Images/menos.png" alt="">
         </div>
-        <div class="subitemOrder">
-          <h3>id: 234535</h3>
+        <div class="containerSubitemOrder">
+          <div class="subitemOrder">
+            <h3>id: 234535</h3>
+          </div>
         </div>
+
       </div>
 
 
