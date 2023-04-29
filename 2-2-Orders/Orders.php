@@ -16,6 +16,8 @@
     color: white;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 400;
   }
 
 
