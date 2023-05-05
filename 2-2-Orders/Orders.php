@@ -70,6 +70,7 @@
     font-size: 0.95em;
     font-weight: 300;
     padding-left: 15px;
+    color: rgba(47, 69, 96, 1);
   }
 
 
