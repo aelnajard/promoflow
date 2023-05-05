@@ -65,12 +65,18 @@
     text-align: left;
     color: black;
     top: 50%;
+    width: 500px;
     transform: translateY(-50%);
     font-weight: 300;
     font-size: 0.95em;
     font-weight: 300;
     padding-left: 15px;
   }
+
+
+
+
+
   .containerSubitemOrder2{
     position: relative;
     width: 100%;
@@ -85,7 +91,6 @@
   .subitemOrder2 h3{
     position: relative;
     text-align: left;
-    width: 500px;
     color: black;
     top: 50%;
     transform: translateY(-50%);
