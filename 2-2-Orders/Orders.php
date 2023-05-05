@@ -83,8 +83,8 @@
       <div class="itemOrder">
         <h3>Order: 2023-04-05</h3>
         <div class="openToggleSubitemOrder">
-          <img id="buttonPlusOrder" class="buttonPlusOrder"src="../2-1-Products/Images/mas.png" alt="">
-          <img id="buttonLessOrder" class="buttonLessOrder"src="../2-1-Products/Images/menos.png" alt="">
+          <img id="buttonPlusOrder" class="buttonPlusOrder"src="../2-2-Orders/Images/mas.png" alt="">
+          <img id="buttonLessOrder" class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">
         </div>
       </div>
       <div class="containersSubitemOrder">
