@@ -71,8 +71,6 @@
     font-weight: 300;
     padding-left: 15px;
   }
-
-
   .containerSubitemOrder2{
     position: relative;
     width: 100%;
@@ -95,6 +93,33 @@
     font-weight: 200;
     padding-left: 15px;
   }
+
+  .buttonPlusOrder2 {
+    position: absolute;
+    width: 25px;
+    height: 21px;
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    }
+  .buttonLessOrder2{
+    position: absolute;
+    width: 25px;
+    height: 11px;
+    top:50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    }
+    .openToggleSubitemOrder2{
+      position: absolute;
+      width: 40px;
+      height: 100%;
+      top: 0px;
+      right: 0px;
+    }
 
 </style>
 <!--  Table 1  -->
@@ -285,14 +310,18 @@
       </div>
 
 
+
       <div class="containerSubitemOrder">
+
         <div class="subitemOrder">
           <h3><strong>Reseller_details:</strong> </h3>
-          <div class="openToggleSubitemOrder">
-            <img  class="buttonPlusOrder"src="../2-2-Orders/Images/mas.png" alt="">
-            <img  class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
           </div>
         </div>
+
+        <div class="containersSubitemOrder2">
 
         <div class="containerSubitemOrder2">
           <div class="subitemOrder2">
@@ -400,6 +429,9 @@
           </div>
         </div>
 
+      </div>
+
+
 
       </div>
 
@@ -438,4 +470,19 @@ for (let i = 0; i < openToggleSubitemOrder.length; i++) {
   })
 }
 
+
+
+const openToggleSubitemOrder2 = document.querySelectorAll(".openToggleSubitemOrder2");
+const containersSubitemOrder2 = document.querySelectorAll(".containersSubitemOrder2");
+
+for (let i = 0; i < openToggleSubitemOrder2.length; i++) {
+  openToggleSubitemOrder2[i].addEventListener("click", function(){
+
+    containersSubitemOrder2[i].classList.toggle("hideShow");
+
+  })
+}
+
+
+//containersSubitemOrder2
 </script>
