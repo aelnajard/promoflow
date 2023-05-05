@@ -288,7 +288,7 @@ for (let i = 0; i < openToggleSubitemOrder.length; i++) {
   openToggleSubitemOrder[i].addEventListener("click", function(){
   //  buttonPlusOrder[i].classList.toggle("hideShow");
   //  buttonLessOrder[i].classList.toggle("hideShow");
-    containersSubitemOrder[i].classList.toggle("showHide");
+    containersSubitemOrder[i].classList.toggle("hideShow");
     alert("hola");
 
   })
