@@ -59,10 +59,10 @@
     height: 40px;
     background-color: rgba(230, 240, 245, 1);
     border: 1px solid black;
-    overflow: scroll;
+    overflow-x: scroll;
   }
   .subitemOrder h3{
-    position: relative;
+    position: absolute;
     text-align: left;
     color: black;
     top: 50%;
@@ -99,7 +99,6 @@
     font-weight: 200;
     padding-left: 15px;
   }
-
   .buttonPlusOrder2 {
     position: absolute;
     width: 25px;
@@ -119,13 +118,13 @@
     cursor: pointer;
     display: none;
     }
-    .openToggleSubitemOrder2{
-      position: absolute;
-      width: 40px;
-      height: 100%;
-      top: 0px;
-      right: 0px;
-    }
+  .openToggleSubitemOrder2{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+  }
 
 </style>
 <!--  Table 1  -->
@@ -457,7 +456,6 @@
           <h3><strong>product_design:</strong> This bag is printed as a flat sheet, laminated, cut and then folded. Please use the templates provided to position your artwork. Bags can be printed full coverage. We recommend keeping critical text and graphics out of the marked quiet areas to avoid distortion. Text can be added to the reinforced turnover top, but take care to rotate it in the artwork so it appears the right way up when finished. Large areas of flat colour are best produced as Pantone spot colours.<br> <br><br><b>Product guidelines</b> can be found in Flyerlink Resources article number: <a href=" http://www.flyerlink.com/res_art_va_mainview.php?resarticle_code=2211">2211</a><br><b>Design templates</b> can be found in Flyerlink Resources article number: <a href=" http://www.flyerlink.com/res_art_va_mainview.php?resarticle_code=1696">1696</a></h3>
         </div>
       </div>
-
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
           <h3><strong>product_special:</strong> The bag can be printed 100% on external sides</h3>
