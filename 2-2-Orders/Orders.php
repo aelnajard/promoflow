@@ -64,12 +64,13 @@
     position: relative;
     text-align: left;
     color: black;
-    top: 50%;
-    transform: translateY(-50%);
+
     font-weight: 300;
     font-size: 0.95em;
     font-weight: 300;
     padding-left: 15px;
+    background-color: blue;
+
   }
 
 
