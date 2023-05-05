@@ -59,10 +59,10 @@
     height: 40px;
     background-color: rgba(230, 240, 245, 1);
     border: 1px solid black;
-    overflow-x: scroll;
+    overflow-y: scroll;
   }
   .subitemOrder h3{
-    position: absolute;
+    position: relative;
     text-align: left;
     color: black;
     top: 50%;
