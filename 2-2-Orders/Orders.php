@@ -311,6 +311,11 @@
 
 
 
+
+
+
+
+
       <div class="containerSubitemOrder">
 
         <div class="subitemOrder">
@@ -431,9 +436,30 @@
 
       </div>
 
-
-
       </div>
+
+
+
+
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>product_spec:</strong> Maple copse paper bag - SMALL<br>195 gsm coated art paper + Matt laminated<br>Litho printed - 2 colour<br>Finished size(mm): maple: 230(w) x 100(d) x 380(h)<br>Hand finished, reinforced top and card base, folded, rope handles hand knotted<br>Max carrying load 4kg<br>Do not get wet</h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>product_design:</strong> This bag is printed as a flat sheet, laminated, cut and then folded. Please use the templates provided to position your artwork. Bags can be printed full coverage. We recommend keeping critical text and graphics out of the marked quiet areas to avoid distortion. Text can be added to the reinforced turnover top, but take care to rotate it in the artwork so it appears the right way up when finished. Large areas of flat colour are best produced as Pantone spot colours.<br> <br><br><b>Product guidelines<\/b> can be found in Flyerlink Resources article number: <a href=" http://www.flyerlink.com/res_art_va_mainview.php?resarticle_code=2211">2211</a><br><b>Design templates</b> can be found in Flyerlink Resources article number: <a href=" http://www.flyerlink.com/res_art_va_mainview.php?resarticle_code=1696">1696</a></h3>
+        </div>
+      </div>
+
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>product_special:</strong> The bag can be printed 100% on external sides</h3>
+        </div>
+      </div>
+
+
+
 
 
 
