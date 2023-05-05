@@ -287,17 +287,117 @@
 
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
-          <h3><strong>reseller_details:</strong> </h3>
+          <h3><strong>Reseller_details:</strong> </h3>
           <div class="openToggleSubitemOrder">
             <img  class="buttonPlusOrder"src="../2-2-Orders/Images/mas.png" alt="">
             <img  class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">
           </div>
         </div>
+
         <div class="containerSubitemOrder2">
           <div class="subitemOrder2">
-            <h3><strong>code:</strong> FRMBEB</h3>
+            <h3><strong>Code:</strong> FRMBEB</h3>
           </div>
-
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>Name:</strong>printing.com @ Mail Boxes Etc</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr1:</strong>Revent Bath Ltd.</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr2:</strong>3 Edgar Buildings</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr3:</strong>George Street</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr4:</strong>Bath</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr5:</strong></h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr6:</strong>United Kingdom</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>postcode:</strong>BA1 2FJ</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>countrycode:</strong>GB</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>main_contact_firstname:</strong>Zoltan</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>main_contact_surname:</strong>Sagi</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>main_contact_title:</strong>null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>main_contact_email:</strong>zoltan@mbebath.co.uk</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>main_contact_telephone:</strong>null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>invoice_contact_firstname:</strong>Zoltan</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>invoice_contact_surname:</strong>Sagi</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>invoice_contact_title:</strong>null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>invoice_contact_email:</strong>zoltan@mbebath.co.uk</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>invoice_contact_telephone:</strong>null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>vat_number:</strong>81819487</h3>
+          </div>
         </div>
 
 
