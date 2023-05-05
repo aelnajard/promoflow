@@ -18,9 +18,6 @@
   cursor: pointer;
   display: none;
   }
-
-
-
   .containerItemsOrder{
     position: relative;
     width: 100%;
@@ -90,6 +87,8 @@
           <img id="buttonLessOrder" class="buttonLessOrder"src="../2-1-Products/Images/menos.png" alt="">
         </div>
       </div>
+      <div class="containersSubitemOrder">
+
 
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
@@ -265,6 +264,9 @@
     </div>
 
 
+    </div>
+
+
 
 
 
@@ -280,13 +282,13 @@ const openToggleSubitemOrder = document.querySelectorAll(".openToggleSubitemOrde
 
 const buttonPlusOrder = document.querySelectorAll(".buttonPlusOrder");
 const buttonLessOrder = document.querySelectorAll(".buttonLessOrder");
-const containerSubitemOrder = document.querySelectorAll(".containerSubitemOrder");
+const containersSubitemOrder = document.querySelectorAll(".containersSubitemOrder");
 
 for (let i = 0; i < openToggleSubitemOrder.length; i++) {
   openToggleSubitemOrder[i].addEventListener("click", function(){
-    buttonPlusOrder[i].classList.toggle("hideShow");
-    buttonLessOrder[i].classList.toggle("hideShow");
-  //  containerSubitemOrder[i].classList.toggle("showHide");
+  //  buttonPlusOrder[i].classList.toggle("hideShow");
+  //  buttonLessOrder[i].classList.toggle("hideShow");
+    containersSubitemOrder[i].classList.toggle("showHide");
 
   })
 }
