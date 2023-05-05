@@ -72,6 +72,7 @@
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
+    background-color: blue;
 
   }
 
