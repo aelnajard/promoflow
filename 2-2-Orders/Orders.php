@@ -66,7 +66,7 @@
     text-align: left;
     color: black;
     top: 50%;
-    width: 500px;
+    height: 140px;
     transform: translateY(-50%);
     font-weight: 300;
     font-size: 0.95em;
