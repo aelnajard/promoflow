@@ -69,7 +69,8 @@
     font-size: 0.95em;
     font-weight: 300;
     padding-left: 15px;
-    background-color: blue;
+    width: 90%;
+    transform: translateX(-50%);
 
   }
 
