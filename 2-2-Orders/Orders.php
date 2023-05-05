@@ -56,7 +56,7 @@
   .subitemOrder{
     position: relative;
     width: 100%;
-    height: 40px;
+    padding: 4px;
     background-color: rgba(230, 240, 245, 1);
     border: 1px solid black;
     overflow-y: scroll;
