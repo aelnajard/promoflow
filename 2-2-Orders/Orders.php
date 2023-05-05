@@ -289,7 +289,6 @@ for (let i = 0; i < openToggleSubitemOrder.length; i++) {
   //  buttonPlusOrder[i].classList.toggle("hideShow");
   //  buttonLessOrder[i].classList.toggle("hideShow");
     containersSubitemOrder[i].classList.toggle("hideShow");
-    alert("hola");
 
   })
 }
