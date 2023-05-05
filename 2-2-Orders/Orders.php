@@ -91,7 +91,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-weight: 300;
-    font-size: 0.95em;
+    font-size: 0.8em;
     font-weight: 200;
     padding-left: 15px;
   }
