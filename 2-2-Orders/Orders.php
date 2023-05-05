@@ -91,12 +91,12 @@
     position: relative;
     text-align: left;
     color: black;
-    top: 50%;
-    transform: translateY(-50%);
     font-weight: 300;
     font-size: 0.8em;
     font-weight: 200;
-    padding-left: 15px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .buttonPlusOrder2 {
     position: absolute;
