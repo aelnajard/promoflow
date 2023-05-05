@@ -83,7 +83,7 @@
   .subitemOrder2{
     position: relative;
     width: 100%;
-    height: 40px;
+    padding: 4px;
     background-color: rgba(230, 240, 245, 0.9);
     border: 1px solid black;
   }
@@ -92,7 +92,7 @@
     text-align: left;
     color: black;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 200;
     width: 90%;
     left: 50%;
