@@ -58,7 +58,6 @@
     width: 100%;
     height: 40px;
     background-color: rgba(230, 240, 245, 0.9);
-
     border: 1px solid black;
   }
   .subitemOrder h3{
@@ -82,7 +81,7 @@
     position: relative;
     width: 100%;
     height: 40px;
-    background-color: rgba(225, 228, 235, 0.8);
+    background-color: rgba(230, 240, 245, 0.75);
     border: 1px solid black;
   }
   .subitemOrder2 h3{
