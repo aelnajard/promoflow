@@ -85,6 +85,7 @@
   .subitemOrder2 h3{
     position: relative;
     text-align: left;
+    width: 500px;
     color: black;
     top: 50%;
     transform: translateY(-50%);
