@@ -64,14 +64,12 @@
     position: relative;
     text-align: left;
     color: black;
-
     font-weight: 300;
     font-size: 0.95em;
     font-weight: 300;
-    padding-left: 15px;
     width: 90%;
-    background-color: blue;
-
+    left: 50%;
+    transform: translateX(-50%);
   }
 
 
