@@ -83,12 +83,11 @@
       <div class="itemOrder">
         <h3>Order: 2023-04-05</h3>
         <div class="openToggleSubitemOrder">
-          <img id="buttonPlusOrder" class="buttonPlusOrder"src="../2-2-Orders/Images/mas.png" alt="">
-          <img id="buttonLessOrder" class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">
+          <img  class="buttonPlusOrder"src="../2-2-Orders/Images/mas.png" alt="">
+          <img  class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">
         </div>
       </div>
       <div class="containersSubitemOrder">
-
 
       <div class="containerSubitemOrder">
         <div class="subitemOrder">
@@ -259,6 +258,28 @@
         <div class="subitemOrder">
           <h3><strong>Reseller_workgroup:</strong> F331</h3>
         </div>
+      </div>
+
+
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>reseller_details:</strong> </h3>
+          <div class="openToggleSubitemOrder">
+            <img  class="buttonPlusOrder"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+        <div class="containerSubitemOrder">
+          <div class="subitemOrder">
+            <h3><strong>Reseller_workgroup:</strong> F331</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder">
+          <div class="subitemOrder">
+            <h3><strong>Reseller_workgroup:</strong> F331</h3>
+          </div>
+        </div>
+
       </div>
 
     </div>
