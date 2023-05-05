@@ -72,6 +72,30 @@
     padding-left: 15px;
   }
 
+
+  .containerSubitemOrder2{
+    position: relative;
+    width: 100%;
+  }
+  .subitemOrder2{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(225, 228, 235, 0.4);
+    border: 1px solid black;
+  }
+  .subitemOrder2 h3{
+    position: relative;
+    text-align: left;
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 300;
+    font-size: 0.95em;
+    font-weight: 300;
+    padding-left: 15px;
+  }
+
 </style>
 <!--  Table 1  -->
 
@@ -269,18 +293,18 @@
             <img  class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">
           </div>
         </div>
-        <div class="containerSubitemOrder">
-          <div class="subitemOrder">
-            <h3><strong>Reseller_workgroup:</strong> F331</h3>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3>Item 2</h3>
           </div>
-        </div>
-        <div class="containerSubitemOrder">
-          <div class="subitemOrder">
-            <h3><strong>Reseller_workgroup:</strong> F331</h3>
-          </div>
+
         </div>
 
+
       </div>
+
+
+
 
     </div>
 
