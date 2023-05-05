@@ -70,6 +70,7 @@
     font-weight: 300;
     padding-left: 15px;
     width: 90%;
+    left: 50%;
     transform: translateX(-50%);
 
   }
