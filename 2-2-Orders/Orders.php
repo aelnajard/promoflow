@@ -286,21 +286,11 @@ const containersSubitemOrder = document.querySelectorAll(".containersSubitemOrde
 
 for (let i = 0; i < openToggleSubitemOrder.length; i++) {
   openToggleSubitemOrder[i].addEventListener("click", function(){
-  //  buttonPlusOrder[i].classList.toggle("hideShow");
-  //  buttonLessOrder[i].classList.toggle("hideShow");
+    buttonPlusOrder[i].classList.toggle("hideShow");
+    buttonLessOrder[i].classList.toggle("showHide");
     containersSubitemOrder[i].classList.toggle("hideShow");
 
   })
 }
-
-/*const buttonPlus = document.querySelectorAll(".buttonPlus");
-const buttonLess = document.querySelectorAll(".buttonLess");
-const boxUserInformation = document.querySelectorAll(".boxUserInformation");function  showInformationUser(data){
-  const toggleInformation = document.querySelectorAll(".toggleInformation");
-
-  boxUserInformation[data].classList.toggle("showHide");
-  buttonPlus[data].classList.toggle("hideShow");
-  buttonLess[data].classList.toggle("showHide");
-}*/
 
 </script>
