@@ -62,14 +62,12 @@
   }
   .subitemOrder h3{
     position: relative;
-    text-align: left;
-    color: black;
-    font-weight: 300;
-    font-size: 0.95em;
-    font-weight: 300;
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 400; 
   }
 
 
