@@ -96,6 +96,7 @@
     font-weight: 200;
     width: 90%;
     left: 50%;
+    background-color: red;
     transform: translateX(-50%);
   }
   .buttonPlusOrder2 {
