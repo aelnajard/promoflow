@@ -50,6 +50,7 @@
              echo $query . "<br>" . $e->getMessage();
            }
        }
+
        function createUser(){
          try{
            $sql = "INSERT INTO `Users`(`name`, `email`, `password`, `userType`)
@@ -67,6 +68,8 @@
              return $query . "<br>" . $e->getMessage();
            }
        }
+
+       
        function updateUser(){
         try{
             $sql = "UPDATE

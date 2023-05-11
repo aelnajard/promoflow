@@ -5,7 +5,7 @@ require_once('../Models/Users.php');
 
 
 
-  
+
     if ($_POST['module'] = "getUsers") {
       $db = new Database();
       $user = new Users($db);
@@ -17,7 +17,7 @@ require_once('../Models/Users.php');
     }*/
     if ($_POST['module']=="updateUsers2") {
       //echo json_encode($_POST['idUser'].$_POST['name'].$_POST['email'].$_POST['password'].$_POST['userType']);
-      echo "Quiero llorar otra vez";
+    //  echo "Quiero llorar otra vez";
     }
 
 

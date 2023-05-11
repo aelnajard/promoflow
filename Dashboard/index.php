@@ -504,7 +504,7 @@
 
     <script type="text/javascript">
     /* verifyLogin */
-    verifyLogin();
+  //  verifyLogin();
     function verifyLogin() {
       $.ajax( "../App/Controller/Controller2.php", {
       type: 'post',

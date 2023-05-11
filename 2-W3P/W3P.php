@@ -57,6 +57,7 @@ leftArrowW3P.addEventListener("click", function(){
  textNavigatorTable[indexTableOn].style.display = "none"; // Turn off current layer
  containerTableW3P[indexTableOn].style.display = "none"; // Turn off current layer
 
+
    if (indexTableOn != 0) { //If layers its not 0
      indexTableOn = indexTableOn - 1;
      textNavigatorTable[indexTableOn].style.display = "block";
@@ -67,12 +68,17 @@ leftArrowW3P.addEventListener("click", function(){
      textNavigatorTable[indexTableOn].style.display = "block";
      containerTableW3P[indexTableOn].style.display = "block";
    }
+   if (indexTableOn == 1) {
+     getOrders();
+   }
 })
 
+var numberClicksOrders = 0;
 /*Event for click right*/
 rightArrowW3P.addEventListener("click", function(){
  textNavigatorTable[indexTableOn].style.display = "none"; // Turn off current layer
  containerTableW3P[indexTableOn].style.display = "none"; // Turn off current layer
+
 
    if (indexTableOn != containerTableW3P.length -1) {  //If layers it's not 3
      indexTableOn = indexTableOn + 1;
@@ -83,6 +89,12 @@ rightArrowW3P.addEventListener("click", function(){
      indexTableOn = 0;
      textNavigatorTable[indexTableOn].style.display = "block";
      containerTableW3P[indexTableOn].style.display = "block";
+   }
+   if (indexTableOn == 1) {
+     if (numberClicksOrders == 0) {
+       getOrders();
+       numberClicksOrders  = numberClicksOrders +1;
+     }
    }
 })
 </script>

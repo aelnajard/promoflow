@@ -25,6 +25,7 @@ require_once('../Models/Users.php');
       $_SESSION['loginUser'] = 'active';
     }
     elseif ($_POST['module']=="createUser") {
+
       $db = new Database();
       $user = new Users($db);
       $user->setEmail($_POST['email']);
@@ -64,6 +65,7 @@ require_once('../Models/Users.php');
       elseif ($_POST['module']=="logout") {
         session_destroy();
       }
+
       elseif ($_POST['module']=="requestProductsExample") {
         // URL de la API que queremos consultar
         $url = 'https://NKA1.API:46fKgJsZP7@dev-7.flyerlink.com/api.php/runs?state=waiting&days=60&prod_workgrp=NKA1&format=json';
@@ -75,6 +77,40 @@ require_once('../Models/Users.php');
         echo json_encode($data);
 
       }
+      elseif ($_POST['module']=="getOrders") {
+        // URL de la API que queremos consultar
+      //  $url = 'https://NKA1.API:46fKgJsZP7@dev-7.flyerlink.com/api.php/runs?state=waiting&days=60&prod_workgrp=NKA1&format=json';
+
+        // Realizamos la solicitud GET utilizando la función file_get_contents() en una sola línea
+      //  $data = json_decode(file_get_contents($url));
+
+        // Imprimimos los datos en la pantalla
+
+
+
+          //$data = json_decode(file_get_contents($data));
+
+          //    echo json_encode($data);
+
+            // Read the JSON file
+        $json = file_get_contents('../../Json/GETRunsAwaitingProduction.json');
+
+
+
+        // Display data
+        echo ($json);
+
+      }
+      elseif ($_POST['module']=="getOrdersContent") {
+        //$url =  'https://NKA1.API:46fKgJsZP7@dev-7.flyerlink.com/api.php/runs/'.$_POST['idOrder'].'/jobs?format=json';
+        $json = file_get_contents('../../Json/GETRUNJobs.json');
+        // Display data
+        echo ($json);
+      }
+
+
+
+      //
 
 
 

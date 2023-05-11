@@ -18,6 +18,7 @@
   cursor: pointer;
   display: none;
   }
+
   .containerItemsOrder{
     position: relative;
     width: 100%;
@@ -45,6 +46,109 @@
     top: 0px;
     right: 0px;
   }
+
+
+
+  .containerItemJob{
+    position: relative;
+    width: 100%;
+  }
+  .itemJob{
+    position: relative;
+    width: 100%;
+    padding: 4px;
+    background-color: rgba(47, 69, 96, 0.7);
+    border: 1px solid black;
+  }
+  .itemJob h3{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .openToggleSubitemJob{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    top: 0px;
+    right: 10px;
+  }
+  .buttonPlusJob {
+    position: absolute;
+    width: 17px;
+    height: 21px;
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    }
+  .buttonLessJob{
+    position: absolute;
+    width: 17px;
+    height: 11px;
+    top:50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    }
+
+
+
+
+    .containerItemContent{
+      position: relative;
+      width: 100%;
+    }
+    .itemContent{
+      position: relative;
+      width: 100%;
+      padding: 4px;
+      background-color: rgba(47, 69, 96, 0.3);
+      border: 1px solid black;
+    }
+    .itemContent h3{
+      position: relative;
+      text-align: center;
+      width: 85%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1em;
+      font-weight: 400;
+    }
+    .openToggleSubitemContent{
+      position: absolute;
+      width: 30px;
+      height: 100%;
+      top: 0px;
+      right: 10px;
+    }
+    .buttonPlusContent {
+      position: absolute;
+      width: 17px;
+      height: 21px;
+      top:50%;
+      right:10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      }
+    .buttonLessContent{
+      position: absolute;
+      width: 17px;
+      height: 11px;
+      top:50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      display: none;
+      }
+
+
+
+
+
 
 
 
@@ -129,8 +233,10 @@
 <!--  Table 1  -->
 
 <div class="containerTableW3P">
-  <div class="containerCenterTable">
+  <div id="containerOrders" class="containerCenterTable">
 
+
+<!--
     <div class="containerItemsOrder">
 
       <div class="itemOrder">
@@ -461,19 +567,705 @@
         </div>
       </div>
 
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>product_partner_code:</strong> null</h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>prod_workgroup:</strong>NKA1 </h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>complete:</strong>no </h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>multifile:</strong>yes </h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>expected_despatch_date:</strong> 17\/05\/2023</h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>front_filename:</strong> 5502878_A01.EPS</h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>reverse_filename:</strong>null </h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>fee_charged_on_job:</strong> null</h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>pages:</strong> 1</h3>
+        </div>
+      </div>
+
+
+
+
+      <div class="containerSubitemOrder">
+
+        <div class="subitemOrder">
+          <h3><strong>addresses:</strong> </h3>
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+
+        <div class="containersSubitemOrder2">
+
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>name:</strong> Bath Spa Dentistry</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr1:</strong> </h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr2:</strong> </h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr3:</strong> </h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr4:</strong> Bath</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr5:</strong> Avon</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>addr6:</strong> United Kingdom</h3>
+          </div>
+        </div><div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>postcode:</strong>BA1 2BT </h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>countrycode:</strong> GB</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>contact:</strong> Lisa  Jones</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>telephone:</strong> 01225 464346</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>email:</strong> reception@bathspadentistry.com</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>best_name:</strong> Bath Spa Dentistry</h3>
+          </div>
+        </div><div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>country:</strong> United Kingdom</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>quantity:</strong> 250</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>despatch_method:</strong> NP</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>despatch_method_name:</strong> Works maker : UK Mainland</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>despatch_customer_code:</strong> OEBATH24</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>despatch_customer_address_id:</strong> </h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>line:</strong> 6780443</h3>
+          </div>
+        </div>
+
+
+      </div>
+      </div>
+
+
+
+
+      <div class="containerSubitemOrder">
+
+        <div class="subitemOrder">
+          <h3><strong>revenue:</strong> </h3>
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+
+        <div class="containersSubitemOrder2">
+
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>id:</strong> 13227951</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>costing:</strong> NPC</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>quantity:</strong> 250</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>units:</strong> 1</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>unitcost:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>unitrev:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>cost:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>revenue:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>unitprcost:</strong> 0.000.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>vat:</strong> 20.000</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>vatcode:</strong> 1</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>vattotal:</strong> 0.000</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_territory:</strong> GBNI</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_vatcode:</strong> 1</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_vat:</strong> 20.000</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_invoice:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_unit_invoice:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_invoice_vattotal:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>revenuesetup:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>costsetup:</strong> 0.00</h3>
+          </div>
+        </div><div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcostsetup:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>name:</strong> Delivery Included</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>customname:</strong> </h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>voucher:</strong> f</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>template:</strong> f</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>wgcosting_id:</strong> null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>sage50_code:</strong> 1</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>sageone_code:</strong> null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>xero_code:</strong> OUTPUT2</h3>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      </div>
+
+
+
+
+      <div class="containerSubitemOrder">
+
+        <div class="subitemOrder">
+          <h3><strong>revenue:</strong> </h3>
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+
+        <div class="containersSubitemOrder2">
+
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>id:</strong> 13204242</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>costing:</strong> PR</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>quantity:</strong> 250</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>units:</strong> 250</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>unitcost:</strong> 833.80</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>unitrev:</strong> 1072.26</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>cost:</strong> 833.80</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>revenue:</strong> 1072.26</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost:</strong> 647.50</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>unitprcost:</strong> 647.50</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>vat:</strong> 20.000</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>vatcode:</strong> 1</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>vattotal:</strong> 214.452</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_territory:</strong> GBNI</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_vatcode:</strong> 1</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_vat:</strong> 20.000</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_invoice:</strong> 647.50</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_unit_invoice:</strong> 647.50</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcost_invoice_vattotal:</strong> 129.50</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>revenuesetup:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>costsetup:</strong> 0.00</h3>
+          </div>
+        </div><div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>prcostsetup:</strong> 0.00</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>name:</strong> Printing</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>customname:</strong> null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>voucher:</strong> f</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>template:</strong> f</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>wgcosting_id:</strong> null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>sage50_code:</strong> 1</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>sageone_code:</strong> null</h3>
+          </div>
+        </div>
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>xero_code:</strong> OUTPUT2</h3>
+          </div>
+        </div>
+
+
+
+      </div>
+      </div>
+
+
+
+      <div class="containerSubitemOrder">
+
+        <div class="subitemOrder">
+          <h3><strong>notes:</strong> </h3>
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+
+        <div class="containersSubitemOrder2">
+
+        <div class="containerSubitemOrder2">
+          <div class="subitemOrder2">
+            <h3><strong>brief:</strong> null</h3>
+          </div>
+        </div>
+
+      </div>
+      </div>
 
 
 
 
 
 
+
+      <div class="containerSubitemOrder">
+
+        <div class="subitemOrder">
+          <h3><strong>finishes:</strong> </h3>
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>id:</strong> NKASHWHT</h3>
+            </div>
+          </div>
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>quantity:</strong> 250</h3>
+            </div>
+          </div>
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>name:</strong> White Rope Handles - short</h3>
+            </div>
+          </div>
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>memo:</strong> </h3>
+            </div>
+          </div>
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>finish_design_instructions:</strong><br> </h3>
+            </div>
+          </div>
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>production_instructions:</strong> <br></h3>
+            </div>
+          </div>
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>customer_memo:</strong> <div></div></h3>
+            </div>
+          </div>
+
+
+      </div>
+
+      </div>
+
+
+
+
+
+
+
+
+      <div class="containerSubitemOrder">
+
+        <div class="subitemOrder">
+          <h3><strong>orientation:</strong> </h3>
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>front:</strong> Portrait</h3>
+            </div>
+          </div>
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>back:</strong> Portrait</h3>
+            </div>
+          </div>
+
+
+      </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>order_code:</strong> null</h3>
+        </div>
+      </div>
+      <div class="containerSubitemOrder">
+        <div class="subitemOrder">
+          <h3><strong>package_code:</strong> null</h3>
+        </div>
+      </div>
+
+
+
+      <div class="containerSubitemOrder">
+
+        <div class="subitemOrder">
+          <h3><strong>jobmaker_pack:</strong> </h3>
+          <div class="openToggleSubitemOrder2">
+            <img  class="buttonPlusOrder2"src="../2-2-Orders/Images/mas.png" alt="">
+            <img  class="buttonLessOrder2"src="../2-2-Orders/Images/menos.png" alt="">
+          </div>
+        </div>
+
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>full_pack:</strong> https://dev-7.flyerlink.com/api.php/jobs/5502878/jobmaker</h3>
+            </div>
+          </div>
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>orderlist_csv:</strong> https://dev-7.flyerlink.com/api.php/jobs/5502878/jobmaker?file=csv</h3>
+            </div>
+          </div>
+        </div>
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>orderlist_xml:</strong> https://dev-7.flyerlink.com/api.php/jobs/5502878/jobmaker?file=xml</h3>
+            </div>
+          </div>
+        </div>
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>worksheet:</strong> https://dev-7.flyerlink.com/api.php/jobs/5502878/jobmaker?file=sheet</h3>
+            </div>
+          </div>
+        </div>
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>packing_slip_draft:</strong> https://dev-7.flyerlink.com/api.php/jobs/5502878/jobmaker?file=slip</h3>
+            </div>
+          </div>
+        </div>
+        <div class="containersSubitemOrder2">
+          <div class="containerSubitemOrder2">
+            <div class="subitemOrder2">
+              <h3><strong>artwork:</strong> <a href="https://dev-7.flyerlink.com/api.php/jobs/5502878/jobmaker?file=pdf">Link</a></h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-
     </div>
-
-
-
+    </div>
+-->
 
 
 </div>
@@ -482,7 +1274,7 @@
 
 <script type="text/javascript">
 
-
+/*
 
 const openToggleSubitemOrder = document.querySelectorAll(".openToggleSubitemOrder");
 
@@ -511,7 +1303,178 @@ for (let i = 0; i < openToggleSubitemOrder2.length; i++) {
 
   })
 }
+*/
 
 
-//containersSubitemOrder2
+var containerOrders = document.getElementById("containerOrders");
+
+
+  function getOrders(){
+    $.ajax( "../App/Controller/Controller2.php", {
+           type: 'post',
+           async: false,
+           data: {
+             module: "getOrders"
+                   },
+           success: function(data){
+            var data = jQuery.parseJSON(data);
+            containerOrders.innerHTML  = "";
+            for (var i = 0; i < data["runs"].length; i++) {
+              createOrders(data["runs"][i]["id"],  data["runs"][i]["created_date"], i);
+            }
+
+            }
+          })
+   }
+//Send many parameters DOM onclick
+//'<div class="openToggleSubitemOrder" onclick="getJobs(\'' + i + '\',\'' + id + '\');" >' +
+
+  function createOrders(idOrder, createdDate, numberOrder){
+    containerOrders.innerHTML +=
+    '<div class="containerItemsOrder">' +
+      '<div class="itemOrder">' +
+        '<h3>Order: '+ createdDate +'</h3>' +
+        '<div class="openToggleSubitemOrder" onclick="showJobs(\'' + numberOrder  + '\');" >' +
+          '<img  class="buttonPlusOrder"src="../2-2-Orders/Images/mas.png" alt="">' +
+          '<img  class="buttonLessOrder"src="../2-2-Orders/Images/menos.png" alt="">' +
+        '</div>' +
+      '</div>' +
+      '<div class="containersItemJob">' +
+      '</div>' +
+    '</div>'
+    ;
+    const buttonPlusOrder =  document.querySelectorAll(".buttonPlusOrder");
+    buttonPlusOrder[numberOrder].style.display = "block";
+
+    setTimeout(function() {
+    getJobs(numberOrder, idOrder);
+    }, 0)
+
+    const containersItemJob =  document.querySelectorAll(".containersItemJob");
+    containersItemJob[numberOrder].style.display = "none";
+
+  }
+var dataJob;
+  function getJobs(numberOrder, idOrder){
+    const containersItemJob =  document.querySelectorAll(".containersItemJob");
+      containersItemJob[numberOrder].innerHTML = '';
+
+      $.ajax( "../App/Controller/Controller2.php", {
+             type: 'post',
+             async: false,
+             data: {
+               module: "getOrdersContent",
+               idOrder: idOrder
+                     },
+             success: function(data){
+              var data = jQuery.parseJSON(data);
+              dataJob =  data["jobs"];
+
+
+              for (var i = 0; i < data["jobs"].length; i++) {
+                  createJobs(numberOrder,   i);
+              }
+              }
+            })
+  }//
+
+// number job  = numeerJob + 1;  y enviarlo como parametro en createContent con eel nombre de otra variablee;
+var numberContainerJob = 0;
+  function createJobs(numberOrder, numberJob){
+    const containersItemJob =  document.querySelectorAll(".containersItemJob");
+
+    containersItemJob[numberOrder].innerHTML +=
+    '<div class="containerItemJob">' +
+      '<div class="itemJob">' +
+        '<h3>Job: ' +  (numberJob +1) +'</h3>' +
+        '<div class="openToggleSubitemJob"  onclick="createContent(\'' + numberContainerJob + '\',\'' + numberJob + '\');" >' + //onclick="createContent(\'' + numberJob + '\',\'' + dataJob + '\');"
+          '<img  class="buttonPlusJob"src="../2-2-Orders/Images/mas.png" alt="">' +
+          '<img  class="buttonLessJob"src="../2-2-Orders/Images/menos.png" alt="">' +
+        '</div>' +
+      '</div>' +
+      '<div class="containersItemsContent">' +
+      '</div>' +
+
+    '</div>'
+
+    ;
+    numberContainerJob  = numberContainerJob +1;
+
+
+    const buttonPlusJob =  document.querySelectorAll(".buttonPlusJob");
+    buttonPlusJob[numberOrder].style.display = "block";
+
+
+
+
+
+    const containersItemsContent =  document.querySelectorAll(".containersItemsContent");
+    containersItemsContent[numberJob].style.display = "none";
+
+
+  }
+  function createContent(numberContainerJob, numberJob){
+    var itemPlus =  '<div class="openToggleSubitemContent">' +
+                      '<img  class="buttonPlusContent"src="../2-2-Orders/Images/mas.png" alt="">' +
+                      '<img  class="buttonLessContent"src="../2-2-Orders/Images/menos.png" alt="">' +
+                    '</div>' ;
+
+    const buttonPlusJob =  document.querySelectorAll(".buttonPlusJob");
+    const buttonLessJob =  document.querySelectorAll(".buttonLessJob");
+    const containersItemsContent =  document.querySelectorAll(".containersItemsContent");
+
+
+    if (buttonPlusJob[numberContainerJob].style.display == "none" ) {
+      buttonPlusJob[numberContainerJob].style.display = "block";
+      buttonLessJob[numberContainerJob].style.display = "none";
+      containersItemsContent[numberContainerJob].style.display = "none";
+
+    }else {
+      buttonPlusJob[numberContainerJob].style.display = "none";
+      buttonLessJob[numberContainerJob].style.display = "block";
+      containersItemsContent[numberContainerJob].style.display = "block";
+
+      containersItemsContent[numberContainerJob].innerHTML = "";
+
+
+        for(let key in dataJob[numberJob]) {
+        //  alert("Quiero llorar");
+
+          containersItemsContent[numberContainerJob].innerHTML +=
+          '<div class="containerItemContent">' +
+            '<div class="itemContent">' +
+              '<h3>'+key+': ' +  dataJob[numberJob][key] +'</h3>' +
+            '</div>' +
+          '</div>'
+          ;
+        }
+    }
+
+
+  //
+
+
+
+  }
+
+
+
+  function showJobs(i){
+    const buttonPlusOrder =  document.querySelectorAll(".buttonPlusOrder");
+    const buttonLessOrder =  document.querySelectorAll(".buttonLessOrder");
+    const containersItemJob =  document.querySelectorAll(".containersItemJob");
+
+    if (buttonPlusOrder[i].style.display == "none" ) {
+      buttonPlusOrder[i].style.display = "block";
+      buttonLessOrder[i].style.display = "none";
+      containersItemJob[i].style.display = "none";
+
+    }else {
+      buttonPlusOrder[i].style.display = "none";
+      buttonLessOrder[i].style.display = "block";
+      containersItemJob[i].style.display = "block";
+    }
+  }
+
+
 </script>
